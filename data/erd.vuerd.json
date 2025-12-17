@@ -4,8 +4,8 @@
   "settings": {
     "width": 2400,
     "height": 2400,
-    "scrollTop": -1262.4415,
-    "scrollLeft": -1159.5392,
+    "scrollTop": -970,
+    "scrollLeft": -912.5392,
     "zoomLevel": 0.79,
     "show": 420,
     "database": 32,
@@ -1691,7 +1691,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1766004558813,
+          "updateAt": 1766005188064,
           "createAt": 1765912248256
         }
       },
@@ -3598,7 +3598,7 @@
       "6oT58Hx3VJETIvJtoe27T": {
         "id": "6oT58Hx3VJETIvJtoe27T",
         "tableId": "rWmOBYzfVPst0j1SkABQ5",
-        "name": "user_id",
+        "name": "user",
         "comment": "",
         "dataType": "INT",
         "default": "",
@@ -3611,7 +3611,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1766003792608,
+          "updateAt": 1766005162341,
           "createAt": 1766003719850
         }
       },

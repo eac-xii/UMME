@@ -83,9 +83,10 @@ class User(AbstractBaseUser, PermissionsMixin):
         return self.nickname
 
 class SpotifyAccount(models.Model):
-    user_id = models.OneToOneField(
+    user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        related_name="spotify"
     )
     access_token = models.TextField()
     refresh_token = models.TextField()
