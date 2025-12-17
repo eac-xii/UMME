@@ -161,3 +161,7 @@ origins = os.getenv('DJANGO_ALLOWED_ORIGINS')
 CORS_ALLOWED_ORIGINS = origins.split(',') if origins else []
 
 AUTH_USER_MODEL = "accounts.User"
+
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = BASE_DIR / "media"

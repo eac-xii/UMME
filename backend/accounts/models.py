@@ -93,3 +93,49 @@ class SpotifyAccount(models.Model):
     scope = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+class Follow(models.Model):
+    follower = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="following"
+    )
+    following = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="followers"
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["follower", "following"],
+                name="unique_follow"
+            ),
+            models.CheckConstraint(
+                condition=~models.Q(follower=models.F("following")),
+                name="prevent_self_follow"
+            ),
+        ]
+
+class Profile(models.Model):
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="profile"
+    )
+    content = models.CharField(max_length=255, blank=True)
+
+    def profile_image_path(instance, filename):
+        return f"profiles/{instance.user.id}/{filename}"
+
+    image = models.ImageField(
+        upload_to=profile_image_path,
+        blank=True,
+        null=True
+    )
+
+    def __str__(self):
+        return f"{self.user.nickname}'s profile"

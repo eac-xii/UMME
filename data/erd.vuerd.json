@@ -4,8 +4,8 @@
   "settings": {
     "width": 2400,
     "height": 2400,
-    "scrollTop": -1093.4415,
-    "scrollLeft": -896.5392,
+    "scrollTop": -1262.4415,
+    "scrollLeft": -1159.5392,
     "zoomLevel": 0.79,
     "show": 420,
     "database": 32,
@@ -1398,7 +1398,7 @@
       "Waq1nGSfY-YhhuBsmEqfq": {
         "id": "Waq1nGSfY-YhhuBsmEqfq",
         "tableId": "d_9jReUKAv4qJ0-mbPgMD",
-        "name": "follower_id",
+        "name": "follower",
         "comment": "",
         "dataType": "INT",
         "default": "",
@@ -1411,27 +1411,27 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1765918278649,
+          "updateAt": 1766004410053,
           "createAt": 1765911558921
         }
       },
       "VTesE4BRFPODMBdEg-kOs": {
         "id": "VTesE4BRFPODMBdEg-kOs",
         "tableId": "d_9jReUKAv4qJ0-mbPgMD",
-        "name": "following_id",
+        "name": "following",
         "comment": "",
         "dataType": "INT",
         "default": "",
         "options": 10,
         "ui": {
           "keys": 3,
-          "widthName": 66,
+          "widthName": 60,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1765911679019,
+          "updateAt": 1766004411402,
           "createAt": 1765911564008
         }
       },
@@ -1678,7 +1678,7 @@
       "qM1qGgPFYUSCW_XHBL2hz": {
         "id": "qM1qGgPFYUSCW_XHBL2hz",
         "tableId": "8warvrVlzeMXqrT0mxQiP",
-        "name": "user_id",
+        "name": "user",
         "comment": "",
         "dataType": "INT",
         "default": "",
@@ -1691,7 +1691,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1765914916225,
+          "updateAt": 1766004558813,
           "createAt": 1765912248256
         }
       },
