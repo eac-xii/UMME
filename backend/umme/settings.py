@@ -159,3 +159,5 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # corsheaders
 origins = os.getenv('DJANGO_ALLOWED_ORIGINS')
 CORS_ALLOWED_ORIGINS = origins.split(',') if origins else []
+
+AUTH_USER_MODEL = "accounts.User"
