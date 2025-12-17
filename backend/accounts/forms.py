@@ -10,7 +10,7 @@ class UserCreationForm(forms.ModelForm):
         widget=forms.EmailInput(
             attrs={
                 "class": "form-control",
-                "placeholder": "Email address",
+                "placeholder": "Email Address",
                 "required": "True"
             }
         )
@@ -62,11 +62,11 @@ class UserCreationForm(forms.ModelForm):
         )
     )
     password2 = forms.CharField(
-        label="Password confirmation",
+        label="Password Confirmation",
         widget=forms.PasswordInput(
             attrs={
                 "class": "form-control",
-                "placeholder": "Password confirmation",
+                "placeholder": "Password Confirmation",
                 "required": "True"
             }
         )
