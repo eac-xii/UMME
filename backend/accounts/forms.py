@@ -1,7 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
-
-from .models import User, UserManager
+from django.contrib.auth import get_user_model
 
 class UserCreationForm(forms.ModelForm):
     email = forms.EmailField(
@@ -10,7 +9,7 @@ class UserCreationForm(forms.ModelForm):
         widget=forms.EmailInput(
             attrs={
                 "class": "form-control",
-                "placeholder": "Email Address",
+                "placeholder": "Email address",
                 "required": "True"
             }
         )
@@ -62,18 +61,18 @@ class UserCreationForm(forms.ModelForm):
         )
     )
     password2 = forms.CharField(
-        label="Password Confirmation",
+        label="Password confirmation",
         widget=forms.PasswordInput(
             attrs={
                 "class": "form-control",
-                "placeholder": "Password Confirmation",
+                "placeholder": "Password confirmation",
                 "required": "True"
             }
         )
     )
 
     class Meta:
-        model = User
+        model = get_user_model()
         fields = ("email", "last_name", "first_name", "nickname")
     
     def clean_password2(self):
@@ -85,9 +84,15 @@ class UserCreationForm(forms.ModelForm):
         return password2
     
     def save(self, commit=True):
-        user = super(UserCreationForm, self).save(commit=False)
-        user.email = UserManager.normalize_email(self.cleaned_data["email"])
-        user.set_password(self.cleaned_data["password1"])
+        User = get_user_model()
+        user = User.objects.create_user(
+            email=self.cleaned_data["email"],
+            last_name=self.cleaned_data["last_name"],
+            first_name=self.cleaned_data["first_name"],
+            nickname=self.cleaned_data["nickname"],
+            password=self.cleaned_data["password1"]
+        )
+
         if commit:
             user.save()
         return user
@@ -98,7 +103,7 @@ class UserChangeForm(forms.ModelForm):
     )
 
     class Meta:
-        model = User
+        model = get_user_model()
         fields = ("email", "password", "last_name", "first_name", "is_active",)
 
     def clean_password(self):
