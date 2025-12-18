@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
     # apps
     'accounts',
+    'chats',
 
     # basic
     'django.contrib.admin',
