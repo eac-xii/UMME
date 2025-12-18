@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     # apps
     'accounts',
     'chats',
+    'musics',
 
     # basic
     'django.contrib.admin',
