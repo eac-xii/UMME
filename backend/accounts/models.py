@@ -160,10 +160,11 @@ class Profile(models.Model):
         return f"{self.user.nickname}'s profile"
     
 class UserFeatures(models.Model):
-    track = models.OneToOneField(
+    user = models.OneToOneField(
         Track,
+        primary_key=True,
         on_delete=models.CASCADE,
-        related_name="audio_features"
+        related_name="user"
     )
     acousticness = models.FloatField(
         validators=float_scope_validator

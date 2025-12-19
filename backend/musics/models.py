@@ -72,6 +72,7 @@ class Track(TimeStampedModel, models.Model):
 class AudioFeatures(TimeStampedModel, models.Model):
     track = models.OneToOneField(
         Track,
+        primary_key=True,
         on_delete=models.CASCADE,
         related_name="audio_features"
     )
