@@ -15,6 +15,18 @@ class UserCreationForm(forms.ModelForm):
         )
     )
 
+    username = forms.CharField(
+        label="Username",
+        required=True,
+        widget=forms.TextInput(
+            attrs={
+                "class": "form-control",
+                "placeholder": "Username",
+                "required": "True"
+            }
+        )
+    )
+
     last_name = forms.CharField(
         label="Last Name",
         required=True,
