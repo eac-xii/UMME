@@ -15,17 +15,17 @@ const router = createRouter({
     },
     {
       path: '/profile',
-      name: 'Profile',
+      name: 'profile',
       component: ProfileView,
     },
     {
       path: '/thread',
-      name: 'Thread',
+      name: 'thread',
       component: ThreadView
     },
     {
       path: '/messenger',
-      name: 'Messenger',
+      name: 'messenger',
       component: MessengerView
     },
     {
