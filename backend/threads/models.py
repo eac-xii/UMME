@@ -1,6 +1,6 @@
 from django.db import models
 from django.conf import settings
-from ..musics.models import Track
+from musics.models import Track
 
 # Create your models here.
 class Thread(models.Model):
