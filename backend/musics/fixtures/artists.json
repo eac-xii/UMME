@@ -1,0 +1,6194 @@
+[
+{
+    "model": "musics.artist",
+    "pk": 1,
+    "fields": {
+        "created_at": "2025-12-19T05:42:29.877Z",
+        "updated_at": "2025-12-19T05:42:29.877Z",
+        "spotify_id": "0hEurMDQu99nJRq8pTxO14",
+        "name": "John Mayer",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe926dd683e1700a6d65bd835"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 2,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.510Z",
+        "updated_at": "2025-12-19T06:00:39.510Z",
+        "spotify_id": "0te6SxImmbdkGXxSQw9lmK",
+        "name": "Gordon Jenkins And Orchestra",
+        "popularity": 26,
+        "image": "https://i.scdn.co/image/ab67616d0000b2735926614586dc8090b80161bc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 3,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.518Z",
+        "updated_at": "2025-12-19T06:00:39.518Z",
+        "spotify_id": "181bsRPaVXVlUKXrxwZfHK",
+        "name": "Megan Thee Stallion",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb65a9ac943abab7c9935ea282"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 4,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.523Z",
+        "updated_at": "2025-12-19T06:00:39.523Z",
+        "spotify_id": "79R17q4kiPsimHDtdOlN2L",
+        "name": "SEHUN",
+        "popularity": 25,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbb3aab295379e923f51c2d6e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 5,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.526Z",
+        "updated_at": "2025-12-19T06:00:39.527Z",
+        "spotify_id": "47z7ZrgFoBvVpCnElCE3Zh",
+        "name": "Yellow Claw",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9abb52bfe2a010c3e05a63e7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 6,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.530Z",
+        "updated_at": "2025-12-19T06:00:39.530Z",
+        "spotify_id": "0Y0kqoEdmURT48Od9DA8WC",
+        "name": "Sy Oliver & His Orchestra",
+        "popularity": 28,
+        "image": "https://i.scdn.co/image/ab67616d0000b2731a367d6cd9a4110036a533e1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 7,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.534Z",
+        "updated_at": "2025-12-19T06:00:39.534Z",
+        "spotify_id": "0Qr4St9aCOLu41Nt5QZIz1",
+        "name": "Ugly Duck",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0eff4d3fb92746c29f1edc06"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 8,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.537Z",
+        "updated_at": "2025-12-19T06:00:39.537Z",
+        "spotify_id": "0z4gvV4rjIZ9wHck67ucSV",
+        "name": "Akon",
+        "popularity": 84,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8c5984726ddb2c2d90ada28d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 9,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.541Z",
+        "updated_at": "2025-12-19T06:00:39.541Z",
+        "spotify_id": "0ucJPeq0vaU8dbHu0Tie6E",
+        "name": "9001",
+        "popularity": 21,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb75c00d04b021e9f5c5753726"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 10,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.544Z",
+        "updated_at": "2025-12-19T06:00:39.544Z",
+        "spotify_id": "46KQM3HJyONaKRTbcfNPlU",
+        "name": "Omega Sapien",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb25c22239e3938f61855c37ed"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 11,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.547Z",
+        "updated_at": "2025-12-19T06:00:39.547Z",
+        "spotify_id": "0tg5uVI4VjzZOFzBryJZii",
+        "name": "Teddy Wilson",
+        "popularity": 49,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0ade8016b3f4a3e4107a577d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 12,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.551Z",
+        "updated_at": "2025-12-19T06:00:39.551Z",
+        "spotify_id": "7cVZApDoQZpS447nHTsNqu",
+        "name": "LeeHi",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb05cead99b1a81b82a9a42838"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 13,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.554Z",
+        "updated_at": "2025-12-19T06:00:39.554Z",
+        "spotify_id": "7jFUYMpMUBDL4JQtMZ5ilc",
+        "name": "Sung Si Kyung",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5c85d1892bed878af193285e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 14,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.557Z",
+        "updated_at": "2025-12-19T06:00:39.557Z",
+        "spotify_id": "6snRLiVZyEVuH73LLGamvi",
+        "name": "Maria Toledo",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/258dcfd1da8d96c0480ead0df314b61310204977"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 15,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.561Z",
+        "updated_at": "2025-12-19T06:00:39.561Z",
+        "spotify_id": "3VQDqjQ4wJyw8PzpGdlZpB",
+        "name": "Colde",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0d70006fb7127e182921ecd7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 16,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.564Z",
+        "updated_at": "2025-12-19T06:00:39.564Z",
+        "spotify_id": "3MaRWfwKpbYnkYHC5gRKYo",
+        "name": "M.C the Max",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb326ead2c66cb0e3e2942776c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 17,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.567Z",
+        "updated_at": "2025-12-19T06:00:39.567Z",
+        "spotify_id": "6Ycj4hhpz2nOfsYCU1gHqR",
+        "name": "D-Hack",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5509c026d82531c8b5ece778"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 18,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.570Z",
+        "updated_at": "2025-12-19T06:00:39.570Z",
+        "spotify_id": "3Rxm9TaXZGuQRw2B91Ap22",
+        "name": "BOYCOLD",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebee4c0d6ccade255c2c994145"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 19,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.575Z",
+        "updated_at": "2025-12-19T06:00:39.575Z",
+        "spotify_id": "6V03b3Y36lolYP2orXn8mV",
+        "name": "98º",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb824b27941abbe0e644b392bf"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 20,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.578Z",
+        "updated_at": "2025-12-19T06:00:39.578Z",
+        "spotify_id": "0pnTDtr7r9ThLMVrEZ6byK",
+        "name": "Tei",
+        "popularity": 36,
+        "image": "https://i.scdn.co/image/ab67616d0000b273fb522bdda5111c698b9c260b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 21,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.581Z",
+        "updated_at": "2025-12-19T06:00:39.581Z",
+        "spotify_id": "6O74knDqdv3XaWtkII7Xjp",
+        "name": "Boyz II Men",
+        "popularity": 71,
+        "image": "https://i.scdn.co/image/c8b0d67be35852171d04d7309c2cfe1992a8a4eb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 22,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.582Z",
+        "updated_at": "2025-12-19T06:00:39.582Z",
+        "spotify_id": "4o7tWrzQOqarDtTMWD2HV9",
+        "name": "LAY",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba0618da3ba4a0f77f7a16163"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 23,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.582Z",
+        "updated_at": "2025-12-19T06:00:39.582Z",
+        "spotify_id": "0hRHbwZ0xSwfVHl4FTv7jq",
+        "name": "GUMMY",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab67616d0000b273a2b9d33218ab66023556eda8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 24,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.591Z",
+        "updated_at": "2025-12-19T06:00:39.591Z",
+        "spotify_id": "56mfhUDKa1vec6rSLZV5Eg",
+        "name": "Jawsh 685",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba161bb6db173854f5a0b6d4e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 25,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.591Z",
+        "updated_at": "2025-12-19T06:00:39.591Z",
+        "spotify_id": "4LLpKhyESsyAXpc4laK94U",
+        "name": "Mac Miller",
+        "popularity": 84,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebed3b89aa602145fde71a163a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 26,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.598Z",
+        "updated_at": "2025-12-19T06:00:39.598Z",
+        "spotify_id": "6zfPiJgoaqNPHsW3fsUlBN",
+        "name": "LEE SUHYUN",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba5acf0bb8b6fcb1fae74d6ab"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 27,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.602Z",
+        "updated_at": "2025-12-19T06:00:39.602Z",
+        "spotify_id": "2NdXW202j10do6ammYu4N1",
+        "name": "Lee Jung Kwon",
+        "popularity": 10,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb291a6260734f0893cc46536b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 28,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.605Z",
+        "updated_at": "2025-12-19T06:00:39.605Z",
+        "spotify_id": "36YE6h8aN09ZKG4EhneDSf",
+        "name": "Joe Lovano",
+        "popularity": 36,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb375e46b73b1cfecb48bc35ae"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 29,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.609Z",
+        "updated_at": "2025-12-19T06:00:39.609Z",
+        "spotify_id": "1wsoV3RXPkxVz3PwsNRI5K",
+        "name": "BewhY",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb38e894e1a1151a8993bbb07c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 30,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.612Z",
+        "updated_at": "2025-12-19T06:00:39.612Z",
+        "spotify_id": "6a8KtGpAv3NHL713mcH08a",
+        "name": "yankie",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab67616d0000b273898cd6e4b27ce8c5be65fa76"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 31,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.616Z",
+        "updated_at": "2025-12-19T06:00:39.616Z",
+        "spotify_id": "24nUVBIlCGi4twz4nYxJum",
+        "name": "fromis_9",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb19a72055491055d0ab09f9b4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 32,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.619Z",
+        "updated_at": "2025-12-19T06:00:39.619Z",
+        "spotify_id": "2ZvrvbQNrHKwjT7qfGFFUW",
+        "name": "Herbie Hancock",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebca17170af02af227d6ea0c31"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 33,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.622Z",
+        "updated_at": "2025-12-19T06:00:39.622Z",
+        "spotify_id": "64k5e9kV9MdukXjFrR5R37",
+        "name": "Jessi",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb956443ea7448847583e99b7d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 34,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.622Z",
+        "updated_at": "2025-12-19T06:00:39.622Z",
+        "spotify_id": "1VEzN9lxvG6KPR3QQGsebR",
+        "name": "Sonny Rollins",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/7f0edf46ec91ef070e8dd73d442c8f00241416aa"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 35,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.622Z",
+        "updated_at": "2025-12-19T06:00:39.622Z",
+        "spotify_id": "769D3IwCDrdPospAd3Hlpi",
+        "name": "Naturally 7",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb98057dcba2a1bf1a9608d393"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 36,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.622Z",
+        "updated_at": "2025-12-19T06:00:39.622Z",
+        "spotify_id": "0ldU0QJm31y0d6f57R1G2A",
+        "name": "Oscar Peterson Trio",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab67616d0000b273947b5cc535d76394a2d98e37"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 37,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.636Z",
+        "updated_at": "2025-12-19T06:00:39.636Z",
+        "spotify_id": "4sTQVOfp9vEMCemLw50sbu",
+        "name": "Galantis",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7bda087d6fb48d481efd3344"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 38,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.639Z",
+        "updated_at": "2025-12-19T06:00:39.639Z",
+        "spotify_id": "0tvpihdAsKiNnP6sWS3jUI",
+        "name": "TroyBoi",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1479649e75753dfcb4393103"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 39,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.651Z",
+        "updated_at": "2025-12-19T06:00:39.651Z",
+        "spotify_id": "3OBkZ9NG8F0Fn4oNpg0yuU",
+        "name": "HA SUNG WOON",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf9095c1996f76a50ddcca7fe"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 40,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.656Z",
+        "updated_at": "2025-12-19T06:00:39.656Z",
+        "spotify_id": "5he5w2lnU9x7JFhnwcekXX",
+        "name": "Skrillex",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4b7641931a85c5f8d42714cf"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 41,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.660Z",
+        "updated_at": "2025-12-19T06:00:39.660Z",
+        "spotify_id": "6iVo62B0bdTknRcrktCmak",
+        "name": "KAI",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0020266884faa55685884292"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 42,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.662Z",
+        "updated_at": "2025-12-19T06:00:39.662Z",
+        "spotify_id": "5K4W6rqBFWDnAN6FQUkS6x",
+        "name": "Kanye West",
+        "popularity": 92,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 43,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.662Z",
+        "updated_at": "2025-12-19T06:00:39.662Z",
+        "spotify_id": "5DIi2JWfQPTKffaVBlIYRn",
+        "name": "Sik-K",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1a6cc6e3939ab528f3b4feea"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 44,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.662Z",
+        "updated_at": "2025-12-19T06:00:39.662Z",
+        "spotify_id": "1Do4bSzfUl0KWL9r1fITu0",
+        "name": "YOON MIRAE",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1787f6596afa03df2d44af87"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 45,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.662Z",
+        "updated_at": "2025-12-19T06:00:39.662Z",
+        "spotify_id": "7H5EC2qaylGun66YeRrVHg",
+        "name": "So!YoON!",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9c5731995a04af6e4cf5d746"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 46,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.677Z",
+        "updated_at": "2025-12-19T06:00:39.677Z",
+        "spotify_id": "6PAt558ZEZl0DmdXlnjMgD",
+        "name": "Eric Clapton",
+        "popularity": 73,
+        "image": "https://i.scdn.co/image/ab6772690000c46ca60e8f215103f6841d8a83f0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 47,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.681Z",
+        "updated_at": "2025-12-19T06:00:39.681Z",
+        "spotify_id": "67nwj3Y5sZQLl72VNUHEYE",
+        "name": "Wale",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb273bdadffd7138dcbd7b79c3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 48,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.684Z",
+        "updated_at": "2025-12-19T06:00:39.684Z",
+        "spotify_id": "1bJudkGbYinY2AIQeEi9Cd",
+        "name": "Xwally",
+        "popularity": 26,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb81ac7e3249a20aa3c61d634e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 49,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.688Z",
+        "updated_at": "2025-12-19T06:00:39.688Z",
+        "spotify_id": "7Icsejk4pdIhkq2KO5A0jD",
+        "name": "ØZI",
+        "popularity": 54,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb81b92891c739d8535993b7e2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 50,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.691Z",
+        "updated_at": "2025-12-19T06:00:39.691Z",
+        "spotify_id": "0Mt9IxntWHsf793bLZhQ9P",
+        "name": "ROCOBERRY",
+        "popularity": 33,
+        "image": "https://i.scdn.co/image/ab67616d0000b273950315fae24bc4a927865349"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 51,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.694Z",
+        "updated_at": "2025-12-19T06:00:39.694Z",
+        "spotify_id": "164Uj4eKjl6zTBKfJLFKKK",
+        "name": "JVKE",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9028079005146db88f6133d0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 52,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.878Z",
+        "updated_at": "2025-12-19T06:00:39.878Z",
+        "spotify_id": "1r1uxoy19fzMxunt3ONAkG",
+        "name": "Phoebe Bridgers",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb626686e362d30246e816cc5b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 53,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.884Z",
+        "updated_at": "2025-12-19T06:00:39.884Z",
+        "spotify_id": "2FjkZT851ez950cyPjeYid",
+        "name": "Bobby McFerrin",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab6772690000c46c1380dba47669ce656a77cc80"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 54,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.887Z",
+        "updated_at": "2025-12-19T06:00:39.887Z",
+        "spotify_id": "4CDi0Dluwqe6VxTnHuQlO0",
+        "name": "Park Sung Yeon",
+        "popularity": 11,
+        "image": "https://i.scdn.co/image/ab67616d0000b2736d792e0c4a23f6a400b3c4f3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 55,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.891Z",
+        "updated_at": "2025-12-19T06:00:39.891Z",
+        "spotify_id": "2hGh5VOeeqimQFxqXvfCUf",
+        "name": "John Coltrane",
+        "popularity": 68,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb73c7f7505c1af82929ec41df"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 56,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.895Z",
+        "updated_at": "2025-12-19T06:00:39.895Z",
+        "spotify_id": "46DakMoRS0EvCx4OS52MA7",
+        "name": "Baek Jiyeong",
+        "popularity": 14,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 57,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.899Z",
+        "updated_at": "2025-12-19T06:00:39.899Z",
+        "spotify_id": "7mW7Tv7NvywKKXqafZo0Lc",
+        "name": "KPop Demon Hunters Cast",
+        "popularity": 89,
+        "image": "https://i.scdn.co/image/ab67616d0000b2736c1334650ced0e28f0b2e13f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 58,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.902Z",
+        "updated_at": "2025-12-19T06:00:39.902Z",
+        "spotify_id": "0VVnWF3KNaa5O7ESohKhAx",
+        "name": "Salif Keita",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf7b8ad976986cf439de86dce"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 59,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.902Z",
+        "updated_at": "2025-12-19T06:00:39.902Z",
+        "spotify_id": "5WUlDfRSoLAfcVSX1WnrxN",
+        "name": "Sia",
+        "popularity": 88,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb91c19888fe2fa3d5066199d1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 60,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.902Z",
+        "updated_at": "2025-12-19T06:00:39.902Z",
+        "spotify_id": "174ThXFgQg2VCq9r3m8ceb",
+        "name": "Luiz Bonfá",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebadc8ea70bbfb0d4bd288fe58"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 61,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.913Z",
+        "updated_at": "2025-12-19T06:00:39.913Z",
+        "spotify_id": "7JXCJDLGh1k9cg6JbYCpYl",
+        "name": "Flipmode Squad",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab67616d0000b27323436e32ad40bb78d3610f8d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 62,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.918Z",
+        "updated_at": "2025-12-19T06:00:39.918Z",
+        "spotify_id": "0vKbTTNdtagd8xiERj6Szb",
+        "name": "Percy Heath",
+        "popularity": 35,
+        "image": "https://i.scdn.co/image/a711b799e8ccc15dba9c1fb9eb122b4e2d1c98a7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 63,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.921Z",
+        "updated_at": "2025-12-19T06:00:39.921Z",
+        "spotify_id": "0kbYTNQb4Pb1rPbbaF0pT4",
+        "name": "Miles Davis",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/423e826b3c1b23930a255d7cbc2daf733f795507"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 64,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.925Z",
+        "updated_at": "2025-12-19T06:00:39.925Z",
+        "spotify_id": "6l3HvQ5sa6mXTsMTB19rO5",
+        "name": "J. Cole",
+        "popularity": 85,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4b053c29fd4b317ff825f0dc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 65,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.928Z",
+        "updated_at": "2025-12-19T06:00:39.928Z",
+        "spotify_id": "1anyVhU62p31KFi8MEzkbf",
+        "name": "Chance the Rapper",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd4d18d62a36a26fe36b70e2a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 66,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.932Z",
+        "updated_at": "2025-12-19T06:00:39.932Z",
+        "spotify_id": "3ZPELd2uCgchQqhLgvrDrI",
+        "name": "O3ohn",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebfa57541d8614b3d2deed5e1c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 67,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.935Z",
+        "updated_at": "2025-12-19T06:00:39.935Z",
+        "spotify_id": "3hcs9uc56yIGFCSy9leWe7",
+        "name": "Lil Durk",
+        "popularity": 81,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb09791422702c3fa9780468d4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 68,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.939Z",
+        "updated_at": "2025-12-19T06:00:39.939Z",
+        "spotify_id": "3nFkdlSjzX9mRTtwJOzDYB",
+        "name": "JAY-Z",
+        "popularity": 85,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc75afcd5a9027f60eaebb5e4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 69,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.942Z",
+        "updated_at": "2025-12-19T06:00:39.942Z",
+        "spotify_id": "0tkHE1pQ5ZCgQb8WZ0ba79",
+        "name": "Gaeko",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9aced4fbad8e0009d029cd8d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 70,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.942Z",
+        "updated_at": "2025-12-19T06:00:39.942Z",
+        "spotify_id": "6zkX5fhrSD4tdVOmimR9wB",
+        "name": "Oscar Peterson",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb13ef8d48c8f86c6f193d57a1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 71,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.942Z",
+        "updated_at": "2025-12-19T06:00:39.942Z",
+        "spotify_id": "5ZsFI1h6hIdQRw2ti0hz81",
+        "name": "ZAYN",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7a1fba1bb3618ef71355f82a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 72,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.942Z",
+        "updated_at": "2025-12-19T06:00:39.942Z",
+        "spotify_id": "4tujQJicOnuZRLiBFdp3Ou",
+        "name": "Xzibit",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7b6ac506853c6453a28d4a64"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 73,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.957Z",
+        "updated_at": "2025-12-19T06:00:39.957Z",
+        "spotify_id": "2XH6h2sS6oSr27Yy4GyLlY",
+        "name": "Wish Bone",
+        "popularity": 44,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 74,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.960Z",
+        "updated_at": "2025-12-19T06:00:39.960Z",
+        "spotify_id": "0b1sIQumIAsNbqAoIClSpy",
+        "name": "j-hope",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb25c2401c3595f0ac35e19b98"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 75,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.964Z",
+        "updated_at": "2025-12-19T06:00:39.964Z",
+        "spotify_id": "5cbutZUQE7SUCA6MsEMbBv",
+        "name": "Hank Mobley",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb58136a57ebcbd783ab43d363"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 76,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.967Z",
+        "updated_at": "2025-12-19T06:00:39.967Z",
+        "spotify_id": "3TVXtAsR1Inumwj472S9r4",
+        "name": "Drake",
+        "popularity": 98,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 77,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.970Z",
+        "updated_at": "2025-12-19T06:00:39.970Z",
+        "spotify_id": "6a8cUmqOsXmjzq1aWKiVpH",
+        "name": "E SENS",
+        "popularity": 38,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5c6eeacbdfbc00a8940a2e5f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 78,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.974Z",
+        "updated_at": "2025-12-19T06:00:39.974Z",
+        "spotify_id": "3qnGvpP8Yth1AqSBMqON5x",
+        "name": "Leon Bridges",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd5112a5b16a01e971ebb049c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 79,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.977Z",
+        "updated_at": "2025-12-19T06:00:39.977Z",
+        "spotify_id": "5z8B2oTjiZbpbMB6rAfPGl",
+        "name": "Heo Hoy Kyung",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc3f3e653ad5e4f26f0b18d6c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 80,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.981Z",
+        "updated_at": "2025-12-19T06:00:39.981Z",
+        "spotify_id": "4jXfFzeP66Zy67HM2mvIIF",
+        "name": "Bill Evans",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/ab6772690000c46c3b629f4118d018321c44f88f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 81,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.984Z",
+        "updated_at": "2025-12-19T06:00:39.984Z",
+        "spotify_id": "36MQil20hjOpG5f52NQ4du",
+        "name": "Moon Sujin",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb35c972960acc4edb9ff9331a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 82,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.988Z",
+        "updated_at": "2025-12-19T06:00:39.988Z",
+        "spotify_id": "7IWshUcKfJyDWrbiF2XT8J",
+        "name": "Kid Milli",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2739f78ee13b01c2a64d38e4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 83,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.992Z",
+        "updated_at": "2025-12-19T06:00:39.992Z",
+        "spotify_id": "2qxJFvFYMEDqd7ui6kSAcq",
+        "name": "Zedd",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 84,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.996Z",
+        "updated_at": "2025-12-19T06:00:39.996Z",
+        "spotify_id": "3WGpXCj9YhhfX11TToZcXP",
+        "name": "Troye Sivan",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb26e8cb3ff6fc7744b312811b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 85,
+    "fields": {
+        "created_at": "2025-12-19T06:00:39.999Z",
+        "updated_at": "2025-12-19T06:00:39.999Z",
+        "spotify_id": "4PDpGtF16XpqvXxsrFwQnN",
+        "name": "Thelonious Monk",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb66a78e11df5c02af9346db02"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 86,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.003Z",
+        "updated_at": "2025-12-19T06:00:40.003Z",
+        "spotify_id": "5gBZLaw5bx0VmZ4CalMsUk",
+        "name": "SEO IN GIK",
+        "popularity": 25,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 87,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.006Z",
+        "updated_at": "2025-12-19T06:00:40.006Z",
+        "spotify_id": "7cEaNXXTHx3LokbjUUyHal",
+        "name": "BIG Naughty",
+        "popularity": 58,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc381cb345091097555f955f4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 88,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.009Z",
+        "updated_at": "2025-12-19T06:00:40.009Z",
+        "spotify_id": "75MOYjGEyyH5U4ZFHOPvxR",
+        "name": "Lim Young Woong",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3caf8ee1889c531ed908d173"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 89,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.013Z",
+        "updated_at": "2025-12-19T06:00:40.013Z",
+        "spotify_id": "6LuN9FCkKOj5PcnpouEgny",
+        "name": "Khalid",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 90,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.016Z",
+        "updated_at": "2025-12-19T06:00:40.016Z",
+        "spotify_id": "2CQZr2RPZmrcvDnaod1ldC",
+        "name": "D.O.",
+        "popularity": 63,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2332cc372c7f473e9ce08066"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 91,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.020Z",
+        "updated_at": "2025-12-19T06:00:40.020Z",
+        "spotify_id": "5dCvSnVduaFleCnyy98JMo",
+        "name": "Heize",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb14df5a6a1377b0cd425a328c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 92,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.022Z",
+        "updated_at": "2025-12-19T06:00:40.022Z",
+        "spotify_id": "0M1UOBJZ9tcKJbrbnVlHZG",
+        "name": "Paul Chambers",
+        "popularity": 54,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdb23bb63e723d2fcea59f806"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 93,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.022Z",
+        "updated_at": "2025-12-19T06:00:40.022Z",
+        "spotify_id": "2LIk90788K0zvyj2JJVwkJ",
+        "name": "Jack Harlow",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb645c02cfa05103299775097"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 94,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.022Z",
+        "updated_at": "2025-12-19T06:00:40.022Z",
+        "spotify_id": "71RG91mSEdCtLwPATIlPvQ",
+        "name": "MK K-Clique",
+        "popularity": 39,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1e62eecbdf8c85350d212f06"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 95,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.022Z",
+        "updated_at": "2025-12-19T06:00:40.022Z",
+        "spotify_id": "5FZYWdNeBGAItqlOdEKNKT",
+        "name": "TANAKA",
+        "popularity": 35,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdc6357c3f43260e2e28bc9fe"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 96,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.037Z",
+        "updated_at": "2025-12-19T06:00:40.037Z",
+        "spotify_id": "4VMYDCV2IEDYJArk749S6m",
+        "name": "Daddy Yankee",
+        "popularity": 88,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9a6918fd0b2fd675d63c675d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 97,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.040Z",
+        "updated_at": "2025-12-19T06:00:40.040Z",
+        "spotify_id": "5QNm7E7RU2m64l6Gliu8Oy",
+        "name": "HARDY",
+        "popularity": 73,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3e7e5b8c09a44d49a95bd842"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 98,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.044Z",
+        "updated_at": "2025-12-19T06:00:40.044Z",
+        "spotify_id": "1Cs0zKBU1kc0i8ypK3B9ai",
+        "name": "David Guetta",
+        "popularity": 89,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf150017ca69c8793503c2d4f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 99,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.047Z",
+        "updated_at": "2025-12-19T06:00:40.047Z",
+        "spotify_id": "4xHlg3Tcv7TZZzFq0aW2hQ",
+        "name": "Mudd the student",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8ba91eda52d8c6e4620ebd51"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 100,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.050Z",
+        "updated_at": "2025-12-19T06:00:40.050Z",
+        "spotify_id": "305pg6Bs6Mz9Tm2zK66psY",
+        "name": "Cosmic Boy",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb18c709e68775923bdae4b739"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 101,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.054Z",
+        "updated_at": "2025-12-19T06:00:40.054Z",
+        "spotify_id": "4ClziihVpBeFXNyDH83Lde",
+        "name": "UMI",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc8313a3a72905937b5c48819"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 102,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.249Z",
+        "updated_at": "2025-12-19T06:00:40.249Z",
+        "spotify_id": "11pXvO7wYuzRWYONDOBd33",
+        "name": "Danny Chung",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb83c5ba4b9a6beb7856170a9f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 103,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.249Z",
+        "updated_at": "2025-12-19T06:00:40.249Z",
+        "spotify_id": "5o615XColiSVMPDWlslKSk",
+        "name": "Wonstein",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb01c50a9dcfef8aee30afd9ad"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 104,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.262Z",
+        "updated_at": "2025-12-19T06:00:40.262Z",
+        "spotify_id": "2jw70GZXlAI8QzWeY2bgRc",
+        "name": "Nelly Furtado",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd2ce0bf5614b54bd44e059d5"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 105,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.266Z",
+        "updated_at": "2025-12-19T06:00:40.266Z",
+        "spotify_id": "3Zn6C68VCosoQrxu4D2Btr",
+        "name": "nafla",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebefc8b150051b628cc80d282e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 106,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.270Z",
+        "updated_at": "2025-12-19T06:00:40.270Z",
+        "spotify_id": "15EDMg4DaX49QQyxlBzC2f",
+        "name": "NS Yoon-G",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b2731c89c73418e7ad0618ffc88e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 107,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.273Z",
+        "updated_at": "2025-12-19T06:00:40.273Z",
+        "spotify_id": "698zn8fEOIr1OrfqG4283S",
+        "name": "TOIL",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb078840d41e1ac86f88d7522e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 108,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.277Z",
+        "updated_at": "2025-12-19T06:00:40.277Z",
+        "spotify_id": "4vsTrZ8Y7nKqQM0BJQ6Dvd",
+        "name": "Kim Yeon Woo",
+        "popularity": 39,
+        "image": "https://i.scdn.co/image/ab67616d0000b2733ac47e3ebd5809b7119edd63"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 109,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.280Z",
+        "updated_at": "2025-12-19T06:00:40.280Z",
+        "spotify_id": "6v5cGuRCZKq08nLI4WXJuB",
+        "name": "Nucksal",
+        "popularity": 38,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd2c56b558b75841a77d7ea09"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 110,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.284Z",
+        "updated_at": "2025-12-19T06:00:40.284Z",
+        "spotify_id": "5t0Js3X9t4wpgXGlaiTFe6",
+        "name": "XIUMIN",
+        "popularity": 49,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb8d1d74a895c61d915cc2cb1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 111,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.287Z",
+        "updated_at": "2025-12-19T06:00:40.287Z",
+        "spotify_id": "5UjifI1TYefXWn9GdqDOHl",
+        "name": "Social House",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb758207d3e4a2ac5341366592"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 112,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.291Z",
+        "updated_at": "2025-12-19T06:00:40.291Z",
+        "spotify_id": "4oUHIQIBe0LHzYfvXNW4QM",
+        "name": "Morgan Wallen",
+        "popularity": 90,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4245b1652fcc23f2b76ccd07"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 113,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.291Z",
+        "updated_at": "2025-12-19T06:00:40.291Z",
+        "spotify_id": "2RP4pPHTXlQpDnO9LvR7Yt",
+        "name": "Lianne La Havas",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb766f6c7b0ba3d0e7e078ce39"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 114,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.291Z",
+        "updated_at": "2025-12-19T06:00:40.291Z",
+        "spotify_id": "6S0dmVVn4udvppDhZIWxCr",
+        "name": "Sean Kingston",
+        "popularity": 73,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebee205e5029a04bd0460e16e4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 115,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.291Z",
+        "updated_at": "2025-12-19T06:00:40.291Z",
+        "spotify_id": "4M9tATKeCZPhipaM6ge2VS",
+        "name": "#Annyeong",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd3179f7aa0a7989f89ebe1be"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 116,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.305Z",
+        "updated_at": "2025-12-19T06:00:40.305Z",
+        "spotify_id": "1OFOShsIbhy1l5x73yuVyB",
+        "name": "Shenseea",
+        "popularity": 71,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb67199fc390ed8b61fdea059c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 117,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.308Z",
+        "updated_at": "2025-12-19T06:00:40.308Z",
+        "spotify_id": "45dkTj5sMRSjrmBSBeiHym",
+        "name": "Tate McRae",
+        "popularity": 91,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbed8016bd64422793ff3bc75"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 118,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.311Z",
+        "updated_at": "2025-12-19T06:00:40.311Z",
+        "spotify_id": "4LEiUm1SRbFMgfqnQTwUbQ",
+        "name": "Bon Iver",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1a0c1f04c95539fd55ef0ebb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 119,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.315Z",
+        "updated_at": "2025-12-19T06:00:40.315Z",
+        "spotify_id": "07YZf4WDAMNwqr4jfgOZ8y",
+        "name": "Jason Derulo",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb94cf6c87c82ddb0eade61eb0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 120,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.319Z",
+        "updated_at": "2025-12-19T06:00:40.319Z",
+        "spotify_id": "31VffPWiL2AAwNIMODB9qZ",
+        "name": "Kim Seungmin",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd0ac399ad60bc9ed40f22fec"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 121,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.322Z",
+        "updated_at": "2025-12-19T06:00:40.322Z",
+        "spotify_id": "77ZUbcdoU5KCPHNUl8bgQy",
+        "name": "João Gilberto",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc18449a640fefd04cfe62359"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 122,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.325Z",
+        "updated_at": "2025-12-19T06:00:40.325Z",
+        "spotify_id": "6741jcSlgsv0M3B4ruIPS5",
+        "name": "EXO-SC",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb818ae8414a3c6412f7432cf"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 123,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.329Z",
+        "updated_at": "2025-12-19T06:00:40.329Z",
+        "spotify_id": "2yNNYQBChuox9A5Ka93BIn",
+        "name": "HUNTR/X",
+        "popularity": 86,
+        "image": "https://i.scdn.co/image/ab67616d0000b2736c1334650ced0e28f0b2e13f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 124,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.329Z",
+        "updated_at": "2025-12-19T06:00:40.329Z",
+        "spotify_id": "1YYJxpOXYk1z1WtqdeLMkn",
+        "name": "Habstrakt",
+        "popularity": 49,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd4f9e0206342d45ab98840c2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 125,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.329Z",
+        "updated_at": "2025-12-19T06:00:40.329Z",
+        "spotify_id": "0JGN9XIqm3vfg7hhPHjExI",
+        "name": "Leessang",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab67616d0000b273dc7284b710f1e8612d6dc71f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 126,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.329Z",
+        "updated_at": "2025-12-19T06:00:40.329Z",
+        "spotify_id": "2h93pZq0e7k5yf4dywlkpM",
+        "name": "Frank Ocean",
+        "popularity": 86,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebee3123e593174208f9754fab"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 127,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.343Z",
+        "updated_at": "2025-12-19T06:00:40.343Z",
+        "spotify_id": "6ueGR6SWhUJfvEhqkvMsVs",
+        "name": "Janelle Monáe",
+        "popularity": 67,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5dab878686269b7b8f4c3ab1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 128,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.346Z",
+        "updated_at": "2025-12-19T06:00:40.346Z",
+        "spotify_id": "4MSCkKz4xskCrvx49wOneF",
+        "name": "WH3N",
+        "popularity": 25,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb67de0ac5fd84a41be91a5f72"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 129,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.349Z",
+        "updated_at": "2025-12-19T06:00:40.349Z",
+        "spotify_id": "4Xj0peBt3EZHbdF20JmdWC",
+        "name": "LEE MU JIN",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb474f4a0aa10dd7732bc679df"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 130,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.353Z",
+        "updated_at": "2025-12-19T06:00:40.353Z",
+        "spotify_id": "5ZATfKurLqflrBhv2FLht5",
+        "name": "Horace Silver",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb394ae6ab2a11993b46b232b2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 131,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.356Z",
+        "updated_at": "2025-12-19T06:00:40.356Z",
+        "spotify_id": "6aLdhHUqgdKE86xbtNmY8g",
+        "name": "Crush",
+        "popularity": 63,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc80c313fbcbc06c6a15b69b0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 132,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.359Z",
+        "updated_at": "2025-12-19T06:00:40.359Z",
+        "spotify_id": "7G1GBhoKtEPnP86X2PvEYO",
+        "name": "Nina Simone",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb136c51c848c26a6cce7f9e56"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 133,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.363Z",
+        "updated_at": "2025-12-19T06:00:40.363Z",
+        "spotify_id": "3RnlokVV0FpqtV5FDeHYZd",
+        "name": "Vince",
+        "popularity": 37,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb455fcefe95de43ca9020cd6e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 134,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.366Z",
+        "updated_at": "2025-12-19T06:00:40.366Z",
+        "spotify_id": "0fyaEHmSmZs2YWMgbruITA",
+        "name": "Masiwei",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb66a90f6b2d3019e1394529ec"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 135,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.369Z",
+        "updated_at": "2025-12-19T06:00:40.369Z",
+        "spotify_id": "3Lz3vEN23Fw0hIelrYEzUD",
+        "name": "EXO-CBX",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb1d0ee2922afe87c228d4cdc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 136,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.369Z",
+        "updated_at": "2025-12-19T06:00:40.369Z",
+        "spotify_id": "2Rf4X6m0oayCJhaJ5K63GQ",
+        "name": "Nathan Sykes",
+        "popularity": 54,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb68ccd97acce9bfa0e8c333bc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 137,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.369Z",
+        "updated_at": "2025-12-19T06:00:40.369Z",
+        "spotify_id": "77AiFEVeAVj2ORpC85QVJs",
+        "name": "Steve Aoki",
+        "popularity": 72,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcf85b39d94c486218a687248"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 138,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.369Z",
+        "updated_at": "2025-12-19T06:00:40.369Z",
+        "spotify_id": "5Z1CCuBsyhEHngq3U5IraY",
+        "name": "Westlife",
+        "popularity": 72,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7299fecc45211132432d7d8c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 139,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.383Z",
+        "updated_at": "2025-12-19T06:00:40.383Z",
+        "spotify_id": "5s5g2cVTox2dzQE65XOD4z",
+        "name": "Bobby Kim",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b273f18088d92d2123a8a9a189bf"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 140,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.387Z",
+        "updated_at": "2025-12-19T06:00:40.387Z",
+        "spotify_id": "4gzpq5DPGxSnKTe4SA8HAU",
+        "name": "Coldplay",
+        "popularity": 90,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1ba8fc5f5c73e7e9313cc6eb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 141,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.389Z",
+        "updated_at": "2025-12-19T06:00:40.389Z",
+        "spotify_id": "1Oa0bMld0A3u5OTYfMzp5h",
+        "name": "Nate Dogg",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/fd5d1f379a33ee26e2dfaf296bbab0970ec95ede"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 142,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.394Z",
+        "updated_at": "2025-12-19T06:00:40.394Z",
+        "spotify_id": "19jNQxmNBaXJlXdvLHtrHY",
+        "name": "Letter flow",
+        "popularity": 21,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb06baf9cc006a59ce6b55f4ab"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 143,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.398Z",
+        "updated_at": "2025-12-19T06:00:40.398Z",
+        "spotify_id": "4CWuEFVuRfUm7LrGmMBMrN",
+        "name": "Boramiyu",
+        "popularity": 36,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3d3a53561d58f5604d1812d0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 144,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.401Z",
+        "updated_at": "2025-12-19T06:00:40.401Z",
+        "spotify_id": "5V0MlUE1Bft0mbLlND7FJz",
+        "name": "Ella Fitzgerald",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/3c1d23141059785c8a863137d176319329dc17ef"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 145,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.404Z",
+        "updated_at": "2025-12-19T06:00:40.404Z",
+        "spotify_id": "1HxJeLhIuegM3KgvPn8sTa",
+        "name": "Jack Ü",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6772690000c46c5be2cdc85f21b8f31a84be22"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 146,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.407Z",
+        "updated_at": "2025-12-19T06:00:40.407Z",
+        "spotify_id": "5vV3bFXnN6D6N3Nj4xRvaV",
+        "name": "Jin",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb88d8bdd33e8395f94af933b7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 147,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.409Z",
+        "updated_at": "2025-12-19T06:00:40.409Z",
+        "spotify_id": "5lZV4z4dpX6IfTYlfUMvOE",
+        "name": "BM",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9fa1acc1666d1f68606e1c27"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 148,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.409Z",
+        "updated_at": "2025-12-19T06:00:40.409Z",
+        "spotify_id": "7IEhlwWQA7pCkEvzwwHehE",
+        "name": "ASH ISLAND",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3e4becdd5732e924b98d4d9a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 149,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.409Z",
+        "updated_at": "2025-12-19T06:00:40.409Z",
+        "spotify_id": "1loWI8jVk9btgJXHgqHXPD",
+        "name": "After School",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab67616d0000b273aab37cd3daa1bed7ed95d220"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 150,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.409Z",
+        "updated_at": "2025-12-19T06:00:40.409Z",
+        "spotify_id": "4GGfAshSkqoxpZdoaHm7ky",
+        "name": "ERNEST",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5a21a7522c9d04f1bf355751"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 151,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.425Z",
+        "updated_at": "2025-12-19T06:00:40.425Z",
+        "spotify_id": "21E3waRsmPlU7jZsS13rcj",
+        "name": "Ne-Yo",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebca118e3822061f7b7f6bc537"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 152,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.658Z",
+        "updated_at": "2025-12-19T06:00:40.658Z",
+        "spotify_id": "2QLM9IFaHBtB16b8ZDaA3A",
+        "name": "P-Lo",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba68b83e568df2e9490bf1028"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 153,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.667Z",
+        "updated_at": "2025-12-19T06:00:40.667Z",
+        "spotify_id": "7qVvIFc9DktkAc0HKzRhNo",
+        "name": "Johnny Hartman",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf549e6f1e55e001ba3359ef7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 154,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.671Z",
+        "updated_at": "2025-12-19T06:00:40.671Z",
+        "spotify_id": "5PkDpzWMZR7Id1vldhF8Qk",
+        "name": "Laurindo Almeida",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/586ded6442c595eb3b0880946c7c89ac93798eb9"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 155,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.674Z",
+        "updated_at": "2025-12-19T06:00:40.674Z",
+        "spotify_id": "1XNC9ksvgXeD1xRJruSA5t",
+        "name": "K.Will",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd07d4a4d320cc06bef26ce7d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 156,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.677Z",
+        "updated_at": "2025-12-19T06:00:40.677Z",
+        "spotify_id": "360IAlyVv4PCEVjgyMZrxK",
+        "name": "Miguel",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb35e36c368fdcd26aba296bd1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 157,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.681Z",
+        "updated_at": "2025-12-19T06:00:40.681Z",
+        "spotify_id": "2dEBKqLtvdFTnPcwpWEw0r",
+        "name": "Sion",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb699354ec66f6bdf1178b5da4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 158,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.684Z",
+        "updated_at": "2025-12-19T06:00:40.684Z",
+        "spotify_id": "0seDu6vvqbUnPUk6s6a616",
+        "name": "SINCE",
+        "popularity": 39,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb86bd036734acd938ea9962ad"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 159,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.687Z",
+        "updated_at": "2025-12-19T06:00:40.687Z",
+        "spotify_id": "7IrDIIq3j04exsiF3Z7CPg",
+        "name": "Beenzino",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebff26398cc4399702e8124986"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 160,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.691Z",
+        "updated_at": "2025-12-19T06:00:40.691Z",
+        "spotify_id": "0LyOADBjj28cbvJWTXUEGA",
+        "name": "Loren Allred",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb63a865830b252c3ebca8701b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 161,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.691Z",
+        "updated_at": "2025-12-19T06:00:40.691Z",
+        "spotify_id": "3UmzVSTun6O0Qtn0wacusX",
+        "name": "João Gilberto Quintet",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab67616d0000b273af6dfb7016c4904c0794c3ae"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 162,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.691Z",
+        "updated_at": "2025-12-19T06:00:40.691Z",
+        "spotify_id": "7KLg0R9RSUabK2CG2MTbBJ",
+        "name": "Jimmy Cobb",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe8f2176d19e55e45cda652f8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 163,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.691Z",
+        "updated_at": "2025-12-19T06:00:40.691Z",
+        "spotify_id": "7ceUfdWq2t5nbatS6ollHh",
+        "name": "Paul Anka",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7f6196428e9a4f69df9e6ff1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 164,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.704Z",
+        "updated_at": "2025-12-19T06:00:40.704Z",
+        "spotify_id": "246dkjvS1zLTtiykXe5h60",
+        "name": "Post Malone",
+        "popularity": 88,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe17c0aa1714a03d62b5ce4e0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 165,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.708Z",
+        "updated_at": "2025-12-19T06:00:40.708Z",
+        "spotify_id": "7nCfLz9ZdOnTkH5PW4IWqy",
+        "name": "Oh Seungeun",
+        "popularity": 13,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 166,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.711Z",
+        "updated_at": "2025-12-19T06:00:40.711Z",
+        "spotify_id": "5uTRxWUE0w5hHOui1lbQjD",
+        "name": "Nahee",
+        "popularity": 28,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb137e2a54606811a3d35b1ca"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 167,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.714Z",
+        "updated_at": "2025-12-19T06:00:40.714Z",
+        "spotify_id": "0c173mlxpT3dSFRgMO8XPh",
+        "name": "Big Sean",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3d5b14b45d4c3d10d23b03ff"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 168,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.718Z",
+        "updated_at": "2025-12-19T06:00:40.718Z",
+        "spotify_id": "5rIOZ6g7qSlq60wITUUle2",
+        "name": "RYNO",
+        "popularity": 24,
+        "image": "https://i.scdn.co/image/ab67616d0000b27397a21dd89e424bd9e7d1d2bb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 169,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.720Z",
+        "updated_at": "2025-12-19T06:00:40.720Z",
+        "spotify_id": "3cwVFmQ6mcUoGR6ZvIPuZ4",
+        "name": "Nicholas Payton",
+        "popularity": 37,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb73753f065b66c415b5761c97"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 170,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.724Z",
+        "updated_at": "2025-12-19T06:00:40.724Z",
+        "spotify_id": "5JZ7CnR6gTvEMKX4g70Amv",
+        "name": "Lauv",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb173d69f77530d77a991984f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 171,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.727Z",
+        "updated_at": "2025-12-19T06:00:40.727Z",
+        "spotify_id": "4T9AuhR3YqSqaPgXzPiAuH",
+        "name": "KIM HOJOONG",
+        "popularity": 39,
+        "image": "https://i.scdn.co/image/ab67616d0000b27379c7922e62001e2063c752e8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 172,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.729Z",
+        "updated_at": "2025-12-19T06:00:40.729Z",
+        "spotify_id": "7c0XG5cIJTrrAgEC3ULPiq",
+        "name": "Ty Dolla $ign",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdeccf223fe80d308aba91b64"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 173,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.729Z",
+        "updated_at": "2025-12-19T06:00:40.729Z",
+        "spotify_id": "586uxXMyD5ObPuzjtrzO1Q",
+        "name": "Sofi Tukker",
+        "popularity": 67,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb38e929af2f9c9fe10e690395"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 174,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.729Z",
+        "updated_at": "2025-12-19T06:00:40.729Z",
+        "spotify_id": "1Xylc3o4UrD53lo9CvFvVg",
+        "name": "Zara Larsson",
+        "popularity": 82,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb11be9310ef4b23734c13b5c8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 175,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.729Z",
+        "updated_at": "2025-12-19T06:00:40.729Z",
+        "spotify_id": "1pwr5rTWLVfqhvHfB7Reap",
+        "name": "Zoot Sims",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab67616d0000b273965cab07549137cd4c73bb0a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 176,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.745Z",
+        "updated_at": "2025-12-19T06:00:40.745Z",
+        "spotify_id": "1Xyo4u8uXC1ZmMpatF05PJ",
+        "name": "The Weeknd",
+        "popularity": 96,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9e528993a2820267b97f6aae"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 177,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.748Z",
+        "updated_at": "2025-12-19T06:00:40.748Z",
+        "spotify_id": "4YLtscXsxbVgi031ovDDdh",
+        "name": "Chris Stapleton",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba0c87c8f329b436eac8b9784"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 178,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.752Z",
+        "updated_at": "2025-12-19T06:00:40.752Z",
+        "spotify_id": "2RYonYiVhhzBz82UFXOvEN",
+        "name": "KEVIN WOO",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2c238c7c84d7355dff601087"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 179,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.755Z",
+        "updated_at": "2025-12-19T06:00:40.755Z",
+        "spotify_id": "7bmYpVgQub656uNTu6qGNQ",
+        "name": "HWASA",
+        "popularity": 68,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8f9fae0a4883b92545cabe60"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 180,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.758Z",
+        "updated_at": "2025-12-19T06:00:40.758Z",
+        "spotify_id": "738wLrAtLtCtFOLvQBXOXp",
+        "name": "Major Lazer",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd18eac6f1e653551fd05a793"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 181,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.761Z",
+        "updated_at": "2025-12-19T06:00:40.761Z",
+        "spotify_id": "06HL4z0CvFAxyc27GXpf02",
+        "name": "Taylor Swift",
+        "popularity": 100,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe2e8e7ff002a4afda1c7147e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 182,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.765Z",
+        "updated_at": "2025-12-19T06:00:40.765Z",
+        "spotify_id": "3NeWfnkjhDK8umjBipcf5W",
+        "name": "Darin",
+        "popularity": 31,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6dadc9fcc7430f3bf4f94b54"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 183,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.768Z",
+        "updated_at": "2025-12-19T06:00:40.768Z",
+        "spotify_id": "5rX2c1zow6hCph8PnnU3kF",
+        "name": "Astrud Gilberto",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab67616d0000b273b48a079c5273b6141af2dc35"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 184,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.769Z",
+        "updated_at": "2025-12-19T06:00:40.769Z",
+        "spotify_id": "5KuvNz7npsGeDJdk8QHMVH",
+        "name": "meenoi",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd10fc630cd322139485410ac"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 185,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.769Z",
+        "updated_at": "2025-12-19T06:00:40.769Z",
+        "spotify_id": "2LZDXcxJWgsJfKXZv9a5eG",
+        "name": "Cashmere Cat",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebed91e9bebd673752510f4bae"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 186,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.788Z",
+        "updated_at": "2025-12-19T06:00:40.788Z",
+        "spotify_id": "687cZJR45JO7jhk1LHIbgq",
+        "name": "Tems",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb22d7d6f8981c7a27bf68a382"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 187,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.790Z",
+        "updated_at": "2025-12-19T06:00:40.790Z",
+        "spotify_id": "4PyPlV92e4yMGcVEJhQxsV",
+        "name": "Sonny Burke & His Orchestra",
+        "popularity": 26,
+        "image": "https://i.scdn.co/image/ab67616d0000b27353ecc48afc06b7325430d38a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 188,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.794Z",
+        "updated_at": "2025-12-19T06:00:40.794Z",
+        "spotify_id": "0RMJOzHDhAKY1o2j0W0vxY",
+        "name": "EJAE",
+        "popularity": 87,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb823e267b7aeb50d2ab58cc94"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 189,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.797Z",
+        "updated_at": "2025-12-19T06:00:40.797Z",
+        "spotify_id": "5cj0lLjcoR7YOSnhnX0Po5",
+        "name": "Doja Cat",
+        "popularity": 88,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8a0644455ebfa7d3976f5101"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 190,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.800Z",
+        "updated_at": "2025-12-19T06:00:40.800Z",
+        "spotify_id": "2EoyTW14yqnbqmk90NjbLT",
+        "name": "PRYVT",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb012e40962788790bb7b60f75"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 191,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.804Z",
+        "updated_at": "2025-12-19T06:00:40.804Z",
+        "spotify_id": "64neTfIIdYKNhJ9zxoz3jF",
+        "name": "Ivan Lins",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4123dd1ef2e2c9491e2f9c82"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 192,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.807Z",
+        "updated_at": "2025-12-19T06:00:40.807Z",
+        "spotify_id": "1qbbu98qe8ExHsjdBpJZNJ",
+        "name": "Defconn",
+        "popularity": 33,
+        "image": "https://i.scdn.co/image/ab67616d0000b273623eb8308f5003a6653d333b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 193,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.810Z",
+        "updated_at": "2025-12-19T06:00:40.810Z",
+        "spotify_id": "7JvaJdbpBgiVUWfxTal27Z",
+        "name": "h4rdy",
+        "popularity": 28,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb08cccdfd88e477bea88e9463"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 194,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.814Z",
+        "updated_at": "2025-12-19T06:00:40.814Z",
+        "spotify_id": "1bqxdqvUtPWZri43cKHac8",
+        "name": "MAX",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb23e614922b351df9c2e93a2b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 195,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.818Z",
+        "updated_at": "2025-12-19T06:00:40.818Z",
+        "spotify_id": "6GEykX11lQqp92UVOQQCC7",
+        "name": "DJ Premier",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebba05f3f8bdbb0a9efbf4de6e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 196,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.821Z",
+        "updated_at": "2025-12-19T06:00:40.821Z",
+        "spotify_id": "0i5yrKtlP4URcRBXQQwnik",
+        "name": "Charlie Byrd",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/a839bcdf68a99108696fd999546ab8c4c3a59d3c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 197,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.826Z",
+        "updated_at": "2025-12-19T06:00:40.826Z",
+        "spotify_id": "49vOeJAPxAz6YmVZPNM7ys",
+        "name": "Huh Gak",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba060937c53a39077e8822a95"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 198,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.829Z",
+        "updated_at": "2025-12-19T06:00:40.829Z",
+        "spotify_id": "26VFTg2z8YR0cCuwLzESi2",
+        "name": "Halsey",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb15136101a0f63f0b2800b9dc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 199,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.833Z",
+        "updated_at": "2025-12-19T06:00:40.833Z",
+        "spotify_id": "3DbwFQlvLxRSi2uX8mf81A",
+        "name": "Sexyy Red",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd341871daa2c688ea24dcf02"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 200,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.837Z",
+        "updated_at": "2025-12-19T06:00:40.837Z",
+        "spotify_id": "57xPD2CfuwxN6Ld7rf2iLG",
+        "name": "Vanilla Acoustic",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b27387ae88c0e8e5c36134ab980f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 201,
+    "fields": {
+        "created_at": "2025-12-19T06:00:40.840Z",
+        "updated_at": "2025-12-19T06:00:40.840Z",
+        "spotify_id": "4yPUoMbYxVJ6XNJWZVJV7Y",
+        "name": "Al Cohn",
+        "popularity": 31,
+        "image": "https://i.scdn.co/image/3683f09213e2b9f662ebe36178c97f2aacdc98ab"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 202,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.009Z",
+        "updated_at": "2025-12-19T06:00:41.009Z",
+        "spotify_id": "1QRj3hoop9Mv5VvHQkwPEp",
+        "name": "Olivia O'Brien",
+        "popularity": 63,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdedc07bc2d6f72f0041a8c1c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 203,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.014Z",
+        "updated_at": "2025-12-19T06:00:41.014Z",
+        "spotify_id": "7qxLQ0CByGfbd3HdL7ilR8",
+        "name": "Frants",
+        "popularity": 25,
+        "image": "https://i.scdn.co/image/ab67616d0000b27315e36e825161ed416330b113"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 204,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.017Z",
+        "updated_at": "2025-12-19T06:00:41.017Z",
+        "spotify_id": "5BkB3rXc0qIdUtuEnhbK0A",
+        "name": "VIXX",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb84f9ce82754d57d4ee374d42"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 205,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.017Z",
+        "updated_at": "2025-12-19T06:00:41.017Z",
+        "spotify_id": "6uNxlIP5lzPFf0BHuELOuX",
+        "name": "GOT the beat",
+        "popularity": 45,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb03fd839c09fe375026192645"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 206,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.026Z",
+        "updated_at": "2025-12-19T06:00:41.026Z",
+        "spotify_id": "3CsHGnB9qK3KYH7xmyGAGX",
+        "name": "Art Taylor",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6772690000c46cba415073779e0fff1642e097"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 207,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.029Z",
+        "updated_at": "2025-12-19T06:00:41.029Z",
+        "spotify_id": "25wMXkplvEHJpJHX8A6Ved",
+        "name": "lIlBOI",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb66be091c611637098ca07478"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 208,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.033Z",
+        "updated_at": "2025-12-19T06:00:41.033Z",
+        "spotify_id": "3uCu2WgyG0Iw50ylOYDSpH",
+        "name": "Maria Gadú",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2ac4d8d36593ae9d03393b1d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 209,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.037Z",
+        "updated_at": "2025-12-19T06:00:41.037Z",
+        "spotify_id": "2Yv0nlRtzgPl6u0dsS2hFv",
+        "name": "Paloalto",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebce658747605cc5eb4abb28ef"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 210,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.040Z",
+        "updated_at": "2025-12-19T06:00:41.040Z",
+        "spotify_id": "3tJoFztHeIJkJWMrx0td2f",
+        "name": "Moneybagg Yo",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6d2f8e8fbf5b13b1baa1eeff"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 211,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.044Z",
+        "updated_at": "2025-12-19T06:00:41.044Z",
+        "spotify_id": "6e7BQ0gM6o8ecMXRZkXxlZ",
+        "name": "Karriem Riggins",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1b181e1a2f5be0fa05f60e10"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 212,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.048Z",
+        "updated_at": "2025-12-19T06:00:41.048Z",
+        "spotify_id": "23zg3TcAtWQy7J6upgbUnj",
+        "name": "USHER",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb716114797a4a644c67c5fa72"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 213,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.049Z",
+        "updated_at": "2025-12-19T06:00:41.049Z",
+        "spotify_id": "4pdMtDzWCUoc08AhVOwWNU",
+        "name": "Sean2Slow",
+        "popularity": 23,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 214,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.049Z",
+        "updated_at": "2025-12-19T06:00:41.049Z",
+        "spotify_id": "0Y2AcMPMpeuPXtPQGVvRBq",
+        "name": "Lee Young Ji",
+        "popularity": 58,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8fdf3504948498378df71140"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 215,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.049Z",
+        "updated_at": "2025-12-19T06:00:41.049Z",
+        "spotify_id": "5jNmxPYz8QE5rYp4GDil8t",
+        "name": "Dina Rae",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb989960b3527fe8067ef3570b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 216,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.062Z",
+        "updated_at": "2025-12-19T06:00:41.062Z",
+        "spotify_id": "6C1ohJrd5VydigQtaGy5Wa",
+        "name": "Joyner Lucas",
+        "popularity": 69,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf94c47d61b62caf79c57b091"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 217,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.066Z",
+        "updated_at": "2025-12-19T06:00:41.066Z",
+        "spotify_id": "4XpUIb8uuNlIWVKmgKZXC0",
+        "name": "ZICO",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebabf246ea3cc5db3a70d97496"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 218,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.069Z",
+        "updated_at": "2025-12-19T06:00:41.070Z",
+        "spotify_id": "4WhH68K75YKSAwHAqWFpi1",
+        "name": "Philly Joe Jones",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab67616d0000b27396d6fb9c864dfb2d74865ad6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 219,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.073Z",
+        "updated_at": "2025-12-19T06:00:41.073Z",
+        "spotify_id": "0BJ2EjOqcfgFvlZXNKrNbE",
+        "name": "Saja Boys",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3ea0cd016115b811fdcba1b1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 220,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.076Z",
+        "updated_at": "2025-12-19T06:00:41.076Z",
+        "spotify_id": "7DxCK6bwfQC3F2ajZ02R2F",
+        "name": "DAWN 던",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0d95897cf4ed6d09b4ed4b89"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 221,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.080Z",
+        "updated_at": "2025-12-19T06:00:41.080Z",
+        "spotify_id": "1mORehSVEd7lcaT2d7Sl2K",
+        "name": "SURAN",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7e6641ca1d8e86529cccdd32"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 222,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.083Z",
+        "updated_at": "2025-12-19T06:00:41.083Z",
+        "spotify_id": "3aJJ3PgNVHdHGZ1XPgtSEc",
+        "name": "WOOCHAN",
+        "popularity": 45,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebfdd8d6cd4112d82c95c205b4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 223,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.086Z",
+        "updated_at": "2025-12-19T06:00:41.086Z",
+        "spotify_id": "15GGbJKqC6w0VYyAJtjej6",
+        "name": "Fatman Scoop",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0a79b0e631f15a9ad1a1e779"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 224,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.089Z",
+        "updated_at": "2025-12-19T06:00:41.089Z",
+        "spotify_id": "1GmsPCcpKgF9OhlNXjOsbS",
+        "name": "Lizzy McAlpine",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb912df0c93a5dc290d3c8816e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 225,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.091Z",
+        "updated_at": "2025-12-19T06:00:41.091Z",
+        "spotify_id": "3vhZuZdMksbnJwoE3AwpXq",
+        "name": "BUMKEY",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc28547dcaabea5e06b8dd004"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 226,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.091Z",
+        "updated_at": "2025-12-19T06:00:41.091Z",
+        "spotify_id": "5q9adPv91NFr8q2ZcKmX0V",
+        "name": "youra",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5d03d4733df7799d27a83a16"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 227,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.091Z",
+        "updated_at": "2025-12-19T06:00:41.091Z",
+        "spotify_id": "5HenzRvMtSrgtvU16XAoby",
+        "name": "Zion.T",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb451e705e650fa08297953ef8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 228,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.103Z",
+        "updated_at": "2025-12-19T06:00:41.103Z",
+        "spotify_id": "1oSPZhvZMIrWW5I41kPkkY",
+        "name": "Jimin",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcb08296cca5a2d197caabb79"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 229,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.107Z",
+        "updated_at": "2025-12-19T06:00:41.107Z",
+        "spotify_id": "7c1HgFDe8ogy5NOZ1ANCJQ",
+        "name": "Car, the garden",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc01f9208391fe683603a0617"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 230,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.110Z",
+        "updated_at": "2025-12-19T06:00:41.110Z",
+        "spotify_id": "7g9DeYASD3RzlT4kDchsQZ",
+        "name": "Gil Evans",
+        "popularity": 36,
+        "image": "https://i.scdn.co/image/5478892a222291e3e78ede3c72196a415732a93f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 231,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.114Z",
+        "updated_at": "2025-12-19T06:00:41.114Z",
+        "spotify_id": "0rW6fVd3yuW2CF2sLYWQtE",
+        "name": "Dok2",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba9be0c2f235599ed9351ebea"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 232,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.118Z",
+        "updated_at": "2025-12-19T06:00:41.118Z",
+        "spotify_id": "2KmAZfz1aJ4On70lLseFHt",
+        "name": "Jaffa",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b27389599538e2523bec6dfdd90a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 233,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.121Z",
+        "updated_at": "2025-12-19T06:00:41.121Z",
+        "spotify_id": "5tTstLTFQFGb2dBb6h9zeG",
+        "name": "toigo",
+        "popularity": 33,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb331467c2616c55c58ac0ae1a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 234,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.124Z",
+        "updated_at": "2025-12-19T06:00:41.124Z",
+        "spotify_id": "5WY88tCMFA6J6vqSN3MmDZ",
+        "name": "NELL",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7ef39e8e41cfceaa7bea3153"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 235,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.127Z",
+        "updated_at": "2025-12-19T06:00:41.127Z",
+        "spotify_id": "1HY2Jd0NmPuamShAr6KMms",
+        "name": "Lady Gaga",
+        "popularity": 90,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 236,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.129Z",
+        "updated_at": "2025-12-19T06:00:41.129Z",
+        "spotify_id": "053q0ukIDRgzwTr4vNSwab",
+        "name": "Grimes",
+        "popularity": 69,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3da21f5c5e6956dd544c0d25"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 237,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.129Z",
+        "updated_at": "2025-12-19T06:00:41.129Z",
+        "spotify_id": "5lFfUYKyl9GIFe3dmrc0eg",
+        "name": "SEIN",
+        "popularity": 38,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb4a6bab6fe76c32594e164ae"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 238,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.129Z",
+        "updated_at": "2025-12-19T06:00:41.129Z",
+        "spotify_id": "2s3FVDZtJYYB4Tof0zjXZo",
+        "name": "Little Sister",
+        "popularity": 25,
+        "image": "https://i.scdn.co/image/9a2d44a62b0587c4c37204d63921e633532307d5"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 239,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.129Z",
+        "updated_at": "2025-12-19T06:00:41.129Z",
+        "spotify_id": "13y7CgLHjMVRMDqxdx0Xdo",
+        "name": "Gucci Mane",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb9b77f64bd278ffde2c94428"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 240,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.145Z",
+        "updated_at": "2025-12-19T06:00:41.145Z",
+        "spotify_id": "4OBJLual30L7gRl5UkeRcT",
+        "name": "T.I.",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb12057d342f33c61b3768f2bc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 241,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.149Z",
+        "updated_at": "2025-12-19T06:00:41.149Z",
+        "spotify_id": "1GxkXlMwML1oSg5eLPiAz3",
+        "name": "Michael Bublé",
+        "popularity": 89,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebecf79fd5be85dabb0f489107"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 242,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.152Z",
+        "updated_at": "2025-12-19T06:00:41.152Z",
+        "spotify_id": "4w8eKJO83kKgKRLbMKM2zB",
+        "name": "Tadd Dameron",
+        "popularity": 26,
+        "image": "https://i.scdn.co/image/ab67616d0000b2735a704ac1d33a8e22ba2a550f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 243,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.155Z",
+        "updated_at": "2025-12-19T06:00:41.155Z",
+        "spotify_id": "0KaZcu3pEVHfYOnB62eLFp",
+        "name": "20 Years of Age",
+        "popularity": 37,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8700dce9413416751e8e74c6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 244,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.159Z",
+        "updated_at": "2025-12-19T06:00:41.159Z",
+        "spotify_id": "0du5cEVh5yTK9QJze8zA0C",
+        "name": "Bruno Mars",
+        "popularity": 92,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc36dd9eb55fb0db4911f25dd"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 245,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.162Z",
+        "updated_at": "2025-12-19T06:00:41.162Z",
+        "spotify_id": "3IjHX8KZKoeq3X4QgXxqbT",
+        "name": "JAY B",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8d53e0500e6a4b00dc5cc219"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 246,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.166Z",
+        "updated_at": "2025-12-19T06:00:41.166Z",
+        "spotify_id": "0kX41bvrBQtgqSEXbmTzMN",
+        "name": "eaJ",
+        "popularity": 58,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc3916d32ab638ea03763d8eb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 247,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.169Z",
+        "updated_at": "2025-12-19T06:00:41.169Z",
+        "spotify_id": "3VwKSHAfgzV1DOHV0aANCI",
+        "name": "TOKiMONSTA",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbecc71dfce49dd7304261813"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 248,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.169Z",
+        "updated_at": "2025-12-19T06:00:41.169Z",
+        "spotify_id": "4fxd5Ee7UefO4CUXgwJ7IP",
+        "name": "GIVĒON",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb48769fa9ef3b5f24af90a09d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 249,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.169Z",
+        "updated_at": "2025-12-19T06:00:41.169Z",
+        "spotify_id": "1okJ4NC308qbtY9LyHn6DO",
+        "name": "BloodPop®",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdedb069c0fd879a2d87f80b2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 250,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.169Z",
+        "updated_at": "2025-12-19T06:00:41.169Z",
+        "spotify_id": "5YGY8feqx7naU7z4HrwZM6",
+        "name": "Miley Cyrus",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf4cccd14ec026038d713e353"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 251,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.329Z",
+        "updated_at": "2025-12-19T06:00:41.329Z",
+        "spotify_id": "1sdyFmN4bVOcuFDpTVsxBB",
+        "name": "Kenny Burrell",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdbb5ce7865a18716adba5083"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 252,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.347Z",
+        "updated_at": "2025-12-19T06:00:41.347Z",
+        "spotify_id": "4kVBW3oggjJ8epz4NWIGfk",
+        "name": "Chiara Civello",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8d935b0ec6cc9fdce8b36766"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 253,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.351Z",
+        "updated_at": "2025-12-19T06:00:41.351Z",
+        "spotify_id": "5RmQ8k4l3HZ8JoPb4mNsML",
+        "name": "Agust D",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb191d43dca6f2f5a126e43e4b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 254,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.355Z",
+        "updated_at": "2025-12-19T06:00:41.355Z",
+        "spotify_id": "1CjHzclPOS2unF1vRtgurF",
+        "name": "Hanhae",
+        "popularity": 38,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb71d28ce9ee626f7e37cb961b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 255,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.360Z",
+        "updated_at": "2025-12-19T06:00:41.360Z",
+        "spotify_id": "1UTPBmNbXNTittyMJrNkvw",
+        "name": "Blake Shelton",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebaa03b29eb3a550f139fbb955"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 256,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.364Z",
+        "updated_at": "2025-12-19T06:00:41.364Z",
+        "spotify_id": "0RM1II8zWIoFb32PXO1RaR",
+        "name": "Jokers",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab67616d0000b273bd60df5b770f7975d8aa1031"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 257,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.368Z",
+        "updated_at": "2025-12-19T06:00:41.368Z",
+        "spotify_id": "2FgZrgTMX6Sk0VNcOsEPmm",
+        "name": "Punch",
+        "popularity": 62,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb065608c797a38d142082fc8a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 258,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.369Z",
+        "updated_at": "2025-12-19T06:00:41.369Z",
+        "spotify_id": "1eDupbD9kIx8UaZlzcBG5r",
+        "name": "samUIL Lee",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebef3d68d238f4e55d5dd81afe"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 259,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.369Z",
+        "updated_at": "2025-12-19T06:00:41.369Z",
+        "spotify_id": "22oiFjlZPKJ1XphV2et1u1",
+        "name": "Naul",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe2bb71041e476cd0a33f3d06"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 260,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.369Z",
+        "updated_at": "2025-12-19T06:00:41.369Z",
+        "spotify_id": "3kPEBSt7qgVoRZSbIXMr7W",
+        "name": "GRAY",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb21cc82b8ba43545933385d70"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 261,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.386Z",
+        "updated_at": "2025-12-19T06:00:41.386Z",
+        "spotify_id": "24sQuJhQ85ZygDG7sUVUxR",
+        "name": "Verbal Jint",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6772690000c46c58d08bf71902410dac32d765"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 262,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.389Z",
+        "updated_at": "2025-12-19T06:00:41.389Z",
+        "spotify_id": "6O5k8LLRfDK8v9jj1GazAQ",
+        "name": "Nubya Garcia",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcc54044c371ab617c1b625bb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 263,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.393Z",
+        "updated_at": "2025-12-19T06:00:41.393Z",
+        "spotify_id": "6q6EXv5ybArXqifMdmTIig",
+        "name": "Lionel Loueke",
+        "popularity": 35,
+        "image": "https://i.scdn.co/image/ab6772690000c46c23aa38e41255998f65ed369b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 264,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.396Z",
+        "updated_at": "2025-12-19T06:00:41.396Z",
+        "spotify_id": "7lXgbtBDcCRbfc5f8FhGUL",
+        "name": "Hoody",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9d323d36c0b99f60579b9da3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 265,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.399Z",
+        "updated_at": "2025-12-19T06:00:41.399Z",
+        "spotify_id": "2Ru6Dj5tdUgAzLrXcXje7q",
+        "name": "Billy Kyle and His Trio",
+        "popularity": 26,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 266,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.403Z",
+        "updated_at": "2025-12-19T06:00:41.403Z",
+        "spotify_id": "2KftmGt9sk1yLjsAoloC3M",
+        "name": "Zucchero",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb967dd0c95ee595677b514256"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 267,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.406Z",
+        "updated_at": "2025-12-19T06:00:41.406Z",
+        "spotify_id": "5Rgh1bKqT34PM9G5kYmlgE",
+        "name": "JAKOPS",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab67616d0000b273c34f6a255ed5cfe45da10f2e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 268,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.409Z",
+        "updated_at": "2025-12-19T06:00:41.409Z",
+        "spotify_id": "5z1VAFwT35EVvCp1XlZZuL",
+        "name": "Diana Krall",
+        "popularity": 67,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd1bfc97e11bb4c1f90f287a6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 269,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.411Z",
+        "updated_at": "2025-12-19T06:00:41.411Z",
+        "spotify_id": "29HqjVbJr3vsc2l6BTI4eB",
+        "name": "GroovyRoom",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc669bd3ef0cb1bd511ab7e5e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 270,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.411Z",
+        "updated_at": "2025-12-19T06:00:41.411Z",
+        "spotify_id": "08PvCOlef4xdOr20jFSTPd",
+        "name": "Flo Milli",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2dd4342359c7b3aca2bca63c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 271,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.411Z",
+        "updated_at": "2025-12-19T06:00:41.411Z",
+        "spotify_id": "00FQb4jTyendYWaN8pK0wa",
+        "name": "Lana Del Rey",
+        "popularity": 90,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb99cacf8acd5378206767261"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 272,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.424Z",
+        "updated_at": "2025-12-19T06:00:41.424Z",
+        "spotify_id": "0U5VaBswRTkquQ6rXxzjVH",
+        "name": "Arkins",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4f3682debea3f511d31c4751"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 273,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.427Z",
+        "updated_at": "2025-12-19T06:00:41.427Z",
+        "spotify_id": "6naXFodImN2DwRmKCQHAUt",
+        "name": "SOLE",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdbe98215f4481d88eab538fc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 274,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.430Z",
+        "updated_at": "2025-12-19T06:00:41.430Z",
+        "spotify_id": "0sKsReKseslDlhxmbN6wLk",
+        "name": "BabyTron",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1ff261f69fb001b1b8a38ea2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 275,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.434Z",
+        "updated_at": "2025-12-19T06:00:41.434Z",
+        "spotify_id": "2SZEuuHNzveriZr2YtUFj5",
+        "name": "Padi",
+        "popularity": 29,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf1ba1abba47fd1c23dec3634"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 276,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.437Z",
+        "updated_at": "2025-12-19T06:00:41.437Z",
+        "spotify_id": "6wPBIyIIMxoqgux29bGF8I",
+        "name": "EXO-K",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb178e3ea7bb3b021834a270ce"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 277,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.441Z",
+        "updated_at": "2025-12-19T06:00:41.441Z",
+        "spotify_id": "2YXlVLKq3X3soXd2aXUtIT",
+        "name": "JAMIE",
+        "popularity": 45,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdbabadb9f03b5b3d5e0241e5"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 278,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.444Z",
+        "updated_at": "2025-12-19T06:00:41.444Z",
+        "spotify_id": "4ufh0WuMZh6y4Dmdnklvdl",
+        "name": "BAEKHYUN",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7d4e246f8c54be347e06bffe"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 279,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.448Z",
+        "updated_at": "2025-12-19T06:00:41.448Z",
+        "spotify_id": "11S00dFcvNvJahis8MTGMD",
+        "name": "Tiger JK",
+        "popularity": 54,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc2ff344b11b26b977b2c40de"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 280,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.449Z",
+        "updated_at": "2025-12-19T06:00:41.449Z",
+        "spotify_id": "7jVv8c5Fj3E9VhNjxT4snq",
+        "name": "Lil Nas X",
+        "popularity": 74,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3758a33e782b46bd7f174e1d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 281,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.449Z",
+        "updated_at": "2025-12-19T06:00:41.449Z",
+        "spotify_id": "6maPmKkdwM4eyhz5O4lbkP",
+        "name": "Nonna",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9bbf4e0338cd71e1e7ff7440"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 282,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.449Z",
+        "updated_at": "2025-12-19T06:00:41.449Z",
+        "spotify_id": "4E4TZnDHlrhclSJgeund1d",
+        "name": "bj wnjn",
+        "popularity": 38,
+        "image": "https://i.scdn.co/image/ab67616d0000b273b3593a83fd88b070a2dc2d18"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 283,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.449Z",
+        "updated_at": "2025-12-19T06:00:41.449Z",
+        "spotify_id": "67IWlRdLy3UcfY3q968euj",
+        "name": "GEMINI",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb232b2f32c2d0395dadbe2618"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 284,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.464Z",
+        "updated_at": "2025-12-19T06:00:41.464Z",
+        "spotify_id": "6jJ0s89eD6GaHleKKya26X",
+        "name": "Katy Perry",
+        "popularity": 86,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4be5330bd48527f9dd620663"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 285,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.467Z",
+        "updated_at": "2025-12-19T06:00:41.467Z",
+        "spotify_id": "4V8Sr092TqfHkfAA5fXXqG",
+        "name": "Luis Fonsi",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc75a7a555898c9a59602b32b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 286,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.471Z",
+        "updated_at": "2025-12-19T06:00:41.471Z",
+        "spotify_id": "2dd5mrQZvg6SmahdgVKDzh",
+        "name": "PSY",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb24b5185226d5b7c6aa91db5a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 287,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.474Z",
+        "updated_at": "2025-12-19T06:00:41.474Z",
+        "spotify_id": "40ZNYROS4zLfyyBSs2PGe2",
+        "name": "Zach Bryan",
+        "popularity": 87,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4fd54df35bfcfa0fc9fc2da7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 288,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.478Z",
+        "updated_at": "2025-12-19T06:00:41.478Z",
+        "spotify_id": "0xOeVMOz2fVg5BJY3N6akT",
+        "name": "Jaden",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5d8f24eed04df5dac0adecf4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 289,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.482Z",
+        "updated_at": "2025-12-19T06:00:41.482Z",
+        "spotify_id": "75OcDAFGCzj0qehe1mADeM",
+        "name": "Way Ched",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3d89b25f121fe0b4e3d9c404"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 290,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.485Z",
+        "updated_at": "2025-12-19T06:00:41.485Z",
+        "spotify_id": "7tYKF4w9nC0nq9CsPZTHyP",
+        "name": "SZA",
+        "popularity": 90,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebfd0a9fb6c252a3ba44079acf"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 291,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.489Z",
+        "updated_at": "2025-12-19T06:00:41.489Z",
+        "spotify_id": "63XBtGSEZINSyXylZxEUbv",
+        "name": "Victoria Monét",
+        "popularity": 63,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0e3524063986882f3706730b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 292,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.492Z",
+        "updated_at": "2025-12-19T06:00:41.492Z",
+        "spotify_id": "5zctI4wO9XSKS8XwcnqEHk",
+        "name": "Lil Mosey",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdb253ca1b593bf197493a9fc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 293,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.495Z",
+        "updated_at": "2025-12-19T06:00:41.495Z",
+        "spotify_id": "2TTGZUWJg6LIOWsmCEgKCZ",
+        "name": "Layone",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb601578f61e9511dfcdc3729"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 294,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.499Z",
+        "updated_at": "2025-12-19T06:00:41.499Z",
+        "spotify_id": "5fNuYnFYyzsrVRtDcKPnxb",
+        "name": "AKLO",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb04c402fc7167b3e38fca3c8b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 295,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.503Z",
+        "updated_at": "2025-12-19T06:00:41.503Z",
+        "spotify_id": "28JPqJh7jsUuxus33Kfwe7",
+        "name": "Joe Flizzow",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb80176156616813f07b49279"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 296,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.506Z",
+        "updated_at": "2025-12-19T06:00:41.506Z",
+        "spotify_id": "5fMUXHkw8R8eOP2RNVYEZX",
+        "name": "Diplo",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdf01727aa674ddefa777797a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 297,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.509Z",
+        "updated_at": "2025-12-19T06:00:41.509Z",
+        "spotify_id": "31TPClRtHm23RisEBtV3X7",
+        "name": "Justin Timberlake",
+        "popularity": 84,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7a5cfe2597665a3d160e805e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 298,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.513Z",
+        "updated_at": "2025-12-19T06:00:41.513Z",
+        "spotify_id": "2AGxU7q0xWss9jkiTPmxH7",
+        "name": "Lionclad",
+        "popularity": 18,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc36a0fe204000bfe19f2f8ea"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 299,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.516Z",
+        "updated_at": "2025-12-19T06:00:41.516Z",
+        "spotify_id": "5t1uryofgueHrjrryqX8vM",
+        "name": "NINGNING",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1d9f83ee8ddaf4fe18ad05d1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 300,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.516Z",
+        "updated_at": "2025-12-19T06:00:41.516Z",
+        "spotify_id": "19eLuQmk9aCobbVDHc6eek",
+        "name": "Louis Armstrong",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6772690000c46c53b6519baafe8f4d6135453e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 301,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.714Z",
+        "updated_at": "2025-12-19T06:00:41.714Z",
+        "spotify_id": "3Bnq7jiU506HcPjRgQ43TM",
+        "name": "Milton Nascimento",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8ed529f569634a2c98232412"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 302,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.723Z",
+        "updated_at": "2025-12-19T06:00:41.723Z",
+        "spotify_id": "5pKCCKE2ajJHZ9KAiaK11H",
+        "name": "Rihanna",
+        "popularity": 93,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcb565a8e684e3be458d329ac"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 303,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.727Z",
+        "updated_at": "2025-12-19T06:00:41.727Z",
+        "spotify_id": "0QHgL1lAIqAw0HtD7YldmP",
+        "name": "DJ Khaled",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6dc42c750614c1101daef28e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 304,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.729Z",
+        "updated_at": "2025-12-19T06:00:41.729Z",
+        "spotify_id": "0knGpCTbmG4ctl1wzYRZs4",
+        "name": "Dijon",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb73479e6db034c4a43d4aee04"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 305,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.729Z",
+        "updated_at": "2025-12-19T06:00:41.729Z",
+        "spotify_id": "4Gso3d4CscCijv0lmajZWs",
+        "name": "Don Toliver",
+        "popularity": 87,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb52258b97639c24efe49fbf9e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 306,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.729Z",
+        "updated_at": "2025-12-19T06:00:41.729Z",
+        "spotify_id": "4XDi67ZENZcbfKnvMnTYsI",
+        "name": "Jay Park",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbaec57292a885401901ce138"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 307,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.729Z",
+        "updated_at": "2025-12-19T06:00:41.729Z",
+        "spotify_id": "1XlyP7FKwWs9j8GTdk5m4k",
+        "name": "Lee Chanwon",
+        "popularity": 30,
+        "image": "https://i.scdn.co/image/ab67616d0000b273b37b72929daa0767c9f556f2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 308,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.745Z",
+        "updated_at": "2025-12-19T06:00:41.745Z",
+        "spotify_id": "2auC28zjQyVTsiZKNgPRGs",
+        "name": "RM",
+        "popularity": 73,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb847fe9bbfef3acf7981acd2a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 309,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.748Z",
+        "updated_at": "2025-12-19T06:00:41.748Z",
+        "spotify_id": "7dC5JED2uhOrtxILEGcecT",
+        "name": "LOUIS of LNGSHOT",
+        "popularity": 35,
+        "image": "https://i.scdn.co/image/ab67616d0000b273bbf1cc18b6f0d9fedd9e2bd9"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 310,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.751Z",
+        "updated_at": "2025-12-19T06:00:41.751Z",
+        "spotify_id": "3cjEqqelV9zb4BYE3qDQ4O",
+        "name": "EXO",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebaf3c4b988a6fef40843cdc83"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 311,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.755Z",
+        "updated_at": "2025-12-19T06:00:41.755Z",
+        "spotify_id": "1lpOgw56wZLDa8gaP6bSIs",
+        "name": "Fast & Furious: The Fast Saga",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebfd03eb88b9979b4a019bd9b6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 312,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.759Z",
+        "updated_at": "2025-12-19T06:00:41.759Z",
+        "spotify_id": "1uNFoZAHBGtllmzznpCI3s",
+        "name": "Justin Bieber",
+        "popularity": 93,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebaf20f7db5288bce9beede034"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 313,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.762Z",
+        "updated_at": "2025-12-19T06:00:41.762Z",
+        "spotify_id": "3QwkvNEofjtqklxjtvJ3ld",
+        "name": "Kimsoonsu",
+        "popularity": 5,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 314,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.765Z",
+        "updated_at": "2025-12-19T06:00:41.765Z",
+        "spotify_id": "3jK9MiCrA42lLAdMGUZpwa",
+        "name": "Anderson .Paak",
+        "popularity": 77,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb96287bd47570ff13f0c01496"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 315,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.768Z",
+        "updated_at": "2025-12-19T06:00:41.768Z",
+        "spotify_id": "1Ktiv08TbBy195pQUH8Qld",
+        "name": "THAMA",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba0ca14d947d17c7c1ddd8fdd"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 316,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.769Z",
+        "updated_at": "2025-12-19T06:00:41.769Z",
+        "spotify_id": "66CXWjxzNUsdJxJ2JdwvnR",
+        "name": "Ariana Grande",
+        "popularity": 95,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6725802588d7dc1aba076ca5"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 317,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.769Z",
+        "updated_at": "2025-12-19T06:00:41.769Z",
+        "spotify_id": "0qDHjPB7TJPxYaQ0CWMEU4",
+        "name": "YOUNGTAK",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b2736f4c00ad8867a03ed9a954fe"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 318,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.769Z",
+        "updated_at": "2025-12-19T06:00:41.769Z",
+        "spotify_id": "0hCNtLu0JehylgoiP8L4Gh",
+        "name": "Nicki Minaj",
+        "popularity": 86,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb07a50f0a9a8f11e5a1102cbd"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 319,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.783Z",
+        "updated_at": "2025-12-19T06:00:41.783Z",
+        "spotify_id": "57htMBtzpppc1yoXgjbslj",
+        "name": "Park Hyo Shin",
+        "popularity": 73,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1e93f18daa7131d2e61b7728"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 320,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.787Z",
+        "updated_at": "2025-12-19T06:00:41.787Z",
+        "spotify_id": "7zYj9S9SdIunYCfSm7vzAR",
+        "name": "JEON SOMI",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb65bb3e6e2567d7558008788e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 321,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.790Z",
+        "updated_at": "2025-12-19T06:00:41.790Z",
+        "spotify_id": "0FnDCrmcQT8qz5TEsZIYw5",
+        "name": "Awich",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7e9bfece14c58858dac8d745"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 322,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.793Z",
+        "updated_at": "2025-12-19T06:00:41.793Z",
+        "spotify_id": "1fjf6ys7DWMxBlHVVT8HTs",
+        "name": "Lula Galvão",
+        "popularity": 28,
+        "image": "https://i.scdn.co/image/ab67616d0000b273f0ca45d3bcb2ca768e465922"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 323,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.797Z",
+        "updated_at": "2025-12-19T06:00:41.797Z",
+        "spotify_id": "0Wwji82sLA0Hcvtuak3omb",
+        "name": "AUDREY NUNA",
+        "popularity": 86,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2e9ac1a1188624174e9c86a3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 324,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.800Z",
+        "updated_at": "2025-12-19T06:00:41.800Z",
+        "spotify_id": "5yG7ZAZafVaAlMTeBybKAL",
+        "name": "Iggy Azalea",
+        "popularity": 69,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb698a6abf2897a8fc8283cc0c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 325,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.804Z",
+        "updated_at": "2025-12-19T06:00:41.804Z",
+        "spotify_id": "15AoeHPWryzqVsycKzmsWA",
+        "name": "VERBAL",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b273b060b3c0da0319f92a9e2303"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 326,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.807Z",
+        "updated_at": "2025-12-19T06:00:41.807Z",
+        "spotify_id": "6k0IBR0lU42s2GYpNX7kA9",
+        "name": "Brian McKnight",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebccd9085c5dbc5f5a991ae59c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 327,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.809Z",
+        "updated_at": "2025-12-19T06:00:41.809Z",
+        "spotify_id": "35iymrFS4VnsKn35ebHKX9",
+        "name": "Red Garland",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/d2eb2b8d27ed067ff0a649c74d280a04446d7211"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 328,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.809Z",
+        "updated_at": "2025-12-19T06:00:41.809Z",
+        "spotify_id": "2u7CP5T30c8ctenzXgEV1W",
+        "name": "pH-1",
+        "popularity": 58,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb4e1a93443ecd2faf97cc2e1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 329,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.809Z",
+        "updated_at": "2025-12-19T06:00:41.809Z",
+        "spotify_id": "0HPaAAfUL4k7xE45xXi5yb",
+        "name": "Samui",
+        "popularity": 26,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb04c9dd6e411a30e5a3fd8437"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 330,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.809Z",
+        "updated_at": "2025-12-19T06:00:41.809Z",
+        "spotify_id": "3MdXrJWsbVzdn6fe5JYkSQ",
+        "name": "Latto",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba11b0b5c37498f5dddb1bd7b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 331,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.823Z",
+        "updated_at": "2025-12-19T06:00:41.823Z",
+        "spotify_id": "5CiGnKThu5ctn9pBxv7DGa",
+        "name": "benny blanco",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9e339e423b680759b0006a63"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 332,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.827Z",
+        "updated_at": "2025-12-19T06:00:41.827Z",
+        "spotify_id": "4nvFFLtv7ZqoTr83387uK4",
+        "name": "Dynamicduo",
+        "popularity": 62,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb18b5e84af500dc8efbd5f889"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 333,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.830Z",
+        "updated_at": "2025-12-19T06:00:41.831Z",
+        "spotify_id": "3CHn74oCO6xiThDGQcDMeA",
+        "name": "Kim MinSeok",
+        "popularity": 45,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb506c2924cae70fb65fb69252"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 334,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.842Z",
+        "updated_at": "2025-12-19T06:00:41.842Z",
+        "spotify_id": "1UIxKzYZnlJeF9siZ6IE1f",
+        "name": "MUSHVENOM",
+        "popularity": 38,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcb1db622504ac8b696cd0951"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 335,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.845Z",
+        "updated_at": "2025-12-19T06:00:41.845Z",
+        "spotify_id": "4F7Q5NV6h5TSwCainz8S5A",
+        "name": "Duke Ellington",
+        "popularity": 62,
+        "image": "https://i.scdn.co/image/1e24691a352233bbe989a311d921f17e7892a87e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 336,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.849Z",
+        "updated_at": "2025-12-19T06:00:41.849Z",
+        "spotify_id": "2SeVOe0CXUEKtCq3BR5A0v",
+        "name": "Jang Minho",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b273f4ae1f75f36313dfb6f9a4ed"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 337,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.849Z",
+        "updated_at": "2025-12-19T06:00:41.849Z",
+        "spotify_id": "6jV25rzTKQ2zMgrqHha1V5",
+        "name": "CHANYEOL",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf3efaf8ac07ad9073aa49200"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 338,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.849Z",
+        "updated_at": "2025-12-19T06:00:41.849Z",
+        "spotify_id": "0kRAVpQhUUArA8UnYwEdeZ",
+        "name": "Kwon Jin Ah",
+        "popularity": 50,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebeb7b71ee305a9fe18a188627"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 339,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.849Z",
+        "updated_at": "2025-12-19T06:00:41.849Z",
+        "spotify_id": "2MtHuR0W2idZdF7x4wddqq",
+        "name": "GIRIBOY",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbddc6fbd6f3557379cc671b0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 340,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.862Z",
+        "updated_at": "2025-12-19T06:00:41.862Z",
+        "spotify_id": "6qvVoPGEqNCyYSjYCgfV1v",
+        "name": "Choi Yu Ree",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd40c7de9c98c852db513c0ca"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 341,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.866Z",
+        "updated_at": "2025-12-19T06:00:41.866Z",
+        "spotify_id": "2oZuwz3cAbFhsEOoXJ2Mem",
+        "name": "UV",
+        "popularity": 18,
+        "image": "https://i.scdn.co/image/ab67616d0000b27329b1b8e4c26596584ed512ba"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 342,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.869Z",
+        "updated_at": "2025-12-19T06:00:41.869Z",
+        "spotify_id": "0UntV1Bw2hk3fbRrm9eMP6",
+        "name": "B.I",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4e2e216c2b0cea636899333a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 343,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.872Z",
+        "updated_at": "2025-12-19T06:00:41.872Z",
+        "spotify_id": "74KM79TiuVKeVCqs8QtB0B",
+        "name": "Sabrina Carpenter",
+        "popularity": 93,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb78e45cfa4697ce3c437cb455"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 344,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.876Z",
+        "updated_at": "2025-12-19T06:00:41.876Z",
+        "spotify_id": "2O3ohFsX5yEGY5FYJqp16q",
+        "name": "Tak",
+        "popularity": 30,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 345,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.879Z",
+        "updated_at": "2025-12-19T06:00:41.879Z",
+        "spotify_id": "2krUNMgFZYm5s4Nn0g91W9",
+        "name": "HAON",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebaae8ad30b0c3f56562bb59b1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 346,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.883Z",
+        "updated_at": "2025-12-19T06:00:41.883Z",
+        "spotify_id": "6sBiS0iWcCyMMgiYrEOxbt",
+        "name": "Supreme Boi",
+        "popularity": 49,
+        "image": "https://i.scdn.co/image/ab67616d0000b273aed258d044bcd33cc71e0ab6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 347,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.886Z",
+        "updated_at": "2025-12-19T06:00:41.886Z",
+        "spotify_id": "02mf5BLKtAfIkAKozHPmU5",
+        "name": "Kim Heejae",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6f3f20a3a7f0cad5cfcbe902"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 348,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.889Z",
+        "updated_at": "2025-12-19T06:00:41.889Z",
+        "spotify_id": "5SkCZXyRQxw5ZLWAH5r4UJ",
+        "name": "Whys Young",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb11d5e0bda97bc7094a88792"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 349,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.893Z",
+        "updated_at": "2025-12-19T06:00:41.893Z",
+        "spotify_id": "7zmuMr74dNGqjq74uibncO",
+        "name": "Kool John",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8778024cdb1455aa5b68af30"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 350,
+    "fields": {
+        "created_at": "2025-12-19T06:00:41.897Z",
+        "updated_at": "2025-12-19T06:00:41.897Z",
+        "spotify_id": "2lolQgalUvZDfp5vvVtTYV",
+        "name": "Tony Bennett",
+        "popularity": 71,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcd9641c8b449440a77ee19cc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 351,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.088Z",
+        "updated_at": "2025-12-19T06:00:42.088Z",
+        "spotify_id": "68TCVp5t1Dxi2TvNuYoYK0",
+        "name": "OHHYUK",
+        "popularity": 49,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9c3adf86cd1aadc015ae2d64"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 352,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.099Z",
+        "updated_at": "2025-12-19T06:00:42.099Z",
+        "spotify_id": "30AghIfoMJrMo1YqoUkEMM",
+        "name": "Huh",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe7faf50f478018480022ce39"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 353,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.103Z",
+        "updated_at": "2025-12-19T06:00:42.103Z",
+        "spotify_id": "6iPbI11utXY9CVhX6SPXEg",
+        "name": "Nitepunk",
+        "popularity": 37,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4714f72f97efdaf32898ea87"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 354,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.107Z",
+        "updated_at": "2025-12-19T06:00:42.107Z",
+        "spotify_id": "0CO7rEbHBtpqgY9QPYJgPM",
+        "name": "Jung In",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebafa53241d04774f04a763ab7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 355,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.111Z",
+        "updated_at": "2025-12-19T06:00:42.111Z",
+        "spotify_id": "0bdfiayQAKewqEvaU6rXCv",
+        "name": "MØ",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebea088fc970f0b2e7e49422c0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 356,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.114Z",
+        "updated_at": "2025-12-19T06:00:42.114Z",
+        "spotify_id": "78hGUmxF4YMnMOpemPsXIX",
+        "name": "LISA",
+        "popularity": 14,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba637f3e0267aa8343e5c6c33"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 357,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.118Z",
+        "updated_at": "2025-12-19T06:00:42.118Z",
+        "spotify_id": "3mPquBmMu97Iq9TpzQ6ayI",
+        "name": "WINTER",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4cb72380e5a70f201d26bc03"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 358,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.122Z",
+        "updated_at": "2025-12-19T06:00:42.122Z",
+        "spotify_id": "5bepW5vcdRzheNc0F8lHJ5",
+        "name": "Esperanza Spalding",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd9f7984689aaeb5faea64bd7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 359,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.126Z",
+        "updated_at": "2025-12-19T06:00:42.126Z",
+        "spotify_id": "2IvkS5MXK0vPGnwyJsrEyV",
+        "name": "Eric Church",
+        "popularity": 72,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb31783fb959349f0c82e39bfe"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 360,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.129Z",
+        "updated_at": "2025-12-19T06:00:42.129Z",
+        "spotify_id": "79g2STpP2iV1xfgHuhrhX0",
+        "name": "Leellamarz",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4eaf216b35e7c5ac20f91c4d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 361,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.129Z",
+        "updated_at": "2025-12-19T06:00:42.129Z",
+        "spotify_id": "3JsHnjpbhX4SnySpvpa9DK",
+        "name": "V",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8e7d00d3aae87cf8fc6946e2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 362,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.129Z",
+        "updated_at": "2025-12-19T06:00:42.129Z",
+        "spotify_id": "25uiPmTg16RbhZWAqwLBy5",
+        "name": "Charli xcx",
+        "popularity": 84,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebdaa727dd396963ba92dd6377"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 363,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.129Z",
+        "updated_at": "2025-12-19T06:00:42.129Z",
+        "spotify_id": "6eUKZXaKkcviH0Ku9w2n3V",
+        "name": "Ed Sheeran",
+        "popularity": 90,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd55c95ad400aed87da52daec"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 364,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.143Z",
+        "updated_at": "2025-12-19T06:00:42.143Z",
+        "spotify_id": "08fiOzXWHTizuWGyS1dWu6",
+        "name": "KEN",
+        "popularity": 34,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb08b0188010b4373e04e24102"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 365,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.148Z",
+        "updated_at": "2025-12-19T06:00:42.148Z",
+        "spotify_id": "7cYFopPCh8aSpBHANLgLaV",
+        "name": "Lim Jae Beum",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab67616d0000b273e81c5ce27000f21b7d5d1100"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 366,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.151Z",
+        "updated_at": "2025-12-19T06:00:42.151Z",
+        "spotify_id": "0cGUm45nv7Z6M6qdXYQGTX",
+        "name": "Kehlani",
+        "popularity": 81,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb57082fd22d755e80a648fac3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 367,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.154Z",
+        "updated_at": "2025-12-19T06:00:42.154Z",
+        "spotify_id": "6VuMaDnrHyPL1p4EHjYLi7",
+        "name": "Charlie Puth",
+        "popularity": 82,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6721f541fb123145d4cb3ace"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 368,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.157Z",
+        "updated_at": "2025-12-19T06:00:42.157Z",
+        "spotify_id": "6HaGTQPmzraVmaVxvz6EUc",
+        "name": "Jung Kook",
+        "popularity": 82,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb40a7268dd742e5f63759b960"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 369,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.161Z",
+        "updated_at": "2025-12-19T06:00:42.161Z",
+        "spotify_id": "4utLUGcTvOJFr6aqIJtYWV",
+        "name": "Skylar Grey",
+        "popularity": 68,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbda75fc11992425816d51e3c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 370,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.164Z",
+        "updated_at": "2025-12-19T06:00:42.164Z",
+        "spotify_id": "6w8vEVxqF3ilGHbjTWgTKI",
+        "name": "the orchard",
+        "popularity": 30,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe4547554bdbaac353abc2027"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 371,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.168Z",
+        "updated_at": "2025-12-19T06:00:42.168Z",
+        "spotify_id": "6udveWUgX4vu75FF0DTrXV",
+        "name": "TAEYANG",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb496189630cd3cb0c7b593fee"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 372,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.169Z",
+        "updated_at": "2025-12-19T06:00:42.169Z",
+        "spotify_id": "3ipn9JLAPI5GUEo4y4jcoi",
+        "name": "Ludacris",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb870a5c56dd011578e5e74f85"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 373,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.169Z",
+        "updated_at": "2025-12-19T06:00:42.169Z",
+        "spotify_id": "20K5puLWHL28ckI4LjieDt",
+        "name": "KIM BUMSOO",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab67616d0000b27315c2540717444c37b24ea978"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 374,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.169Z",
+        "updated_at": "2025-12-19T06:00:42.169Z",
+        "spotify_id": "0LOK81e9H5lr61HlGGHqwA",
+        "name": "XG",
+        "popularity": 71,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd4a49e97ee6baeee9a8c8341"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 375,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.169Z",
+        "updated_at": "2025-12-19T06:00:42.169Z",
+        "spotify_id": "1RyvyyTE3xzB2ZywiAwp0i",
+        "name": "Future",
+        "popularity": 91,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7565b356bc9d9394eefa2ccb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 376,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.186Z",
+        "updated_at": "2025-12-19T06:00:42.186Z",
+        "spotify_id": "6VUdDU44uo3KwSHc9lAEFE",
+        "name": "The Clark Sisters",
+        "popularity": 45,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb089fc00c4bb2dd278f9a8041"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 377,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.189Z",
+        "updated_at": "2025-12-19T06:00:42.189Z",
+        "spotify_id": "7MNyflLAWpaH0EPw1fdORD",
+        "name": "Lena Park",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab67616d0000b2731e221eac30b657c9861989b5"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 378,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.192Z",
+        "updated_at": "2025-12-19T06:00:42.192Z",
+        "spotify_id": "0ffXbLm7KIcfu3M1ee0UkP",
+        "name": "Algebra Blessett",
+        "popularity": 30,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbae0aadd9f49aba8bc328fd3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 379,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.195Z",
+        "updated_at": "2025-12-19T06:00:42.195Z",
+        "spotify_id": "3KJXOvCbens3401TlXcsYh",
+        "name": "Browneyed Girls",
+        "popularity": 4,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 380,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.200Z",
+        "updated_at": "2025-12-19T06:00:42.200Z",
+        "spotify_id": "4ht1mwP4ouSu79jOOktCY3",
+        "name": "Fromm",
+        "popularity": 33,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb65081444559fba1abf207e1c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 381,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.203Z",
+        "updated_at": "2025-12-19T06:00:42.203Z",
+        "spotify_id": "5cM1PvItlR21WUyBnsdMcn",
+        "name": "Robert Glasper",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebeac91c1b242fe7aff48894f5"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 382,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.207Z",
+        "updated_at": "2025-12-19T06:00:42.207Z",
+        "spotify_id": "7t9GBnoezuCQxIIoMaE8KO",
+        "name": "Nochang",
+        "popularity": 33,
+        "image": "https://i.scdn.co/image/ab67616d0000b273122382bf192a018c488b6af3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 383,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.209Z",
+        "updated_at": "2025-12-19T06:00:42.209Z",
+        "spotify_id": "5MraexJKZDrQYzS98kNwie",
+        "name": "Sevdaliza",
+        "popularity": 70,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0086af40aaead26bd90c9b0a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 384,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.209Z",
+        "updated_at": "2025-12-19T06:00:42.209Z",
+        "spotify_id": "6RzEJR9Jz1DFFjZOVm8Xtg",
+        "name": "Muzie",
+        "popularity": 31,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe7ac48cac899065026c58870"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 385,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.209Z",
+        "updated_at": "2025-12-19T06:00:42.209Z",
+        "spotify_id": "0rIiNDJUesrgFPkYesJmKl",
+        "name": "Jinu",
+        "popularity": 72,
+        "image": "https://i.scdn.co/image/ab67616d0000b2737f0c699d4ed3d9c942ca6fdc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 386,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.209Z",
+        "updated_at": "2025-12-19T06:00:42.209Z",
+        "spotify_id": "0FMucZsEnCxs5pqBjHjIc8",
+        "name": "Stan Getz",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb45dd470659deedf47618968e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 387,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.225Z",
+        "updated_at": "2025-12-19T06:00:42.225Z",
+        "spotify_id": "6vbKIm1WsvhMMDpthYONc1",
+        "name": "Balming Tiger",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0d572a9f305a947823d4e0d6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 388,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.229Z",
+        "updated_at": "2025-12-19T06:00:42.229Z",
+        "spotify_id": "0jPDWsUr0XvGs5JcZChtto",
+        "name": "Paradise",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb49850b9843c5c88c2a10e577"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 389,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.232Z",
+        "updated_at": "2025-12-19T06:00:42.232Z",
+        "spotify_id": "6tjbcCaexKI8esvvEZPVnt",
+        "name": "Jiselle",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebddc0bbb23aa6d85710493b2b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 390,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.236Z",
+        "updated_at": "2025-12-19T06:00:42.236Z",
+        "spotify_id": "6PkSULcbxFKkxdgrmPGAvn",
+        "name": "Cécile McLorin Salvant",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb49212236490b008bf849071d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 391,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.239Z",
+        "updated_at": "2025-12-19T06:00:42.239Z",
+        "spotify_id": "24PJqH46WhB0pUB7NlsFna",
+        "name": "Knoc-Turn'al",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab67616d0000b2737146ff1edc9d2b755a34401b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 392,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.242Z",
+        "updated_at": "2025-12-19T06:00:42.242Z",
+        "spotify_id": "0ebNdVaOfp6N0oZ1guIxM8",
+        "name": "SUGA",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0fad315ccb6b38517152d2cc"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 393,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.246Z",
+        "updated_at": "2025-12-19T06:00:42.246Z",
+        "spotify_id": "7C0lSOS41UnTbnF7bMSEWN",
+        "name": "WOOGIE",
+        "popularity": 36,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe70125afbbed90ac3e9339ba"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 394,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.249Z",
+        "updated_at": "2025-12-19T06:00:42.249Z",
+        "spotify_id": "1MAUqH0haKBYbjpknTfreY",
+        "name": "PENOMECO",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb12740107b3c79348a79b1f41"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 395,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.249Z",
+        "updated_at": "2025-12-19T06:00:42.249Z",
+        "spotify_id": "3HqSLMAZ3g3d5poNaI7GOU",
+        "name": "IU",
+        "popularity": 69,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb789f38042e5ef8911fc3826b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 396,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.249Z",
+        "updated_at": "2025-12-19T06:00:42.249Z",
+        "spotify_id": "7hJcb9fa4alzcOq3EaNPoG",
+        "name": "Snoop Dogg",
+        "popularity": 83,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc19a88576ebe6fcbb325c297"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 397,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.249Z",
+        "updated_at": "2025-12-19T06:00:42.249Z",
+        "spotify_id": "6qHV34ZuWE31v0NihuQbWv",
+        "name": "Nikki Glaspie",
+        "popularity": 11,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 398,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.264Z",
+        "updated_at": "2025-12-19T06:00:42.264Z",
+        "spotify_id": "3Nrfpe0tUJi4K4DXYWgMUX",
+        "name": "BTS",
+        "popularity": 87,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 399,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.267Z",
+        "updated_at": "2025-12-19T06:00:42.267Z",
+        "spotify_id": "4z6yrDz5GfKXkeQZjOaZdq",
+        "name": "DAVICHI",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb40e9bd998a98de7a1c1ef354"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 400,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.271Z",
+        "updated_at": "2025-12-19T06:00:42.271Z",
+        "spotify_id": "6qWgiAQ4wmohJJy8spiHOX",
+        "name": "이성우",
+        "popularity": 28,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 401,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.544Z",
+        "updated_at": "2025-12-19T06:00:42.544Z",
+        "spotify_id": "2gsggkzM5R49q6jpPvazou",
+        "name": "Jessie J",
+        "popularity": 74,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb92b8a2548ec8c91bb5ef418e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 402,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.551Z",
+        "updated_at": "2025-12-19T06:00:42.551Z",
+        "spotify_id": "4saSwzwWZffYhoS1aFgncp",
+        "name": "Sweden Laundry",
+        "popularity": 35,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5db445088ec864d5041512e9"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 403,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.555Z",
+        "updated_at": "2025-12-19T06:00:42.555Z",
+        "spotify_id": "1Y3klzPXyHrinIk3tQ20Se",
+        "name": "NATTY",
+        "popularity": 36,
+        "image": "https://i.scdn.co/image/ab67616d0000b273697a771decff9e23fe41159b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 404,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.556Z",
+        "updated_at": "2025-12-19T06:00:42.556Z",
+        "spotify_id": "3b8QkneNDz4JHKKKlLgYZg",
+        "name": "Florida Georgia Line",
+        "popularity": 72,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebaa2d9bd207a62adc3edf6631"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 405,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.556Z",
+        "updated_at": "2025-12-19T06:00:42.556Z",
+        "spotify_id": "3q7HBObVc0L8jNeTe5Gofh",
+        "name": "50 Cent",
+        "popularity": 86,
+        "image": "https://i.scdn.co/image/dd031b9c5d1b6eba4a691cd89c954255aae787f2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 406,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.556Z",
+        "updated_at": "2025-12-19T06:00:42.556Z",
+        "spotify_id": "19y5MFBH7gohEdGwKM7QsP",
+        "name": "Luther Vandross",
+        "popularity": 67,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc609e4ef97e896a2b32b1473"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 407,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.556Z",
+        "updated_at": "2025-12-19T06:00:42.556Z",
+        "spotify_id": "5bXNU0MAF2HSqyFPhYtscH",
+        "name": "Neckwav",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbd3e862aa0dd980b2af914a2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 408,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.571Z",
+        "updated_at": "2025-12-19T06:00:42.571Z",
+        "spotify_id": "0qDZ7wym9Vg843lDKkzmoR",
+        "name": "Marcelo Zarvos",
+        "popularity": 58,
+        "image": "https://i.scdn.co/image/5f49eaf662b1edc77396a2cdbc549c864e89092e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 409,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.573Z",
+        "updated_at": "2025-12-19T06:00:42.573Z",
+        "spotify_id": "3Xt3RrJMFv5SZkCfUE8C1J",
+        "name": "Kim Petras",
+        "popularity": 71,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbfb79df787104f6b3363529f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 410,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.573Z",
+        "updated_at": "2025-12-19T06:00:42.573Z",
+        "spotify_id": "4pgbuGIiSAJXvW5TeXPkfn",
+        "name": "2Spade",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4930e74f1cc5dfe316eb22d3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 411,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.573Z",
+        "updated_at": "2025-12-19T06:00:42.573Z",
+        "spotify_id": "3uCDicSmenMBtsKb5A51dd",
+        "name": "Jeon Sang Keun",
+        "popularity": 43,
+        "image": "https://i.scdn.co/image/ab67616d0000b273be7ce582be61b21de531a628"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 412,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.586Z",
+        "updated_at": "2025-12-19T06:00:42.586Z",
+        "spotify_id": "78sJswwVn4P8aEhkF4K6fQ",
+        "name": "HYOLYN",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb98fe576c70f200cdd5eb3ebe"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 413,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.589Z",
+        "updated_at": "2025-12-19T06:00:42.589Z",
+        "spotify_id": "53B8dEQzmtefvkdCAkO0YR",
+        "name": "Krayzie Bone",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0bc1497c23c5612db272540b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 414,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.592Z",
+        "updated_at": "2025-12-19T06:00:42.592Z",
+        "spotify_id": "0QWrMNukfcVOmgEU0FEDyD",
+        "name": "Jacob Collier",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9cc73a463d6301a1bfc05c7f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 415,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.595Z",
+        "updated_at": "2025-12-19T06:00:42.595Z",
+        "spotify_id": "2wrxoZjEVKfJZhxCiqK0ju",
+        "name": "JayDon",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb434390637be142925be488a2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 416,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.599Z",
+        "updated_at": "2025-12-19T06:00:42.599Z",
+        "spotify_id": "6S2OmqARrzebs0tKUEyXyp",
+        "name": "Demi Lovato",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb42d7061876b87861d7c8f3fb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 417,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.602Z",
+        "updated_at": "2025-12-19T06:00:42.602Z",
+        "spotify_id": "3VBZBLX807XsYkBcZqEGn4",
+        "name": "Fisherman",
+        "popularity": 27,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebca0eaf6bc36cfa08e09c7619"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 418,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.605Z",
+        "updated_at": "2025-12-19T06:00:42.605Z",
+        "spotify_id": "0VRj0yCOv2FXJNP47XQnx5",
+        "name": "Quavo",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd52229f479361a2375f6021c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 419,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.608Z",
+        "updated_at": "2025-12-19T06:00:42.608Z",
+        "spotify_id": "6DPYiyq5kWVQS4RGwxzPC7",
+        "name": "Dr. Dre",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/83d2489cade1dadcdc533ddbcd74993d0ca6d4cb"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 420,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.609Z",
+        "updated_at": "2025-12-19T06:00:42.609Z",
+        "spotify_id": "4QDcs3XrA8uHUZ7Xt9Ytep",
+        "name": "Primary",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab67616d0000b27330b6adc29d752c16f25ff834"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 421,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.609Z",
+        "updated_at": "2025-12-19T06:00:42.609Z",
+        "spotify_id": "23kP8xlQifcAV4nd84iHbW",
+        "name": "Trey Lorenz",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb22f01012a18b93c238c5a360"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 422,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.609Z",
+        "updated_at": "2025-12-19T06:00:42.609Z",
+        "spotify_id": "3pO5VjZ4wOHCMBXOvbMISG",
+        "name": "Antônio Carlos Jobim",
+        "popularity": 69,
+        "image": "https://i.scdn.co/image/25438d99922a46a53792e1496b31159ad386806a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 423,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.609Z",
+        "updated_at": "2025-12-19T06:00:42.609Z",
+        "spotify_id": "7F1ImAAHo2wJLDG6Hd5aR7",
+        "name": "Kan Miyeon",
+        "popularity": 4,
+        "image": null
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 424,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.626Z",
+        "updated_at": "2025-12-19T06:00:42.626Z",
+        "spotify_id": "2tIP7SsRs7vjIcLrU85W8J",
+        "name": "The Kid LAROI",
+        "popularity": 81,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb47a63ec071646765439ba93a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 425,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.630Z",
+        "updated_at": "2025-12-19T06:00:42.630Z",
+        "spotify_id": "7bXgB6jMjp9ATFy66eO08Z",
+        "name": "Chris Brown",
+        "popularity": 90,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb01513fbafb66a3ca4f28b299"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 426,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.634Z",
+        "updated_at": "2025-12-19T06:00:42.634Z",
+        "spotify_id": "7fB8Qn00ToFmUY3mAJJSki",
+        "name": "JD1",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb19eb85f7f0d3dae105f2195c"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 427,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.637Z",
+        "updated_at": "2025-12-19T06:00:42.637Z",
+        "spotify_id": "5ncBRFyyylFng7kQJaRXN0",
+        "name": "Wynton Kelly",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6772690000c46c3e4281451053e424f60f73af"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 428,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.640Z",
+        "updated_at": "2025-12-19T06:00:42.640Z",
+        "spotify_id": "4obzFoKoKRHIphyHzJ35G3",
+        "name": "Becky G",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb1b7aaeedafb29af4c513ebd3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 429,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.643Z",
+        "updated_at": "2025-12-19T06:00:42.643Z",
+        "spotify_id": "20wkVLutqVOYrc0kxFs7rA",
+        "name": "Daniel Caesar",
+        "popularity": 88,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe4d94f7cbebb17504c25d419"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 430,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.647Z",
+        "updated_at": "2025-12-19T06:00:42.647Z",
+        "spotify_id": "1z4g3DjTBBZKhvAroFlhOM",
+        "name": "Red Velvet",
+        "popularity": 69,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb02a562ea6b1dc718394010ac"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 431,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.650Z",
+        "updated_at": "2025-12-19T06:00:42.650Z",
+        "spotify_id": "6XpaIBNiVzIetEPCWDvAFP",
+        "name": "Whitney Houston",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcd9f60ab57585bf3b77ecc51"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 432,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.654Z",
+        "updated_at": "2025-12-19T06:00:42.654Z",
+        "spotify_id": "6nfYGe7IIuuP5bMY1jkJP6",
+        "name": "Jermaine Dupri",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6d9a4c00e18fd89e7dc81efa"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 433,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.658Z",
+        "updated_at": "2025-12-19T06:00:42.658Z",
+        "spotify_id": "3nvehGmSWu2jlnWSC2EacH",
+        "name": "Suki",
+        "popularity": 19,
+        "image": "https://i.scdn.co/image/ab67616d0000b273e6ba3196dcaed09c977455da"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 434,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.661Z",
+        "updated_at": "2025-12-19T06:00:42.661Z",
+        "spotify_id": "4wVcCedmr7FHtUlFnIeJIG",
+        "name": "Youjeen",
+        "popularity": 65,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbfca71642060abd2c8bffa79"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 435,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.665Z",
+        "updated_at": "2025-12-19T06:00:42.665Z",
+        "spotify_id": "6dhfy4ByARPJdPtMyrUYJK",
+        "name": "Yerin Baek",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb36fb1d2c40997cd05363de1f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 436,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.668Z",
+        "updated_at": "2025-12-19T06:00:42.668Z",
+        "spotify_id": "7tjVFCxJdwT4NdrTmjyjQ6",
+        "name": "Muni Long",
+        "popularity": 68,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb37c11c7e11e87dd22bdc65a4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 437,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.671Z",
+        "updated_at": "2025-12-19T06:00:42.671Z",
+        "spotify_id": "5v74mT11KGJqadf9sLw4dA",
+        "name": "Cannonball Adderley",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/c9ac5f2db563d4c6635882e09ab6373b871a7c7a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 438,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.674Z",
+        "updated_at": "2025-12-19T06:00:42.674Z",
+        "spotify_id": "19k8AgwwTSxeaxkOuCQEJs",
+        "name": "Jelly Roll",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb27901c1c025fa90f5dc007ef"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 439,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.676Z",
+        "updated_at": "2025-12-19T06:00:42.676Z",
+        "spotify_id": "7bPplWv4cZ1q26UY2Wmcvw",
+        "name": "DPR CREAM",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb014c6da2bc77b9937ea40c32"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 440,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.676Z",
+        "updated_at": "2025-12-19T06:00:42.676Z",
+        "spotify_id": "1DKIdDHKHi3rIwG4UB5zLE",
+        "name": "DON MALIK",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc3fedb8f8b34467a49177ec7"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 441,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.676Z",
+        "updated_at": "2025-12-19T06:00:42.676Z",
+        "spotify_id": "61NK0rswbwo8TU9cUg25J3",
+        "name": "Studio Rio",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab67616d0000b2732eface417f9bd4b3436b1ee5"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 442,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.676Z",
+        "updated_at": "2025-12-19T06:00:42.676Z",
+        "spotify_id": "4MCBfE4596Uoi2O4DtmEMz",
+        "name": "Juice WRLD",
+        "popularity": 88,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb23a60030944f7853c21565ef"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 443,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.691Z",
+        "updated_at": "2025-12-19T06:00:42.691Z",
+        "spotify_id": "4YXNoMVTHRt01jYaKXTumJ",
+        "name": "Raiden",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe573c355eafdd7c8f16e68e1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 444,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.691Z",
+        "updated_at": "2025-12-19T06:00:42.691Z",
+        "spotify_id": "2nDC4PH8XE1gHeeAxVLXRO",
+        "name": "KATIE",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2ab395e03e800fcc54fafc24"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 445,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.696Z",
+        "updated_at": "2025-12-19T06:00:42.696Z",
+        "spotify_id": "7dGJo4pcD2V6oG8kP0tJRR",
+        "name": "Eminem",
+        "popularity": 91,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 446,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.696Z",
+        "updated_at": "2025-12-19T06:00:42.696Z",
+        "spotify_id": "58BWh3yJrluDugLv0QF0eC",
+        "name": "Lee So Ra",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab67616d0000b2737ae18c6f8287fa3066c0224b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 447,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.704Z",
+        "updated_at": "2025-12-19T06:00:42.704Z",
+        "spotify_id": "3hvinNZRzTLoREmqFiKr1b",
+        "name": "CHANGMO",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbb73111f9404833bd8df8816"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 448,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.708Z",
+        "updated_at": "2025-12-19T06:00:42.708Z",
+        "spotify_id": "6ZjFtWeHP9XN7FeKSUe80S",
+        "name": "Bing Crosby",
+        "popularity": 84,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc3cc7f45922b9adade39ef19"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 449,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.711Z",
+        "updated_at": "2025-12-19T06:00:42.711Z",
+        "spotify_id": "4RkTSLr5Qf79FfUkeaDKbl",
+        "name": "LEE CHANHYUK",
+        "popularity": 49,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb97d27171eb6333c189f0f59a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 450,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.714Z",
+        "updated_at": "2025-12-19T06:00:42.714Z",
+        "spotify_id": "5zkf2Na8DKKJmtWX5Xrx3m",
+        "name": "SUHO",
+        "popularity": 48,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebbf6694d9c49e63dbf3fbd1fd"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 451,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.917Z",
+        "updated_at": "2025-12-19T06:00:42.917Z",
+        "spotify_id": "0ZZtYIiyXvgRAKrTh6mCOd",
+        "name": "KENZIE",
+        "popularity": 29,
+        "image": "https://i.scdn.co/image/ab67616d0000b273764f05a8507a4012afbca027"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 452,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.929Z",
+        "updated_at": "2025-12-19T06:00:42.929Z",
+        "spotify_id": "1slszTGbkp1uNnI6G5uD0X",
+        "name": "BANG YEDAM",
+        "popularity": 46,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb66c3e4fa90021cb3de9f6071"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 453,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.929Z",
+        "updated_at": "2025-12-19T06:00:42.929Z",
+        "spotify_id": "4YCMBr9I1zesFyMMyoc4pX",
+        "name": "DUT2",
+        "popularity": 33,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebaebc9e61a85ac9423f4a0f35"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 454,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.929Z",
+        "updated_at": "2025-12-19T06:00:42.929Z",
+        "spotify_id": "6b29EYSqnLhUyxC3yyNbyr",
+        "name": "TRADE L",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4b40223171c12650602fbdae"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 455,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.929Z",
+        "updated_at": "2025-12-19T06:00:42.929Z",
+        "spotify_id": "6xlIFpRmRNDoVuFUqzuMFE",
+        "name": "NSW yoon",
+        "popularity": 34,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb63f5786f4bffd95dee2356f4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 456,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.944Z",
+        "updated_at": "2025-12-19T06:00:42.944Z",
+        "spotify_id": "4b7ZEkk5uXPlwX2IPuV7Q2",
+        "name": "IMLAY",
+        "popularity": 45,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb06cdec79db72b574e8c66dbf"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 457,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.947Z",
+        "updated_at": "2025-12-19T06:00:42.947Z",
+        "spotify_id": "5SVFuUaS3BKAdJs6I8rVa4",
+        "name": "Tim Bernardes",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd91deca571610be109e3f3db"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 458,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.951Z",
+        "updated_at": "2025-12-19T06:00:42.951Z",
+        "spotify_id": "540vIaP2JwjQb9dm3aArA4",
+        "name": "DJ Snake",
+        "popularity": 80,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7e57e2ed9b787ba5773b7cb9"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 459,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.954Z",
+        "updated_at": "2025-12-19T06:00:42.954Z",
+        "spotify_id": "4qRXrzUmdy3p33lgvJEzdv",
+        "name": "Paul Kim",
+        "popularity": 54,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb9aeb37f19398d3028ef58563"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 460,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.958Z",
+        "updated_at": "2025-12-19T06:00:42.958Z",
+        "spotify_id": "2DSE0PhxKUmTPLfZm13sup",
+        "name": "Rumi",
+        "popularity": 72,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6d3e66c13c41092e46da8f01"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 461,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.961Z",
+        "updated_at": "2025-12-19T06:00:42.961Z",
+        "spotify_id": "4iHNK0tOyZPYnBU7nGAgpQ",
+        "name": "Mariah Carey",
+        "popularity": 87,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd0a27777aaeb1725add6ace8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 462,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.965Z",
+        "updated_at": "2025-12-19T06:00:42.965Z",
+        "spotify_id": "5dlCVmfRbWVGOJYHzGyk32",
+        "name": "Benny Carter",
+        "popularity": 56,
+        "image": "https://i.scdn.co/image/ab67616d0000b273bb2fe5117d825292792d472e"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 463,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.968Z",
+        "updated_at": "2025-12-19T06:00:42.968Z",
+        "spotify_id": "4Ww5mwS7BWYjoZTUIrMHfC",
+        "name": "Charlie Parker",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5642427a0fb3988948c9bec4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 464,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.971Z",
+        "updated_at": "2025-12-19T06:00:42.971Z",
+        "spotify_id": "6zn0ihyAApAYV51zpXxdEp",
+        "name": "10CM",
+        "popularity": 62,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb2445af13cb1a8132388cd566"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 465,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.974Z",
+        "updated_at": "2025-12-19T06:00:42.974Z",
+        "spotify_id": "0MLC3CMOxIZNyc6GEXyLJI",
+        "name": "차지연",
+        "popularity": 3,
+        "image": "https://i.scdn.co/image/ab67616d0000b2733e7927c0978a5d57ac018fc6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 466,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.978Z",
+        "updated_at": "2025-12-19T06:00:42.978Z",
+        "spotify_id": "34tJ8UnaAbWcrug3Nym7ZO",
+        "name": "OZworld",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc880854a8fca902c4d5f33a1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 467,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.981Z",
+        "updated_at": "2025-12-19T06:00:42.981Z",
+        "spotify_id": "5se8HfkMw6SGJEqC5BhEZV",
+        "name": "Kim Ji Soo",
+        "popularity": 27,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4e927da241f5227b1683b3f6"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 468,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.985Z",
+        "updated_at": "2025-12-19T06:00:42.985Z",
+        "spotify_id": "0UEP2XBR9aC5NBKcAKnBIq",
+        "name": "CHEN",
+        "popularity": 57,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb267c4a3f9807be1f11197722"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 469,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.988Z",
+        "updated_at": "2025-12-19T06:00:42.988Z",
+        "spotify_id": "6l40OFJhuTbHQ9V12evc9K",
+        "name": "Gerry Mulligan",
+        "popularity": 47,
+        "image": "https://i.scdn.co/image/218add4b080f3731b5448403eba9b676d5bf992b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 470,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.991Z",
+        "updated_at": "2025-12-19T06:00:42.991Z",
+        "spotify_id": "3aM9H4QBnPUo6mnNVufAtN",
+        "name": "Bob Brookmeyer",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab288ca3e103b1344e5e99b6ea1fdb87be10d02a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 471,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.995Z",
+        "updated_at": "2025-12-19T06:00:42.995Z",
+        "spotify_id": "2qoQgPAilErOKCwE2Y8wOG",
+        "name": "GloRilla",
+        "popularity": 78,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebc33cf3ad025517202d8efbc0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 472,
+    "fields": {
+        "created_at": "2025-12-19T06:00:42.998Z",
+        "updated_at": "2025-12-19T06:00:42.998Z",
+        "spotify_id": "1NXSMPrdftOB0I4LeSkwjz",
+        "name": "Ganavya",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba798e3bd28206e1f65cb86ed"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 473,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.002Z",
+        "updated_at": "2025-12-19T06:00:43.002Z",
+        "spotify_id": "2mpeljBig2IXLXRAFO9AAs",
+        "name": "Dido",
+        "popularity": 75,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebf36e7b59cdaa0df8bee8e63f"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 474,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.005Z",
+        "updated_at": "2025-12-19T06:00:43.005Z",
+        "spotify_id": "1YfEcTuGvBQ8xSD1f53UnK",
+        "name": "Busta Rhymes",
+        "popularity": 73,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb7b31aba081ef084510cde4e3"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 475,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.008Z",
+        "updated_at": "2025-12-19T06:00:43.008Z",
+        "spotify_id": "3eCd0TZrBPm2n9cDG6yWfF",
+        "name": "DEAN",
+        "popularity": 62,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0380068b5097515265c51f4b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 476,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.012Z",
+        "updated_at": "2025-12-19T06:00:43.012Z",
+        "spotify_id": "1l1AlGBju8wtmnzAa9hRtE",
+        "name": "TEAM BOSS",
+        "popularity": 15,
+        "image": "https://i.scdn.co/image/ab67616d0000b273a3c85f5306bbe4ddb815e536"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 477,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.015Z",
+        "updated_at": "2025-12-19T06:00:43.015Z",
+        "spotify_id": "7n2Ycct7Beij7Dj7meI4X0",
+        "name": "TWICE",
+        "popularity": 84,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 478,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.020Z",
+        "updated_at": "2025-12-19T06:00:43.020Z",
+        "spotify_id": "5QeXARPcuiXETSB2iPhaup",
+        "name": "Ali",
+        "popularity": 2,
+        "image": "https://i.scdn.co/image/ab67616d0000b273e60eb6027c26da2615e92e24"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 479,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.023Z",
+        "updated_at": "2025-12-19T06:00:43.023Z",
+        "spotify_id": "4CYjITN8Au3K5CWFeex7fU",
+        "name": "Tabber",
+        "popularity": 51,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebd899ddeed6b9c1e4428ee81b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 480,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.026Z",
+        "updated_at": "2025-12-19T06:00:43.026Z",
+        "spotify_id": "10hnt5byoob9FKHUN8Awfa",
+        "name": "YOO YOUNG JIN",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab67616d0000b2731351dc0ae74714785aac7dde"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 481,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.039Z",
+        "updated_at": "2025-12-19T06:00:43.039Z",
+        "spotify_id": "0js3wKXyi7RL11sfOykRt1",
+        "name": "dj friz",
+        "popularity": 53,
+        "image": "https://i.scdn.co/image/ab67616d0000b27357354d0cf206b5e890a45b15"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 482,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.042Z",
+        "updated_at": "2025-12-19T06:00:43.042Z",
+        "spotify_id": "682SntJ7VKoFfssPfDAmDZ",
+        "name": "Flava D",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe1bde5b9aa77d2aaae45e997"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 483,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.046Z",
+        "updated_at": "2025-12-19T06:00:43.046Z",
+        "spotify_id": "3EA9hVIzKfFiQI0Kikz2wo",
+        "name": "Andrea Bocelli",
+        "popularity": 74,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebfb101ed2a035fcfa2bd6fee1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 484,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.050Z",
+        "updated_at": "2025-12-19T06:00:43.050Z",
+        "spotify_id": "7xwlN7fhoOwNgDmRTwYZOa",
+        "name": "Kenny Clarke",
+        "popularity": 33,
+        "image": "https://i.scdn.co/image/ab67616d0000b27323cb2bc11815bbb4735587b0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 485,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.053Z",
+        "updated_at": "2025-12-19T06:00:43.053Z",
+        "spotify_id": "4TaSvnT5o4REFwhqfrmK27",
+        "name": "imase",
+        "popularity": 63,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb3d2c025c71d75a0ba89718ed"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 486,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.056Z",
+        "updated_at": "2025-12-19T06:00:43.056Z",
+        "spotify_id": "63cvWayCvPbWYNDi537w0z",
+        "name": "DINDIN",
+        "popularity": 35,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5a1ddf7b5af3cd44f88dd479"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 487,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.059Z",
+        "updated_at": "2025-12-19T06:00:43.059Z",
+        "spotify_id": "0Ch0t9gI47Lkal71uQnmV3",
+        "name": "JUSTHIS",
+        "popularity": 52,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb49660015d7968cfbe6fbd1b1"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 488,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.063Z",
+        "updated_at": "2025-12-19T06:00:43.063Z",
+        "spotify_id": "5V8q61RswIFvxhIfzYVew9",
+        "name": "Reese Witherspoon",
+        "popularity": 55,
+        "image": "https://i.scdn.co/image/ab67616d0000b273c37e16a96851f59e42bd684b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 489,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.067Z",
+        "updated_at": "2025-12-19T06:00:43.067Z",
+        "spotify_id": "6l8D5mZvv6wusxpawsw1t6",
+        "name": "Harikiri",
+        "popularity": 35,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb8c219a4e1a0967c1435fcfe2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 490,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.070Z",
+        "updated_at": "2025-12-19T06:00:43.070Z",
+        "spotify_id": "0u06YeydlBk3awnk5KgdBx",
+        "name": "Chancellor",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba824d25fe9f1d31ecad8a197"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 491,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.074Z",
+        "updated_at": "2025-12-19T06:00:43.074Z",
+        "spotify_id": "49cCO8Hy5heGnXj9hb6KEW",
+        "name": "Gwangil Jo",
+        "popularity": 39,
+        "image": "https://i.scdn.co/image/ab67616d0000b27387f63a56692ec5994177be5b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 492,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.075Z",
+        "updated_at": "2025-12-19T06:00:43.075Z",
+        "spotify_id": "4k5fFEYgkWYrYvtOK3zVBl",
+        "name": "BOL4",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb4a970fe13b80298b5621d657"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 493,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.075Z",
+        "updated_at": "2025-12-19T06:00:43.075Z",
+        "spotify_id": "5SyCTZ8X8YQCI0J1VRp4iC",
+        "name": "Phonte",
+        "popularity": 44,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebb9ed3a2176781bc9e4a60a24"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 494,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.075Z",
+        "updated_at": "2025-12-19T06:00:43.075Z",
+        "spotify_id": "4FS6bomikvJR2E9JHNwiAM",
+        "name": "RayRay",
+        "popularity": 41,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb80859a3f55aceba751ee520a"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 495,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.075Z",
+        "updated_at": "2025-12-19T06:00:43.075Z",
+        "spotify_id": "5C01hDqpEmrmDfUhX9YWsH",
+        "name": "FIFA Sound",
+        "popularity": 59,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe756a8b666e63d90abf174c8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 496,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.091Z",
+        "updated_at": "2025-12-19T06:00:43.091Z",
+        "spotify_id": "6U3ybJ9UHNKEdsH7ktGBZ7",
+        "name": "JID",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb02e4e47e711e07e363ecc6e0"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 497,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.093Z",
+        "updated_at": "2025-12-19T06:00:43.093Z",
+        "spotify_id": "1YzCsTRb22dQkh9lghPIrp",
+        "name": "Billie Holiday",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/4efa6b6871a0f672b78b3d16fd5a03c6cd212d58"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 498,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.097Z",
+        "updated_at": "2025-12-19T06:00:43.097Z",
+        "spotify_id": "6IeQ8QiuP3yQ2MGCsSuIFQ",
+        "name": "DPR ARTIC",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb59a359f8363463decfdb1dc8"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 499,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.097Z",
+        "updated_at": "2025-12-19T06:00:43.097Z",
+        "spotify_id": "6JL8zeS1NmiOftqZTRgdTz",
+        "name": "Meghan Trainor",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb240d44db603d49305d3d7b56"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 500,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.105Z",
+        "updated_at": "2025-12-19T06:00:43.105Z",
+        "spotify_id": "46SHBwWsqBkxI7EeeBEQG7",
+        "name": "Kodak Black",
+        "popularity": 82,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb98f80af7d47ac0d17d10d989"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 501,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.228Z",
+        "updated_at": "2025-12-19T06:00:43.228Z",
+        "spotify_id": "3zTOe1BtyTkwNvYZOxXktX",
+        "name": "Joe",
+        "popularity": 66,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb56910dd36ced0f6f3fbecacd"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 502,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.235Z",
+        "updated_at": "2025-12-19T06:00:43.235Z",
+        "spotify_id": "3ZotbHeyVQKxQCPDJuQ4SU",
+        "name": "Q-Tip",
+        "popularity": 61,
+        "image": "https://i.scdn.co/image/de7804e485499fb93165fb84bb6d655232c561e2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 503,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.240Z",
+        "updated_at": "2025-12-19T06:00:43.240Z",
+        "spotify_id": "55Aa2cqylxrFIXC767Z865",
+        "name": "Lil Wayne",
+        "popularity": 88,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb998010cd1075921b5faf16b2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 504,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.243Z",
+        "updated_at": "2025-12-19T06:00:43.243Z",
+        "spotify_id": "6k4r73Wq8nhkCDoUsECL1e",
+        "name": "MeloMance",
+        "popularity": 62,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba0e601a6151cf62e4ff2ced2"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 505,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.247Z",
+        "updated_at": "2025-12-19T06:00:43.247Z",
+        "spotify_id": "7EwMRcLv8TJpfEsGDc5JwJ",
+        "name": "Mount XLR",
+        "popularity": 26,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb28658adc4611565e9a4c2175"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 506,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.249Z",
+        "updated_at": "2025-12-19T06:00:43.249Z",
+        "spotify_id": "6U1dV7aL68N7Gb0Naq34V5",
+        "name": "REI AMI",
+        "popularity": 86,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebeb39ded0900c3e50e3d7ba68"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 507,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.249Z",
+        "updated_at": "2025-12-19T06:00:43.249Z",
+        "spotify_id": "6YVMFz59CuY7ngCxTxjpxE",
+        "name": "aespa",
+        "popularity": 79,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb18d4cb767d2dfe5f4b28ba07"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 508,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.249Z",
+        "updated_at": "2025-12-19T06:00:43.249Z",
+        "spotify_id": "2067CjQ2nC56cRZX8goeHg",
+        "name": "nævis",
+        "popularity": 40,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebcf826ca3eb17edf7a12f0338"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 509,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.249Z",
+        "updated_at": "2025-12-19T06:00:43.249Z",
+        "spotify_id": "7pFeBzX627ff0VnN6bxPR4",
+        "name": "Desiigner",
+        "popularity": 60,
+        "image": "https://i.scdn.co/image/ab6761610000e5eba2db76c97f9d0f0e60667230"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 510,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.264Z",
+        "updated_at": "2025-12-19T06:00:43.264Z",
+        "spotify_id": "2mlKlEmxOO3vb6DqopDh4H",
+        "name": "Sonny Rollins Quartet",
+        "popularity": 32,
+        "image": "https://i.scdn.co/image/ab67616d0000b273ff8accdb8cda91be8be3ee10"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 511,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.267Z",
+        "updated_at": "2025-12-19T06:00:43.267Z",
+        "spotify_id": "7JBaynR7JFeniONqbnn1U4",
+        "name": "Andrew Choi",
+        "popularity": 81,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb63fd1d24444e5ef6865c670d"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 512,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.270Z",
+        "updated_at": "2025-12-19T06:00:43.270Z",
+        "spotify_id": "6iLGJqxVgxxWsJe5bW4dxt",
+        "name": "Woodie Gochild",
+        "popularity": 42,
+        "image": "https://i.scdn.co/image/ab67616d0000b273f4bce6aba1d33c8fc2bdf17b"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 513,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.274Z",
+        "updated_at": "2025-12-19T06:00:43.274Z",
+        "spotify_id": "4I13kBfOo5vI4LT8oNE0Fy",
+        "name": "Sagong",
+        "popularity": 26,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6e0c74501424d3b6191631e4"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 514,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.277Z",
+        "updated_at": "2025-12-19T06:00:43.277Z",
+        "spotify_id": "0ErzCpIMyLcjPiwT4elrtZ",
+        "name": "NLE Choppa",
+        "popularity": 76,
+        "image": "https://i.scdn.co/image/ab6761610000e5ebe2c985e8509fc8788a5a5208"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 515,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.280Z",
+        "updated_at": "2025-12-19T06:00:43.280Z",
+        "spotify_id": "2e4G04F77jxVuDYo44TCSm",
+        "name": "Loco",
+        "popularity": 64,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5e7434d5fdfde7dbc146eb10"
+    }
+},
+{
+    "model": "musics.artist",
+    "pk": 516,
+    "fields": {
+        "created_at": "2025-12-19T06:00:43.284Z",
+        "updated_at": "2025-12-19T06:00:43.284Z",
+        "spotify_id": "0IznZPMUyaPGdqfP4oqBja",
+        "name": "Coogie",
+        "popularity": 49,
+        "image": "https://i.scdn.co/image/ab6761610000e5eb5c8fe4d8c72bbd833ceaf202"
+    }
+}
+]

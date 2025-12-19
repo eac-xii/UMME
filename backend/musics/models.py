@@ -64,6 +64,7 @@ class Track(TimeStampedModel, models.Model):
         blank=True
     )
     release_date = models.DateField(null=True, blank=True)
+    duration_ms = models.PositiveIntegerField()
 
     class Meta:
         ordering = ['-popularity']
