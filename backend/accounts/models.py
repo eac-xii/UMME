@@ -103,6 +103,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 class SpotifyAccount(models.Model):
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
+        primary_key=True,
         on_delete=models.CASCADE,
         related_name="spotify"
     )
@@ -142,6 +143,7 @@ class Follow(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
+        primary_key=True,
         on_delete=models.CASCADE,
         related_name="profile"
     )
