@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <h1>Thread Create</h1>
   </div>
 </template>
 
