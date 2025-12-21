@@ -15,14 +15,12 @@
         </li>
         <li class="nav-item">
           <RouterLink class="nav-link" active-class="active" :to="{ name: 'thread-create' }">
-            <!-- <i class="bi bi-pencil-square px-3"></i> -->
             <PhNotePencil size="20" weight="regular" class="mx-3"/> 
             <span>{{ collapsed ? '' : threadText }}</span>
           </RouterLink>
         </li>
         <li class="nav-item">
           <RouterLink class="nav-link" active-class="active" :to="{ name: 'messenger' }">
-            <!-- <i class="bi bi-envelope px-3"></i>  -->
             <PhMessengerLogo size="20" weight="regular" class="mx-3"/>
             {{ collapsed ? '' : messengerText }}
           </RouterLink>
@@ -36,15 +34,16 @@
           <i class="bi bi-search"></i>
         </div>
 
-        <div class="profileBtn d-flex justify-content-center align-items-center ms-auto">
+        <RouterLink :to="{ name: 'profile'}" class="profileBtn d-flex justify-content-center align-items-center ms-auto text-decoration-none">
           <span>Y</span>
-        </div>
+        </RouterLink>
       </header>
       <RouterView />
     </main>
   </div>
 
   <div class="SDK position-fixed bottom-0 start-0">
+    <SDKPlayer v-if="account.user?.is_spotify"/>
   </div>
 
 </template>
@@ -53,6 +52,10 @@
 import { RouterLink, RouterView } from 'vue-router';
 import { ref } from 'vue'
 import { PhHouse, PhNotePencil, PhMessengerLogo, PhCow } from '@phosphor-icons/vue'
+import SDKPlayer from '@/components/SDKPlayer.vue'
+import { useAccountStore } from '@/stores/accounts'
+
+const account = useAccountStore()
 
 const collapsed = ref(false)
 const homeText = ref('Home')

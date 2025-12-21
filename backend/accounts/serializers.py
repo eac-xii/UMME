@@ -1,5 +1,5 @@
 from dj_rest_auth.registration.serializers import RegisterSerializer
-from dj_rest_auth.serializers import LoginSerializer
+from dj_rest_auth.serializers import LoginSerializer, UserDetailsSerializer
 from rest_framework import serializers
 from django.contrib.auth import get_user_model, authenticate
 
@@ -45,3 +45,12 @@ class CustomLoginSerializer(LoginSerializer):
 
         attrs['user'] = user
         return attrs
+
+class CustomUserDetailsSerializer(UserDetailsSerializer):
+    is_spotify = serializers.SerializerMethodField()
+
+    class Meta(UserDetailsSerializer.Meta):
+        fields = UserDetailsSerializer.Meta.fields + ("is_spotify",)
+
+    def get_is_spotify(self, user):
+        return hasattr(user, "spotify")

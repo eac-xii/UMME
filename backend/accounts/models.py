@@ -61,7 +61,6 @@ class User(AbstractBaseUser, PermissionsMixin):
         auto_now_add=True
     )
 
-    is_spotify = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
