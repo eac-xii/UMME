@@ -1,8 +1,7 @@
-* {
+html, body, #app {
     background-color: black;
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+    font-family: 'Neue Helvetica', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
+    color: #aaa;
 }
