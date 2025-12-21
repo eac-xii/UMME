@@ -51,17 +51,6 @@ class UserCreationForm(forms.ModelForm):
         )
     )
 
-    nickname = forms.CharField(
-        label="Nickname",
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                "class": "form-control",
-                "placeholder": "Nickname",
-                "required": "True"
-            }
-        )
-    )
     password1 = forms.CharField(
         label="Password",
         widget=forms.PasswordInput(
@@ -85,7 +74,7 @@ class UserCreationForm(forms.ModelForm):
 
     class Meta:
         model = get_user_model()
-        fields = ("email", "last_name", "first_name", "nickname")
+        fields = ("email", "last_name", "first_name")
     
     def clean_password2(self):
         password1 = self.cleaned_data.get("password1")
@@ -101,7 +90,6 @@ class UserCreationForm(forms.ModelForm):
             email=self.cleaned_data["email"],
             last_name=self.cleaned_data["last_name"],
             first_name=self.cleaned_data["first_name"],
-            nickname=self.cleaned_data["nickname"],
             password=self.cleaned_data["password1"]
         )
 

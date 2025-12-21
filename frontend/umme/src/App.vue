@@ -15,14 +15,12 @@
         </li>
         <li class="nav-item">
           <RouterLink class="nav-link" active-class="active" :to="{ name: 'thread' }">
-            <!-- <i class="bi bi-pencil-square px-3"></i> -->
             <PhNotePencil size="20" weight="regular" class="mx-3"/> 
             <span>{{ collapsed ? '' : threadText }}</span>
           </RouterLink>
         </li>
         <li class="nav-item">
           <RouterLink class="nav-link" active-class="active" :to="{ name: 'messenger' }">
-            <!-- <i class="bi bi-envelope px-3"></i>  -->
             <PhMessengerLogo size="20" weight="regular" class="mx-3"/>
             {{ collapsed ? '' : messengerText }}
           </RouterLink>
@@ -36,9 +34,9 @@
           <i class="bi bi-search"></i>
         </div>
 
-        <div class="profileBtn d-flex justify-content-center align-items-center ms-auto">
+        <RouterLink :to="{ name: 'profile'}" class="profileBtn d-flex justify-content-center align-items-center ms-auto text-decoration-none">
           <span>Y</span>
-        </div>
+        </RouterLink>
       </header>
       <RouterView />
     </main>

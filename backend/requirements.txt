@@ -11,6 +11,7 @@ Django==5.2.9
 django-allauth==64.0.0
 django-cors-headers==4.9.0
 djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
 executing==2.2.1
 idna==3.11
 ipython==9.8.0

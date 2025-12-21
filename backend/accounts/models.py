@@ -13,41 +13,21 @@ float_scope_validator = [
 ]
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, username, last_name, first_name, nickname, password=None):
+    def create_user(self, email, password=None, **extra_fields):
         if not email:
-            raise ValueError("Users must have an email address")
+            raise ValueError("Email is required")
 
-        user = self.model(
-            email=self.normalize_email(email),
-            username=username,
-            last_name=last_name,
-            first_name=first_name,
-            nickname=nickname,
-        )
-
-        user.is_spotify = False
+        email = self.normalize_email(email)
+        user = self.model(email=email, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, last_name, first_name, nickname, password=None):
-        """
-        Creates and saves a superuser with the given email, date of
-        birth and password.
-        """
-        user = self.create_user(
-            email,
-            username=username,
-            last_name=last_name,
-            first_name=first_name,
-            nickname=nickname,
-            password=password,
-        )
-        
-        user.is_staff = True
-        user.is_superuser = True
-        user.save(using=self._db)
-        return user
+    def create_superuser(self, email, password=None, **extra_fields):
+        extra_fields.setdefault('is_staff', True)
+        extra_fields.setdefault('is_superuser', True)
+        return self.create_user(email, password, **extra_fields)
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(
@@ -65,19 +45,15 @@ class User(AbstractBaseUser, PermissionsMixin):
     last_name = models.CharField(
         verbose_name="Last Name",
         max_length=30,
-        unique=False
+        unique=False,
+        blank=False
     )
 
     first_name = models.CharField(
         verbose_name="First Name",
         max_length=30,
-        unique=False
-    )
-
-    nickname = models.CharField(
-        verbose_name="Nickname",
-        max_length=30,
-        unique=True
+        unique=False,
+        blank=False
     )
 
     created_at = models.DateTimeField(
@@ -92,7 +68,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["nickname", "last_name", "first_name"]
+    REQUIRED_FIELDS = ["last_name", "first_name"]
 
     class Meta:
         ordering = ("-created_at",)
@@ -147,6 +123,7 @@ class Profile(models.Model):
         on_delete=models.CASCADE,
         related_name="profile"
     )
+
     content = models.CharField(max_length=255, blank=True)
 
     def profile_image_path(instance, filename):
