@@ -168,3 +168,45 @@ def spotify_play(request):
     )
 
     return Response(status=204)
+
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
+auth_manager = SpotifyClientCredentials(
+    client_id=client_id,
+    client_secret=client_secret
+)
+spcc = spotipy.Spotify(auth_manager=auth_manager)
+
+from rapidfuzz import fuzz
+from pprint import pprint
+@api_view(["GET"])
+def spotify_search(request):
+    if request.method == "GET":
+        query = request.GET["query"]
+        response = spcc.search(query, limit=5, offset=0, type='artist,track', market=None)
+        artists = response["artists"]["items"]
+        tracks = response["tracks"]["items"]
+
+        combined_results = []
+
+        for artist in artists:
+            similarity = fuzz.partial_ratio(query, artist["name"])
+            score = similarity * 1.15 + artist["popularity"] * 1.05
+            combined_results.append({
+                'type': 'artist',
+                'data': artist,
+                'score': score
+            })
+
+        for track in tracks:
+            similarity = fuzz.partial_ratio(query, track["name"])
+            score = similarity * 1.0 + track["popularity"] * 1.2
+            combined_results.append({
+                'type': 'track',
+                'data': track,
+                'score': score
+            })
+
+        sorted_results = sorted(combined_results, key=lambda x: x['score'], reverse=True)
+    return Response(sorted_results)
