@@ -7,6 +7,7 @@ import ThreadCreateView from '@/views/ThreadCreateView.vue'
 import ThreadDetailView from '@/views/ThreadDetailView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAccountStore } from '@/stores/accounts'
+import { useToolStore } from '@/stores/tools'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,9 +57,14 @@ const router = createRouter({
 
 router.beforeEach(async (to) => {
     const account = useAccountStore()
+    const tool = useToolStore()
 
     if (!account.checked || !account.user?.is_spotify) {
        await account.checkAuth()
+    }
+    
+    if (account.isAuthenticated && account.user.is_spotify) {
+      await tool.getPlaylistItems()
     }
 
     if ((to.name === 'login' || to.name === 'signup') && account.isAuthenticated) {
