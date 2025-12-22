@@ -17,6 +17,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
+from .models import Playlist
+
 User = get_user_model()
 
 #region Token Handlers
@@ -109,6 +111,12 @@ def spotify_callback(request):
         }
     )
 
+    playlist, _ = Playlist.objects.get_or_create(
+        user=user,
+        name=f"{user.username}'s Playlist",
+        is_public=True
+    )
+
     return redirect("http://localhost:5173/")
 
 @api_view(["GET"])
@@ -183,7 +191,7 @@ from pprint import pprint
 @api_view(["GET"])
 def spotify_search(request):
     if request.method == "GET":
-        query = request.GET["query"]
+        query = request.GET.get("query")
         response = spcc.search(query, limit=5, offset=0, type='artist,track', market=None)
         artists = response["artists"]["items"]
         tracks = response["tracks"]["items"]
@@ -210,3 +218,110 @@ def spotify_search(request):
 
         sorted_results = sorted(combined_results, key=lambda x: x['score'], reverse=True)
     return Response(sorted_results)
+
+@api_view(["GET"])
+def spotify_search_artist_tracks(request):
+    if request.method == "GET":
+        artist_id = request.GET.get("artistId")
+        response = spcc.artist_top_tracks(artist_id=artist_id)
+        response = [{"data": track, "type": "track"} for track in response["tracks"]]
+        return Response(response)
+    
+
+from datetime import date
+from .models import Artist, Track, AudioFeatures, PlaylistTrack
+from django.db.models import Max
+reccobeats_base_url = "https://api.reccobeats.com/v1"
+
+def parse_spotify_release_date(date_str: str) -> date:
+    if not date_str:
+        return None
+    
+    if len(date_str) == 4:
+        return date(int(date_str), 1, 1)
+    elif len(date_str) == 7:
+        year, month = map(int, date_str.split("-"))
+        return date(year, month, 1)
+    else:
+        return date.fromisoformat(date_str)
+
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def add_track_to_playlist(request):
+    if request.method == "POST":
+        data = request.data["track"]
+        artists = data["artists"]
+        spotify_ids = []
+        for artist in artists:
+            detail = spcc.artist(artist["id"])
+            spotify_ids.append(detail["id"])
+            newArtist, _ = Artist.objects.get_or_create(
+                spotify_id=detail["id"],
+                name=detail["name"],
+                popularity=detail["popularity"],
+                image=detail["images"][0]["url"] if detail["images"] else ''
+            )
+        artists = Artist.objects.filter(spotify_id__in=spotify_ids)
+        newTrack, _ = Track.objects.get_or_create(
+            spotify_id=data["id"],
+            name=data["name"],
+            popularity=data["popularity"],
+            image=data["album"]["images"][0]["url"] if data["album"]["images"] else '',
+            release_date=parse_spotify_release_date(data["album"]["release_date"]),
+            duration_ms=data["duration_ms"]
+        )
+        newTrack.artists.set(artists)
+
+        headers = {
+            "Accept": "application/json"
+        }
+        item = requests.request(
+            "GET",
+            f"{reccobeats_base_url}/audio-features",
+            headers=headers,
+            params={
+                "ids": data["id"]
+            }
+        ).json()["content"]
+
+        if item:
+            item = item[0]
+            track = Track.objects.get(spotify_id=data["id"])
+            audiofeatures, _ = AudioFeatures.objects.get_or_create(
+                track=track,
+                acousticness=item["acousticness"],
+                danceability=item["danceability"],
+                energy=item["energy"],
+                instrumentalness=item["instrumentalness"],
+                key=item["key"],
+                liveness=item["liveness"],
+                loudness=item["loudness"],
+                mode=item["mode"],
+                speechiness=item["speechiness"],
+                tempo=item["tempo"],
+                valence=item["valence"]
+            )
+
+        targetPlaylist = Playlist.objects.get(user=request.user)
+
+        max_index = PlaylistTrack.objects.filter(playlist=targetPlaylist).aggregate(Max('order_index'))['order_index__max']
+
+        next_index = (max_index + 1) if max_index is not None else 0
+
+        playlistTrack, _ = PlaylistTrack.objects.get_or_create(
+            track=newTrack,
+            playlist=targetPlaylist,
+            order_index=next_index
+        )
+        return Response(status=201)
+
+from .serializers import PlaylistTracksSerializer
+
+@api_view(["GET"])
+@permission_classes([IsAuthenticated])
+def get_playlist_items(request):
+    user = request.user
+    playlist = Playlist.objects.get(user=user)
+    playlist_track = PlaylistTrack.objects.filter(playlist=playlist)
+    serializer = PlaylistTracksSerializer(playlist_track, many=True)
+    return Response(serializer.data)

@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-4">
-    <div class="row min-vh-100 g-0">
+    <div class="row g-0">
       <section class="col-9 threadlist px-3">
         <ThreadList />
       </section>

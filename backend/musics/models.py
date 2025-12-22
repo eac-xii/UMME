@@ -154,5 +154,4 @@ class PlaylistTrack(TimeStampedModel, models.Model):
     order_index = models.PositiveIntegerField()
 
     class Meta:
-        unique_together = ("playlist", "track")
         ordering = ["order_index"]

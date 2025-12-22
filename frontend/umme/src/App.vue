@@ -27,13 +27,11 @@
         </li>
       </ul>
       <hr class="m-4">
+      <Playlist/>
     </aside>
     <main class="flex-grow-1">
       <header class="top d-flex align-items-center px-3">
-        <div class="searchBox d-flex align-items-center">
-          <i class="bi bi-search"></i>
-        </div>
-
+        <SearchBox/>
         <RouterLink :to="{ name: 'profile'}" class="profileBtn d-flex justify-content-center align-items-center ms-auto text-decoration-none">
           <span>Y</span>
         </RouterLink>
@@ -54,6 +52,8 @@ import { ref } from 'vue'
 import { PhHouse, PhNotePencil, PhMessengerLogo, PhCow } from '@phosphor-icons/vue'
 import SDKPlayer from '@/components/SDKPlayer.vue'
 import { useAccountStore } from '@/stores/accounts'
+import SearchBox from './components/SearchBox.vue';
+import Playlist from './components/Playlist.vue';
 
 const account = useAccountStore()
 
@@ -143,19 +143,6 @@ main {
 header {
   height: 11.85vh;
   background-color: black;
-}
-
-.searchBox {
-  margin-left: 2rem;
-  background-color: #121212;
-  width: 70%;
-  height: 50%;
-  border-radius: 3vh;
-}
-
-.searchBox>i {
-  margin: 2rem;
-  font-size: 3vh;
 }
 
 .profileBtn {

@@ -31,7 +31,7 @@ const users = ref([
 
 <style scoped>
 .userlist {
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: 50px;
   border-radius: 1rem;
   background-color: #121212;
