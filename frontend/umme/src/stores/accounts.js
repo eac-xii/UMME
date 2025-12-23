@@ -49,7 +49,7 @@ export const useAccountStore = defineStore('account', {
         connectSpotify() {
             const clientId = import.meta.env.VITE_CLIENT_ID
             const redirectURI = import.meta.env.VITE_REDIRECT_URI
-            const scope = 'web-playback streaming user-read-email user-read-private user-modify-playback-state user-read-playback-state'
+            const scope = 'streaming user-read-email user-read-private'
 
             const userId = this.user.pk
             const state = btoa(JSON.stringify({ user_id: userId }))
