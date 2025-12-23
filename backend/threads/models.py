@@ -14,10 +14,9 @@ class Thread(models.Model):
         on_delete=models.CASCADE,
         related_name="threads"
     )
-    content = models.TextField()
+    content = models.TextField(max_length=660)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
 
 class ThreadRecommend(models.Model):
     user = models.ForeignKey(

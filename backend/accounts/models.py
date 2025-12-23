@@ -73,7 +73,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         ordering = ("-created_at",)
 
     def __str__(self):
-        return self.nickname
+        return self.username
 
 class SpotifyAccount(models.Model):
     user = models.OneToOneField(

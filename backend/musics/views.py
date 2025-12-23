@@ -77,105 +77,109 @@ def ensure_valid_token(spotify, buffer_seconds=30):
 # Create your views here.
 @api_view(["GET"])
 def spotify_callback(request):
-    code = request.GET.get("code")
-    state = request.GET.get("state")
+    if request.method == "GET":
+        code = request.GET.get("code")
+        state = request.GET.get("state")
 
-    data = json.loads(base64.b64decode(state).decode())
-    user_id = data["user_id"]
+        data = json.loads(base64.b64decode(state).decode())
+        user_id = data["user_id"]
 
-    user = get_object_or_404(User, id=user_id)
+        user = get_object_or_404(User, id=user_id)
 
-    token_response = requests.post(
-        "https://accounts.spotify.com/api/token",
-        data={
-            "grant_type": "authorization_code",
-            "code": code,
-            "redirect_uri": redirect_uri,
-        },
-        headers={
-            "Authorization": "Basic "
-                + base64.b64encode(f"{client_id}:{client_secret}".encode()).decode(),
-            "Content-Type": "application/x-www-form-urlencoded",
-        }
-    )
+        token_response = requests.post(
+            "https://accounts.spotify.com/api/token",
+            data={
+                "grant_type": "authorization_code",
+                "code": code,
+                "redirect_uri": redirect_uri,
+            },
+            headers={
+                "Authorization": "Basic "
+                    + base64.b64encode(f"{client_id}:{client_secret}".encode()).decode(),
+                "Content-Type": "application/x-www-form-urlencoded",
+            }
+        )
 
-    tokens = token_response.json()
+        tokens = token_response.json()
 
-    SpotifyAccount.objects.update_or_create(
-        user=user,
-        defaults={
-            "access_token": tokens["access_token"],
-            "refresh_token": tokens["refresh_token"],
-            "expires_at": timezone.now() + timedelta(seconds=tokens["expires_in"]),
-            "scope": tokens["scope"]
-        }
-    )
+        SpotifyAccount.objects.update_or_create(
+            user=user,
+            defaults={
+                "access_token": tokens["access_token"],
+                "refresh_token": tokens["refresh_token"],
+                "expires_at": timezone.now() + timedelta(seconds=tokens["expires_in"]),
+                "scope": tokens["scope"]
+            }
+        )
 
-    playlist, _ = Playlist.objects.get_or_create(
-        user=user,
-        name=f"{user.username}'s Playlist",
-        is_public=True
-    )
+        playlist, _ = Playlist.objects.get_or_create(
+            user=user,
+            name=f"{user.username}'s Playlist",
+            is_public=True
+        )
 
-    return redirect("http://localhost:5173/")
+        return redirect("http://localhost:5173/")
 
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def spotify_playback_token(request):
-    spotify = request.user.spotify
+    if request.method == "GET":
+        spotify = request.user.spotify
 
-    if "streaming" not in spotify.scope:
-        return Response(
-            {"detail": "Spotify streaming 권한 없음"},
-            status=403
-        )
+        if "streaming" not in spotify.scope:
+            return Response(
+                {"detail": "Spotify streaming 권한 없음"},
+                status=403
+            )
 
-    ensure_valid_token(spotify)
-    
-    return Response({ "access_token": spotify.access_token })
+        ensure_valid_token(spotify)
+        
+        return Response({ "access_token": spotify.access_token })
 
 @api_view(["PUT"])
 @permission_classes([IsAuthenticated])
 def spotify_transfer_playback(request):
-    spotify = request.user.spotify
-    ensure_valid_token(spotify)
+    if request.method == "PUT":
+        spotify = request.user.spotify
+        ensure_valid_token(spotify)
 
-    requests.put(
-        "https://api.spotify.com/v1/me/player",
-        json={
-            "device_ids": [request.data["device_id"]],
-            "play": True
-        },
-        headers={
-            "Authorization": f"Bearer {spotify.access_token}"
-        }
-    )
+        requests.put(
+            "https://api.spotify.com/v1/me/player",
+            json={
+                "device_ids": [request.data["device_id"]],
+                "play": True
+            },
+            headers={
+                "Authorization": f"Bearer {spotify.access_token}"
+            }
+        )
 
-    return Response(status=204)
+        return Response(status=204)
 
 @api_view(["PUT"])
 @permission_classes([IsAuthenticated])
 def spotify_play(request):
-    spotify = request.user.spotify
-    ensure_valid_token(spotify)
+    if request.method == "PUT":
+        spotify = request.user.spotify
+        ensure_valid_token(spotify)
 
-    device_id = request.data.get("device_id")
+        device_id = request.data.get("device_id")
 
-    requests.put(
-        "https://api.spotify.com/v1/me/player/play",
-        params={
-            "device_id": device_id
-        },
-        json={
-            "uris": request.data["uris"]
-        },
-        headers={
-            "Authorization": f"Bearer {spotify.access_token}"
-        },
-        timeout=5
-    )
+        requests.put(
+            "https://api.spotify.com/v1/me/player/play",
+            params={
+                "device_id": device_id
+            },
+            json={
+                "uris": request.data.get("uris")
+            },
+            headers={
+                "Authorization": f"Bearer {spotify.access_token}"
+            },
+            timeout=5
+        )
 
-    return Response(status=204)
+        return Response(status=204)
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -320,8 +324,9 @@ from .serializers import PlaylistTracksSerializer
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def get_playlist_items(request):
-    user = request.user
-    playlist = Playlist.objects.get(user=user)
-    playlist_track = PlaylistTrack.objects.filter(playlist=playlist)
-    serializer = PlaylistTracksSerializer(playlist_track, many=True)
-    return Response(serializer.data)
+    if request.method == "GET":
+        user = request.user
+        playlist = Playlist.objects.get(user=user)
+        playlist_track = PlaylistTrack.objects.filter(playlist=playlist)
+        serializer = PlaylistTracksSerializer(playlist_track, many=True)
+        return Response(serializer.data)
