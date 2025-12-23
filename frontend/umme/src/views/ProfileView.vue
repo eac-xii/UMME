@@ -12,7 +12,6 @@
         </div>
       </div>
     </div>
-
     <div class="row second">
       <div class="col-6 profile-overview">
         <div class="threads">
@@ -43,6 +42,7 @@ import Playlist from '@/components/Profile/Playlist.vue'
 .second {
   height: 48vh;
 }
+
 .profile-layout {
   height: 100vh;
 }
@@ -51,6 +51,7 @@ import Playlist from '@/components/Profile/Playlist.vue'
 .music {
   min-width: 0;
 }
+
 .userinfo {
   height: 100%;
   padding: 10px;
@@ -61,6 +62,7 @@ import Playlist from '@/components/Profile/Playlist.vue'
   overflow-y: scroll;
   padding: 10px;
 }
+
 .threads::-webkit-scrollbar {
   display: none;
 }
@@ -75,4 +77,3 @@ import Playlist from '@/components/Profile/Playlist.vue'
   padding: 10px;
 }
 </style>
-

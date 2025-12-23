@@ -5,17 +5,14 @@
       <div class="filter-item">Follow</div>
       <hr class="line">
     </div>
-    <div class="mx-2 mb-3 p-0" 
-    v-for="thread in threads" 
-    :key="thread.title"
-    >
-    <ThreadCard :thread="thread"/>
+    <div class="mx-2 mb-3 p-0" v-for="thread in threads" :key="thread.title">
+      <ThreadCard :thread="thread" />
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import ThreadCard from './ThreadCard.vue'
 import { useThreadStore } from '@/stores/threads'
 

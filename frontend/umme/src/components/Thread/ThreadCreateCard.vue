@@ -14,7 +14,7 @@
         <hr>
         <div class="py-4">
           <p>Title <span class="mx-2">|</span> {{ props.track?.name }}</p>
-          <p>Artist <span class="mx-2">|</span> {{ props.track?.artists.map(artist => artist.name).join(', ') }}</p>
+          <p>Artist <span class="mx-2">|</span> {{props.track?.artists.map(artist => artist.name).join(', ')}}</p>
           <p></p>
         </div>
       </div>
@@ -48,7 +48,6 @@ const props = defineProps({
 const content = ref('')
 
 const uploadThread = () => {
-  console.log(content.value)
   if (props.track === null) window.alert('Select track first!')
   else if (content.value === '') window.alert('Type any content!')
   else {
@@ -58,7 +57,7 @@ const uploadThread = () => {
     }
     thread.uploadThread(payload)
     content.value = ''
-    router.push({ name: 'home'})
+    router.push({ name: 'home' })
   }
 }
 
@@ -89,6 +88,7 @@ textarea {
   color: #aaa;
   outline: none;
 }
+
 .bgGreen {
   background-color: #1ed760;
   width: 100%;

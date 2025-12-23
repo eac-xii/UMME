@@ -10,12 +10,12 @@
       </div>
       <div class="card-item" id="usersummary">
         <div id="followers">
-          <i class="bi bi-person"></i> {{ user.followers }} 
+          <i class="bi bi-person"></i> {{ user.followers }}
         </div>
         <div id="songs" class="mx-2">
           <i class="bi bi-music-note-list"></i> {{ user.songs }}
         </div>
-    </div>
+      </div>
     </div>
 
   </div>
@@ -23,7 +23,7 @@
 
 <script setup>
 const props = defineProps({
-  'user' : Object,
+  'user': Object,
 })
 </script>
 
@@ -66,15 +66,17 @@ p {
 #name {
   font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
+
 #type {
   font-size: clamp(0.65rem, 1vw, 0.75rem);
 }
+
 #usersummary {
   display: flex;
   font-size: clamp(0.65rem, 1vw, 0.75rem);
 }
 
-div > i{
+div>i {
   margin-right: 5px;
 }
 </style>

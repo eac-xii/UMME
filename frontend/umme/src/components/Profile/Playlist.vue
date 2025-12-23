@@ -14,7 +14,7 @@
   height: 70%;
   flex-direction: row;
   display: flex;
-  background-color:#121212;
+  background-color: #121212;
   justify-content: start;
   align-items: center;
   overflow: hidden;

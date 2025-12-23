@@ -2,10 +2,10 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-5">
-        <Playlist @evoke-track="getTrack"/>
+        <Playlist @evoke-track="getTrack" />
       </div>
       <div class="col-7">
-        <ThreadCreateCard :track="trackDetail"/>
+        <ThreadCreateCard :track="trackDetail" />
       </div>
     </div>
   </div>
@@ -25,5 +25,4 @@ const getTrack = (track) => {
 
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

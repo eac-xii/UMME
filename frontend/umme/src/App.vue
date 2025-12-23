@@ -5,7 +5,6 @@
         <PhCow :size="32" class="mx-2" />
         <span class="mx-2">UMME</span>
       </div>
-
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
           <RouterLink class="nav-link" active-class="active" :to="{ name: 'home' }">
@@ -13,13 +12,13 @@
             <span>Home</span>
           </RouterLink>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" v-if="account.isAuthenticated">
           <RouterLink class="nav-link" active-class="active" :to="{ name: 'thread-create' }">
             <PhNotePencil size="20" weight="regular" class="mx-3" />
             <span>Thread</span>
           </RouterLink>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" v-if="account.isAuthenticated">
           <RouterLink class="nav-link" active-class="active" :to="{ name: 'messenger' }">
             <PhMessengerLogo size="20" weight="regular" class="mx-3" />
             Messenger
@@ -27,7 +26,7 @@
         </li>
       </ul>
       <hr class="m-4">
-      <Playlist @evoke-track="playTrack" />
+      <Playlist v-if="account.isAuthenticated" @evoke-track="playTrack" />
     </aside>
     <main class="flex-grow-1">
       <header class="top d-flex align-items-center px-3">
@@ -35,10 +34,11 @@
         <button v-if="account.isAuthenticated" class="btn btn-outline border-0" @click.prevent="logOut">
           로그아웃
         </button>
-        <button v-if="!account.user?.is_spotify && account.isAuthenticated" class="btn btn-outline" @click.prevent="connectSpotify">
+        <button v-if="!account.user?.is_spotify && account.isAuthenticated" class="btn btn-outline"
+          @click.prevent="connectSpotify">
           스포티파이 연동하기
         </button>
-        <RouterLink v-if="!account.isAuthenticated" :to="{ name: 'login'}">
+        <RouterLink v-if="!account.isAuthenticated" :to="{ name: 'login' }">
           <button class="btn btn-light rounded-pill px-4 py-2 ms-4">
             로그인하기
           </button>
@@ -68,19 +68,13 @@ import Playlist from './components/Playlist.vue'
 import { useAccountStore } from '@/stores/accounts'
 import { useControlStore } from './stores/controls'
 import { useToolStore } from '@/stores/tools'
-import { RouterLink, RouterView } from 'vue-router'
+import { useRouter, RouterLink, RouterView } from 'vue-router'
 import { PhHouse, PhNotePencil, PhMessengerLogo, PhCow } from '@phosphor-icons/vue'
-import { onMounted } from 'vue'
 
+const router = useRouter()
 const account = useAccountStore()
 const control = useControlStore()
 const tool = useToolStore()
-
-onMounted(() => {
-  window.onSpotifyWebPlaybackSDKReady = () => {
-  control.sdkReady = true
-  }
-})
 
 const logOut = async () => {
   await account.logOut()
@@ -92,8 +86,13 @@ const connectSpotify = () => {
   account.connectSpotify()
 }
 
-const playTrack = async (track) => {
+const playTrack = async (idx, track) => {
+  if (!account.user?.is_spotify) {
+    window.alert('Play track can only be used by Spotify Premium users!')
+    return
+  }
   const payload = {
+    cIdx: idx,
     spotify_id: track.spotify_id
   }
   await control.playTrack(payload)
@@ -108,7 +107,7 @@ const playTrack = async (track) => {
 
 .sidebar {
   padding: 1rem 0;
-  width: 20vh;
+  width: 25vh;
   background-color: #121212;
   flex-shrink: 0;
   border-top-right-radius: 30px;
@@ -136,25 +135,19 @@ main {
   height: 100%;
 }
 
-/* 기본 nav-link */
 .nav-pills .nav-link {
   display: flex;
   color: #b3b3b3;
-  /* 기본 텍스트 */
   background-color: #121212;
-  /* 기본 배경 */
   border-radius: 0px;
   align-items: center;
-  /* 세로가운데 */
 }
 
-/* hover */
 .nav-pills .nav-link:hover {
   background-color: #1e1e1e;
   color: #ffffff;
 }
 
-/* active */
 .nav-pills .nav-link.active {
   background-color: #2a2a2a;
   color: #ffffff;

@@ -21,5 +21,4 @@ import UserList from '@/components/home/UserList.vue';
   display: flex;
   flex-direction: column;
 }
-
 </style>
