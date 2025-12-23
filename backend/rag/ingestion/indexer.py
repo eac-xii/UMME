@@ -5,6 +5,7 @@ from sentence_transformers import SentenceTransformer
 from loader import load_documents
 import uuid
 from pprint import pprint
+from rag.config.settings import TOP_K
 
 
 load_dotenv()
@@ -35,7 +36,7 @@ def create_vector_db(docs, collection):
 create_vector_db(docs, collection)
 
 # 질문에 맞는 문서 반환
-def search_vector_db(query, collection, top_k=5):
+def search_vector_db(query, collection, top_k):
     """
     주어진 쿼리에 대해 유사한 문서를 벡터 DB에서 검색합니다.
     """
@@ -50,6 +51,6 @@ def search_vector_db(query, collection, top_k=5):
     
     return results
 query = "기타에 대한 평가가 좋은 스레드 보여줘"
-results = search_vector_db(query, collection, top_k=5)
+results = search_vector_db(query, collection, TOP_K)
 
 pprint(results)
