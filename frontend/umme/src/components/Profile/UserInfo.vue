@@ -3,7 +3,7 @@
     <div class="profileImg"></div>
     <div id="user-meta" class="d-flex">
       <div class="userinfo mx-4 text-nowrap">
-        <div id="name">Yeon7_24</div>
+        <div id="name">{{ account.user.last_name }} {{ account.user.first_name }}</div>
         <div id="follow-info">Follower 30  |  Following 24</div>
       </div>
       <div class="followBtn">
@@ -14,6 +14,9 @@
 </template>
 
 <script setup>
+import { useAccountStore } from '@/stores/accounts'
+
+const account = useAccountStore()
 
 </script>
 
@@ -33,7 +36,7 @@
 }
 
 .profileImg {
-  width: 8rem;
+  width: 6rem;
   aspect-ratio: 1;
   margin: 0 2%;
   background-color: aqua;

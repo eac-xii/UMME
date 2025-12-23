@@ -15,14 +15,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import ThreadCard from './ThreadCard.vue';
+import { ref, computed } from 'vue'
+import ThreadCard from './ThreadCard.vue'
+import { useThreadStore } from '@/stores/threads'
 
-const threads = ref([
-  { title: 'Thread1', content: 'content1'},
-  { title: 'Thread2', content: 'content2'},
-  { title: 'Thread3', content: 'content3'},
-])
+const thread = useThreadStore()
+
+const threads = computed(() => thread.threadItems)
 </script>
 
 <style scoped>

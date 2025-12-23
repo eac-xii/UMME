@@ -15,6 +15,10 @@ export default defineConfig({
       '/musics': {
         target: 'http://127.0.0.1:8000',
         changeOrigin: true,
+      },
+      '/threads': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
       }
     }
   },

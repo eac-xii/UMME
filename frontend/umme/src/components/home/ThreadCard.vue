@@ -1,14 +1,23 @@
 <template>
   <div class="thread-card d-flex p-4">
     <div class="songInfo mx-3">
-      <div id="albumcover">Image</div>
+      <img :src="thread.track?.image" id="albumcover">
       <div class="track-meta px-2">
-        <p id="title">I Fall In Love Too Easily</p>
-        <p id="artist">Chet Baker</p>
+        <p id="title">{{ thread.track?.name }}</p>
+        <p id="artist">{{thread.track?.artists.map(artist => artist.name).join(', ')}}</p>
       </div>
     </div>
     <div class="thread-body px-3">
-      <h5>{{ thread.title }}</h5>
+      <div class="userinfo d-flex flex-row">
+        <div class="profileBtn d-flex justify-content-center align-items-center rounded-circle me-4">
+          <span>{{ thread.user?.last_name[0].toUpperCase() }}</span>
+        </div>
+        <div class="d-flex flex-column">
+          <p>{{ thread.user?.last_name }} {{ thread.user?.first_name }}</p>
+          <p>{{ thread.updated_at }}</p>
+        </div>
+      </div>
+      <hr>
       <p>{{ thread.content }}</p>
     </div>
   </div>
@@ -16,7 +25,7 @@
 
 <script setup>
 const props = defineProps({
-  'thread' : Object,
+  'thread': Object,
 })
 </script>
 
@@ -37,6 +46,7 @@ p {
   flex-grow: 1;
   flex-direction: column;
 }
+
 .songInfo {
   width: 12rem;
   flex: 0 0 auto;
@@ -45,6 +55,16 @@ p {
   text-align: start;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.profileBtn {
+  background-color: #1ed760;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 3vh;
+  color: black;
+  font-weight: 700;
+
 }
 
 #albumcover {
@@ -60,6 +80,7 @@ p {
   font-size: 0.7em;
   color: #eee;
 }
+
 #artist {
   font-size: 0.5em;
 }

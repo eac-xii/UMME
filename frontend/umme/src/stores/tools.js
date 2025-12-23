@@ -26,15 +26,16 @@ export const useToolStore = defineStore('tool', {
         this.searchItems = response.data
       } catch (error) {}
     },
-    addTrackToPlaylist(payload) {
+    async addTrackToPlaylist(payload) {
       const { track } = payload
-      api.post('/musics/spotify/add_track_to_playlist/', { track })
+      try {
+        await api.post('/musics/spotify/add_track_to_playlist/', { track })
+      } catch (error) {}
     },
     async getPlaylistItems() {
       try {
         const response = await api.get('/musics/get_playlist_items/')
         this.playlist = response.data
-        console.log(response.data)
       } catch (error) {}
     }
   }

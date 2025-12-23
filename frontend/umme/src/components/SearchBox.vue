@@ -61,11 +61,12 @@ const searchArtistTracks = async (artistId) => {
   console.log(dropdownItems.value)
 }
 
-const addTrackToPlaylist = (track) => {
+const addTrackToPlaylist = async (track) => {
   const payload = {
     track
   }
-  tool.addTrackToPlaylist(payload)
+  await tool.addTrackToPlaylist(payload)
+  await tool.getPlaylistItems()
 }
 </script>
 

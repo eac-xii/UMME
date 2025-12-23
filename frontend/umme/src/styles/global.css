@@ -11,3 +11,9 @@ html, body, #app {
 html::-webkit-scrollbar {
   display: none;
 }
+.bgDark {
+  background-color: #121212;
+}
+.bgLightDark {
+  background-color: #8c8c8c;
+}

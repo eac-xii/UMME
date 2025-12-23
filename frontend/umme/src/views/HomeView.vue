@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid px-4">
     <div class="row g-0">
-      <section class="col-9 threadlist px-3">
+      <section class="col-10 threadlist px-3">
         <ThreadList />
       </section>
-      <section class="col-3 recommendation">
+      <section class="col-2 recommendation">
         <UserList />
       </section>
     </div>

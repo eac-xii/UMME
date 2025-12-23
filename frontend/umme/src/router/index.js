@@ -8,6 +8,7 @@ import ThreadDetailView from '@/views/ThreadDetailView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAccountStore } from '@/stores/accounts'
 import { useToolStore } from '@/stores/tools'
+import { useThreadStore } from '@/stores/threads'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +17,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-      meta: { requiresAuth: true }
     },
     {
       path: '/profile',
@@ -58,6 +58,7 @@ const router = createRouter({
 router.beforeEach(async (to) => {
     const account = useAccountStore()
     const tool = useToolStore()
+    const thread = useThreadStore()
 
     if (!account.checked || !account.user?.is_spotify) {
        await account.checkAuth()
@@ -65,6 +66,13 @@ router.beforeEach(async (to) => {
     
     if (account.isAuthenticated && account.user.is_spotify) {
       await tool.getPlaylistItems()
+    }
+
+    if (to.name === 'home') {
+      const payload = {
+        filter: 'all'
+      }
+      await thread.getThreads(payload)
     }
 
     if ((to.name === 'login' || to.name === 'signup') && account.isAuthenticated) {

@@ -1,6 +1,8 @@
 <template>
     <div class="container-fluid d-flex justify-content-center align-items-center">
         <form class="w-50" @submit.prevent="logIn">
+            <h2>Log In</h2>
+            <hr>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email</label>
                 <input type="text" id="inputEmail" class="form-control" v-model="email">
@@ -9,9 +11,14 @@
                 <label for="inputPassword" class="form-label">Password</label>
                 <input type="password" id="inputPassword" class="form-control" v-model="password">
             </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
-            <br>
-            <RouterLink :to="{ name: 'signup' }">Sign Up</RouterLink>
+            <div class="mb-3 d-flex justify-content-between">
+                <button type="submit" class="btn btn-outline-light">Submit</button>
+                <RouterLink :to="{ name: 'signup' }">
+                    <button class="btn btn-outline-secondary">
+                        Sign Up
+                    </button>
+                </RouterLink>
+            </div>
         </form>
     </div>
 </template>

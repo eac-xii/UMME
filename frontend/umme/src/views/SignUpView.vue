@@ -1,6 +1,8 @@
 <template>
     <div class="container-fluid d-flex justify-content-center align-items-center">
         <form class="w-50" @submit.prevent="signUp">
+            <h2>Sign Up</h2>
+            <hr>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email</label>
                 <input type="email" id="inputEmail" class="form-control" v-model="email">
@@ -27,7 +29,7 @@
                 <label for="inputPassword2" class="form-label">Password Confirmation</label>
                 <input type="password" id="inputPassword2" class="form-control" v-model="password2">
             </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
+            <button type="submit" class="btn btn-outline-light">Submit</button>
         </form>
     </div>
 </template>
