@@ -35,9 +35,11 @@
 import { ref } from 'vue'
 import { useAccountStore } from '@/stores/accounts'
 import { useThreadStore } from '@/stores/threads'
+import { useRouter } from 'vue-router'
 
 const account = useAccountStore()
 const thread = useThreadStore()
+const router = useRouter()
 
 const props = defineProps({
   track: Object,
@@ -46,13 +48,17 @@ const props = defineProps({
 const content = ref('')
 
 const uploadThread = () => {
-  if (props.track && content.value) {
+  console.log(content.value)
+  if (props.track === null) window.alert('Select track first!')
+  else if (content.value === '') window.alert('Type any content!')
+  else {
     const payload = {
       content: content.value,
       track_id: props.track.spotify_id
     }
     thread.uploadThread(payload)
     content.value = ''
+    router.push({ name: 'home'})
   }
 }
 
