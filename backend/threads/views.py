@@ -1,3 +1,10 @@
+import os 
+from dotenv import load_dotenv
+load_dotenv()
+
+base_url = os.getenv("VUE_BASE_URL")
+
+from django.shortcuts import redirect
 from django.contrib.auth import get_user_model
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -9,10 +16,12 @@ from musics.models import Track
 from .serializers import ThreadListSerializer
 
 # Create your views here.
-@api_view(["POST"])
+@api_view(["GET", "POST"])
 @permission_classes([IsAuthenticated])
 def create(request):
-    if request.method == "POST":
+    if request.method == "GET":
+        return redirect(f"{base_url}")
+    elif request.method == "POST":
         track_id = request.data["track_id"]
 
         user = request.user
