@@ -6,6 +6,8 @@ from rest_framework.response import Response
 from .models import Thread
 from musics.models import Track
 
+from .serializers import ThreadListSerializer
+
 # Create your views here.
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
@@ -22,3 +24,15 @@ def create(request):
             content=content
         )
         return Response(status=201)
+    
+@api_view(["GET"])
+def get_threads(request):
+    if request.method == "GET":
+        query_filter = request.GET.get("filter")
+        if query_filter == "all":
+            threads = Thread.objects.all()
+            serializer = ThreadListSerializer(threads, many=True)
+            return Response(serializer.data, status=200)
+
+        else:
+            return Response(status=204)
