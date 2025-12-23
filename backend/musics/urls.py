@@ -9,5 +9,6 @@ urlpatterns = [
     path('spotify/search/', views.spotify_search),
     path('spotify/search_artist_tracks/', views.spotify_search_artist_tracks),
     path('spotify/add_track_to_playlist/', views.add_track_to_playlist),
+    path('create_user_playlist/', views.create_user_playlist),
     path('get_playlist_items/', views.get_playlist_items),
 ]

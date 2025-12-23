@@ -37,8 +37,11 @@
 <script setup>
 import { ref } from 'vue'
 import { useAccountStore } from '@/stores/accounts'
+import { useToolStore } from '@/stores/tools'
 import { useRouter } from 'vue-router'
+
 const account = useAccountStore()
+const tool = useToolStore()
 const router = useRouter()
 
 const email = ref('')
@@ -49,7 +52,7 @@ const password1 = ref('')
 const password2 = ref('')
 
 const signUp = async () => {
-    const payload = {
+    let payload = {
         email: email.value,
         username: username.value,
         last_name: last_name.value,
@@ -57,12 +60,17 @@ const signUp = async () => {
         password1: password1.value,
         password2: password2.value
     }
-    await account.signUp(payload)   
-    router.push({ name: 'home' }) 
+    try {
+        await account.signUp(payload)
+        payload['password'] = payload.password1
+        await account.logIn(payload)
+
+        await tool.createUserPlaylist()
+
+        router.push({ name: 'home' })
+    } catch (error) { }
 }
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -4,7 +4,7 @@
     <div id="user-meta" class="d-flex">
       <div class="userinfo mx-4 text-nowrap">
         <div id="name">{{ account.user.last_name }} {{ account.user.first_name }}</div>
-        <div id="follow-info">Follower 30  |  Following 24</div>
+        <div id="follow-info">Follower 30 | Following 24</div>
       </div>
       <div class="followBtn">
         <button class="btn btn-dark">Follow</button>
@@ -29,7 +29,6 @@ const account = useAccountStore()
   align-items: center;
   overflow: hidden;
   padding: 5rem;
-
   border-radius: 1rem;
   background-color: #121212;
   color: #aaa;
@@ -41,7 +40,6 @@ const account = useAccountStore()
   margin: 0 2%;
   background-color: aqua;
   border-radius: 50%;
-
   flex-shrink: 0;
   min-width: 48px;
   min-height: 48px;
@@ -55,6 +53,7 @@ const account = useAccountStore()
 #follow-info {
   font-size: 1rem;
 }
+
 .followBtn {
   display: flex;
   justify-content: center;

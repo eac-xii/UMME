@@ -1,12 +1,7 @@
 <template>
   <div class="thread-grid-wrapper">
     <div class="thread-grid">
-      <ThreadItem
-        v-for="thread in threads"
-        :key="thread.title"
-        :thread="thread"
-        class="grid-item"
-      />
+      <ThreadItem v-for="thread in threads" :key="thread.title" :thread="thread" class="grid-item" />
     </div>
   </div>
 </template>
@@ -30,10 +25,8 @@ const threads = ref([
 </script>
 
 <style scoped>
-
 .thread-grid-wrapper {
   height: 70%;
-  /* 스크롤 */
   overflow-y: auto;
   padding: 1rem;
   background-color: #121212;
@@ -41,14 +34,12 @@ const threads = ref([
   box-sizing: border-box;
 }
 
-/* 그리드 */
 .thread-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-/* 카드 */
 .grid-item {
   background-color: #1e1e1e;
   border-radius: 0.5rem;
@@ -61,40 +52,34 @@ const threads = ref([
   box-sizing: border-box;
 }
 
-/* 반응형: 2열 */
 @media (max-width: 992px) {
   .thread-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* 반응형: 1열 */
 @media (max-width: 576px) {
   .thread-grid {
     grid-template-columns: 1fr;
   }
 }
 
-
-/* TODO : header 배경색 변경 필요 */
-/* 스크롤바 전체 */
 .thread-grid-wrapper::-webkit-scrollbar {
-  width: 0.8rem; /* 스크롤바 두께 */
+  width: 0.8rem;
 }
-/* 스크롤바 트랙 (배경) */
+
 .thread-grid-wrapper::-webkit-scrollbar-track {
-  background: #1e1e1e; /* 트랙 색상 */
+  background: #1e1e1e;
   border-radius: 0.3rem;
 }
-/* 스크롤바 막대 (드래그 가능한 부분) */
+
 .thread-grid-wrapper::-webkit-scrollbar-thumb {
-  background-color: #aaa; /* 막대 색상 */
+  background-color: #aaa;
   border-radius: 0.3rem;
-  border: 2px solid #1e1e1e; /* 막대 외곽 */
+  border: 2px solid #1e1e1e;
 }
-/* 호버 시 색상 변경 */
+
 .thread-grid-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: #868686;
 }
 </style>
-

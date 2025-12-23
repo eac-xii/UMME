@@ -112,12 +112,6 @@ def spotify_callback(request):
             }
         )
 
-        playlist, _ = Playlist.objects.get_or_create(
-            user=user,
-            name=f"{user.username}'s Playlist",
-            is_public=True
-        )
-
         return redirect("http://localhost:5173/")
 
 @api_view(["GET"])
@@ -318,6 +312,17 @@ def add_track_to_playlist(request):
             order_index=next_index
         )
         return Response(status=201)
+    
+@api_view(["GET"])
+@permission_classes([IsAuthenticated])
+def create_user_playlist(request):
+    if request.method == "GET":
+        playlist, _ = Playlist.objects.get_or_create(
+            user=request.user,
+            name=f"{request.user}'s Playlist",
+            is_public=True
+        )
+        return Response({"received": True})
 
 from .serializers import PlaylistTracksSerializer
 

@@ -64,7 +64,7 @@ router.beforeEach(async (to) => {
        await account.checkAuth()
     }
     
-    if (account.isAuthenticated && account.user.is_spotify) {
+    if (account.isAuthenticated) {
       await tool.getPlaylistItems()
     }
 

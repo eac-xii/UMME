@@ -13,14 +13,12 @@
           <div class="progress Sentiment" :style="{ width: Sentiment + '%' }"></div>
         </div>
       </div>
-
       <div class="feature">
         <div class="title">Energy</div>
         <div class="progress-bar">
           <div class="progress Energy" :style="{ width: Energy + '%' }"></div>
         </div>
       </div>
-
       <div class="feature">
         <div class="title">Danceability</div>
         <div class="progress-bar">
@@ -65,7 +63,7 @@ const Sentiment = ref(15)
 .feature {
   display: flex;
   align-items: center;
-  gap: 2rem;  /* title - bar 간격 */
+  gap: 2rem;
 }
 
 .title {
@@ -81,7 +79,6 @@ const Sentiment = ref(15)
   background-color: #eee;
   border-radius: 0.5rem;
   overflow: hidden;
-
 }
 
 .progress {
@@ -89,8 +86,19 @@ const Sentiment = ref(15)
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.Acousticness {background-color: #8FD917;}
-.Danceability {background-color: #1799D9;}
-.Energy {background-color: #A217D9;}
-.Sentiment {background-color: #D91765;}
+.Acousticness {
+  background-color: #8FD917;
+}
+
+.Danceability {
+  background-color: #1799D9;
+}
+
+.Energy {
+  background-color: #A217D9;
+}
+
+.Sentiment {
+  background-color: #D91765;
+}
 </style>
