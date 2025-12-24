@@ -1,35 +1,46 @@
 import { defineStore } from 'pinia'
-import api from '@/api/axios'
 import { ref } from 'vue'
+import api from '@/api/axios'
 
-export const useThreadStore = defineStore('thread', () => {
-  const threadItems = ref([])
+export const useThreadStore = defineStore('thread', {
+  state: () => ({
+    threadItems: [],
+    ragThreads: [],
+    isAIMode: false,
+  }),
 
-  const uploadThread = async (payload) => {
-    const { content, track_id } = payload
-    await api.post('/threads/create/', {
-      track_id,
-      content,
-    })
-  }
+  actions: {
+    uploadThread(payload) {
+      const { content, track_id } = payload
 
-  const getThreads = async (payload) => {
-    const { filter } = payload
-    try {
-      const response = await api.get('/threads/get_threads/', {
-        params: { filter },
+      return api.post('/threads/create/', {
+        track_id,
+        content,
       })
-      threadItems.value = response.data
+    },
+
+    async getThreads(payload) {
+      const { filter } = payload
+
+      try {
+        const response = await api.get('/threads/get_threads/', {
+          params: { filter },
+        })
+
+        this.threadItems = response.data
+        console.log(response.data)
+
+        return response.data
+      } catch (error) {
+        console.error('getThreads error:', error)
+      }
+    },
+
+    async runRag(payload) {
+      this.isAIMode = true
+      const response = await api.post('/rag/query/', payload)
+      this.ragThreads = response.data.threads
       return response.data
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
-  return {
-    threadItems,
-
-    uploadThread,
-    getThreads,
-  }
+    },
+  },
 })
