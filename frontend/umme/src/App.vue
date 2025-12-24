@@ -18,12 +18,6 @@
             <span>Thread</span>
           </RouterLink>
         </li>
-        <li class="nav-item" v-if="account.isAuthenticated">
-          <RouterLink class="nav-link" active-class="active" :to="{ name: 'messenger' }">
-            <PhMessengerLogo size="20" weight="regular" class="mx-3" />
-            Messenger
-          </RouterLink>
-        </li>
       </ul>
       <hr class="m-4">
       <Playlist v-if="account.isAuthenticated" @evoke-track="playTrack" />
@@ -69,7 +63,7 @@ import { useAccountStore } from '@/stores/accounts'
 import { useControlStore } from './stores/controls'
 import { useToolStore } from '@/stores/tools'
 import { useRouter, RouterLink, RouterView } from 'vue-router'
-import { PhHouse, PhNotePencil, PhMessengerLogo, PhCow } from '@phosphor-icons/vue'
+import { PhHouse, PhNotePencil, PhCow } from '@phosphor-icons/vue'
 
 const router = useRouter()
 const account = useAccountStore()

@@ -37,11 +37,9 @@
 <script setup>
 import { ref } from 'vue'
 import { useAccountStore } from '@/stores/accounts'
-import { useToolStore } from '@/stores/tools'
 import { useRouter } from 'vue-router'
 
 const account = useAccountStore()
-const tool = useToolStore()
 const router = useRouter()
 
 const email = ref('')
@@ -64,11 +62,11 @@ const signUp = async () => {
         await account.signUp(payload)
         payload['password'] = payload.password1
         await account.logIn(payload)
-
-        await tool.createUserPlaylist()
-
-        router.push({ name: 'home' })
-    } catch (error) { }
+        await account.initUserSetting()
+        window.location.href = '/'
+    } catch (error) {
+        console.error(error)
+    }
 }
 
 </script>

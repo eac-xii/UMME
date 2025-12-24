@@ -1,6 +1,5 @@
 import HomeView from '@/views/HomeView.vue'
 import LoginView from '@/views/LoginView.vue'
-import MessengerView from '@/views/MessengerView.vue'
 import ProfileView from '@/views/ProfileView.vue'
 import SignUpView from '@/views/SignUpView.vue'
 import ThreadCreateView from '@/views/ThreadCreateView.vue'
@@ -34,12 +33,6 @@ const router = createRouter({
       path: '/threads/:id',
       name: 'thread-detail',
       component: ThreadDetailView,
-      meta: { requiresAuth: true }
-    },
-    {
-      path: '/messenger',
-      name: 'messenger',
-      component: MessengerView,
       meta: { requiresAuth: true }
     },
     {

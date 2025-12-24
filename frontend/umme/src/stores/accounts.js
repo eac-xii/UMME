@@ -38,6 +38,14 @@ export const useAccountStore = defineStore('account', () => {
         checked.value = false
     }
 
+    const initUserSetting = async () => {
+        try {
+            await api.post('/accounts_umme/init_user_settings/')
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
     const connectSpotify = () => {
         if (!user.value) return
 
@@ -70,6 +78,8 @@ export const useAccountStore = defineStore('account', () => {
         logIn,
         signUp,
         logOut,
+        initUserSetting,
+
         connectSpotify,
     }
 })

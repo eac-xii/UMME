@@ -31,14 +31,6 @@ export const useToolStore = defineStore('tool', () => {
     }
   }
 
-  const createUserPlaylist = async () => {
-    try {
-      const response = await api.get('/musics/create_user_playlist/')
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
   const addTrackToPlaylist = async (payload) => {
     const { track } = payload
     try {
@@ -63,7 +55,6 @@ export const useToolStore = defineStore('tool', () => {
 
     search,
     searchArtistTracks,
-    createUserPlaylist,
     addTrackToPlaylist,
     getPlaylistItems,
   }

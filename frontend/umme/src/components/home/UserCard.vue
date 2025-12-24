@@ -17,7 +17,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -45,7 +44,6 @@ p {
 .userimg {
   width: 2.5em;
   min-width: 2rem;
-  /* 가로세로비율고정 */
   aspect-ratio: 1;
   background-color: aliceblue;
   border-radius: 50%;
@@ -57,12 +55,10 @@ p {
 }
 
 .card-item {
-  /* 줄바꿈 방지 */
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* clamp(min, val, max) */
 #name {
   font-size: clamp(0.8rem, 1.2vw, 1rem);
 }
