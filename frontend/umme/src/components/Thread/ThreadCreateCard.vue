@@ -17,7 +17,7 @@
 
         <div class="py-3 text-secondary">
           <p>Title <span class="mx-2">|</span> {{ props.track?.name }}</p>
-          <p>Artist <span class="mx-2">|</span> {{ props.track?.artists.map(a => a.name).join(', ') }}</p>
+          <p>Artist <span class="mx-2">|</span> {{props.track?.artists.map(a => a.name).join(', ')}}</p>
         </div>
       </div>
     </div>
@@ -25,19 +25,26 @@
     <!-- textarea -->
     <div class="row">
       <div class="col m-3">
-        <textarea
-          v-model="content"
-          class="threadcontent rounded-4 w-100"
-          placeholder="이 음악에 대한 생각을 가볍게 적어보세요…"
-        />
+        <textarea v-model="content" class="threadcontent rounded-4 w-100"
+          placeholder="이 음악에 대한 생각을 가볍게 적어보세요…"></textarea>
       </div>
     </div>
 
     <div class="row">
       <div class="col">
-        <button class="btn bgGreen" @click.prevent="uploadThread">
+        <button type="button" class="btn bgGreen" @click.prevent="uploadThread">
           Upload
         </button>
+      </div>
+    </div>
+  </div>
+  <div aria-alive="polite" class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div ref="toastElement" class="toast" role="alert" aria-live="polite" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">UMME</strong>
+      </div>
+      <div class="toast-body">
+        Thread for {{ props.track?.name }} created!
       </div>
     </div>
   </div>
@@ -45,6 +52,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import * as bootstrap from 'bootstrap'
 import { useAccountStore } from '@/stores/accounts'
 import { useThreadStore } from '@/stores/threads'
 import { useRouter } from 'vue-router'
@@ -58,6 +66,7 @@ const props = defineProps({
 })
 
 const content = ref('')
+const toastElement = ref(null)
 
 const uploadThread = () => {
   if (!props.track) return alert('Select track first!')
@@ -68,13 +77,20 @@ const uploadThread = () => {
     track_id: props.track.spotify_id,
   })
 
+
+  if (toastElement.value) {
+    const toast = bootstrap.Toast.getOrCreateInstance(toastElement.value)
+    toast.show()
+  }
+
   content.value = ''
-  router.push({ name: 'home' })
+  setTimeout(() => {
+    router.push({ name: 'home' })
+  }, 1500)
 }
 </script>
 
 <style scoped>
-
 .createCard {
   background-color: #121212;
   width: 50rem;
@@ -149,5 +165,14 @@ img {
 
 .bgGreen:hover {
   background-color: #1bd45a;
+}
+
+.toast-header {
+  background-color: #1ed760;
+  color: #121212;
+}
+.toast-body {
+  background-color: #121212;
+  color: #eee;
 }
 </style>

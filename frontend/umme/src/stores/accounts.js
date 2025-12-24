@@ -46,6 +46,15 @@ export const useAccountStore = defineStore('account', () => {
         }
     }
 
+    const updateProfile = async (payload) => {
+        try {
+            const response = await api.put('/accounts_umme/update_profile/', payload)   
+            console.log(response.data)
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
     const connectSpotify = () => {
         if (!user.value) return
 
@@ -69,6 +78,24 @@ export const useAccountStore = defineStore('account', () => {
         window.location.href = url
     }
 
+    const getProfile = async (userId) => {
+        try {
+            const response = await api.get(`/accounts_umme/get_profile/${userId}/`)
+            return response.data
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    const getPlaylist = async (userId) => {
+        try {
+            const response = await api.get(`/accounts_umme/get_playlist/${userId}`)
+            return response.data
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
     return {
         user,
         isAuthenticated,
@@ -79,7 +106,11 @@ export const useAccountStore = defineStore('account', () => {
         signUp,
         logOut,
         initUserSetting,
+        updateProfile,
 
         connectSpotify,
+
+        getProfile,
+        getPlaylist,
     }
 })

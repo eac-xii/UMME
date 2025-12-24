@@ -1,26 +1,20 @@
 <template>
-  <div class="container-fluid profile-layout px-5">
-    <div class="row first">
-      <div class="col-6 profile-overview">
-        <div class="userinfo">
-          <UserInfo />
+  <div class="row view-container">
+    <div class="col">
+      <div class="row detail">
+        <div class="col">
+          <UserInfo :userId="userId"/>
+        </div>
+        <div class="col">
+          <UserType :userId="userId"/>
         </div>
       </div>
-      <div class="col-6  music">
-        <div class="usertype">
-          <UserType />
+      <div class="row activity">
+        <div class="col">
+          <ThreadGrid :userId="userId"/>
         </div>
-      </div>
-    </div>
-    <div class="row second">
-      <div class="col-6 profile-overview">
-        <div class="threads">
-          <ThreadGrid :user="route.params.id"/>
-        </div>
-      </div>
-      <div class="col-6 music">
-        <div class="playlist">
-          <Playlist />
+        <div class="col">
+          <Playlist :userId="userId"/>
         </div>
       </div>
     </div>
@@ -36,49 +30,17 @@ import Playlist from '@/components/Profile/Playlist.vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-
+const userId = route.params.id
 </script>
 
 <style scoped>
-.first {
-  height: 24vh;
-}
-
-.second {
-  height: 48vh;
-}
-
-.profile-layout {
-  height: 100vh;
-}
-
-.profile-overview,
-.music {
-  min-width: 0;
-}
-
-.userinfo {
+.view-container {
   height: 100%;
-  padding: 10px;
 }
-
-.threads {
-  height: 100%;
-  overflow-y: scroll;
-  padding: 10px;
+.detail {
+  max-height: 30vh;
 }
-
-.threads::-webkit-scrollbar {
-  display: none;
-}
-
-.usertype {
-  height: 100%;
-  padding: 10px;
-}
-
-.playlist {
-  height: 100%;
-  padding: 10px;
+.activity {
+  max-height: 55vh;
 }
 </style>

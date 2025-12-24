@@ -37,9 +37,9 @@
             로그인하기
           </button>
         </RouterLink>
-        <RouterLink v-if="account.isAuthenticated" :to="{ name: 'profile', params: { id: account.user?.pk }}"
+        <RouterLink v-if="account.isAuthenticated" :to="{ name: 'profile', params: { id: account.user?.pk } }"
           class="profileBtn d-flex justify-content-center align-items-center ms-auto text-decoration-none">
-          <span>{{ account.user?.last_name[0].toUpperCase() }}</span>
+          <UserImage :user="user" />
         </RouterLink>
       </header>
       <RouterView />
@@ -62,13 +62,33 @@ import Playlist from './components/Playlist.vue'
 import { useAccountStore } from '@/stores/accounts'
 import { useControlStore } from './stores/controls'
 import { useToolStore } from '@/stores/tools'
+import { ref, watch } from 'vue'
 import { useRouter, RouterLink, RouterView } from 'vue-router'
 import { PhHouse, PhNotePencil, PhCow } from '@phosphor-icons/vue'
+import UserImage from './components/UserImage.vue'
 
 const router = useRouter()
 const account = useAccountStore()
 const control = useControlStore()
 const tool = useToolStore()
+
+const user = ref(null)
+const loading = ref(true)
+const error = ref(false)
+watch(
+  () => account.user?.pk,
+  async id => {
+    if (!id) return
+    try {
+      user.value = await account.getProfile(id)
+    } catch {
+      error.value = true
+    } finally {
+      loading.value = false
+    }
+  },
+  { immediate: true }
+)
 
 const logOut = async () => {
   await account.logOut()
@@ -166,12 +186,6 @@ header {
 .profileBtn {
   width: 6vh;
   height: 6vh;
-  background-color: #1ed760;
-  border-radius: 100%;
-  border: 1vh solid #121212;
-  color: #121212;
-  font-size: 1.5vh;
-  font-weight: 700;
 }
 
 .profileBtn:hover {

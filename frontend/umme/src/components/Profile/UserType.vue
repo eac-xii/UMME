@@ -1,29 +1,27 @@
 <template>
-  <div class="card">
-    <div class="features-wrapper">
-      <div class="feature">
-        <div class="title">Acousticness</div>
-        <div class="progress-bar">
-          <div class="progress Acousticness" :style="{ width: Acousticness + '%' }"></div>
-        </div>
+  <div class="row features-container ms-1 me-2">
+    <div class="feature">
+      <div class="title">Acousticness</div>
+      <div class="progress-bar">
+        <div class="progress Acousticness" :style="{ width: Acousticness + '%' }"></div>
       </div>
-      <div class="feature">
-        <div class="title">Sentiment</div>
-        <div class="progress-bar">
-          <div class="progress Sentiment" :style="{ width: Sentiment + '%' }"></div>
-        </div>
+    </div>
+    <div class="feature">
+      <div class="title">Sentiment</div>
+      <div class="progress-bar">
+        <div class="progress Sentiment" :style="{ width: Sentiment + '%' }"></div>
       </div>
-      <div class="feature">
-        <div class="title">Energy</div>
-        <div class="progress-bar">
-          <div class="progress Energy" :style="{ width: Energy + '%' }"></div>
-        </div>
+    </div>
+    <div class="feature">
+      <div class="title">Energy</div>
+      <div class="progress-bar">
+        <div class="progress Energy" :style="{ width: Energy + '%' }"></div>
       </div>
-      <div class="feature">
-        <div class="title">Danceability</div>
-        <div class="progress-bar">
-          <div class="progress Danceability" :style="{ width: Danceability + '%' }"></div>
-        </div>
+    </div>
+    <div class="feature">
+      <div class="title">Danceability</div>
+      <div class="progress-bar">
+        <div class="progress Danceability" :style="{ width: Danceability + '%' }"></div>
       </div>
     </div>
   </div>
@@ -39,20 +37,11 @@ const Sentiment = ref(15)
 </script>
 
 <style scoped>
-.card {
-  width: 100%;
+.features-container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  gap: 1rem;
-  padding-right: 2rem;
-  border-radius: 1rem;
-  background-color: #121212;
-}
-
-.features-wrapper {
+  background: linear-gradient(to bottom, #121212, 50%, #000);
+  border-top-left-radius: 3vh;
+  border-top-right-radius: 3vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

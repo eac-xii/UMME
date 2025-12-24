@@ -1,6 +1,6 @@
 <template>
   <div class="thread-grid-wrapper">
-    <div class="thread-grid">
+    <div class="thread-grid px-4">
       <ThreadItem v-for="thread in threads" :key="thread.title" :thread="thread" class="grid-item" />
     </div>
   </div>
@@ -15,25 +15,24 @@ const thread = useThreadStore()
 const threads = ref([])
 
 const props = defineProps({
-  user: Number
+  userId: String
 })
 
 onMounted(async () => {
   const payload = {
-    userId: props.user
+    userId: props.userId
   }
   const data = await thread.getUserThreads(payload)
   threads.value = data
-  console.log(threads.value)
 })
 </script>
 
 <style scoped>
 .thread-grid-wrapper {
-  height: 70%;
+  max-height: 55vh;
   overflow-y: auto;
   padding: 1rem;
-  background-color: #121212;
+  background: #000;
   border-radius: 1rem;
   box-sizing: border-box;
 }
@@ -41,18 +40,16 @@ onMounted(async () => {
 .thread-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1vh;
 }
 
 .grid-item {
   background-color: #1e1e1e;
-  border-radius: 0.5rem;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #aaa;
-  padding: 0.5rem;
   box-sizing: border-box;
 }
 
@@ -69,21 +66,20 @@ onMounted(async () => {
 }
 
 .thread-grid-wrapper::-webkit-scrollbar {
-  width: 0.8rem;
+  width: .8vh;
 }
 
 .thread-grid-wrapper::-webkit-scrollbar-track {
-  background: #1e1e1e;
-  border-radius: 0.3rem;
+  background: #000;
+  border-radius: 3vh;
 }
 
 .thread-grid-wrapper::-webkit-scrollbar-thumb {
-  background-color: #aaa;
-  border-radius: 0.3rem;
-  border: 2px solid #1e1e1e;
+  background-color: #121212;
+  border-radius: 0vh;
 }
 
 .thread-grid-wrapper::-webkit-scrollbar-thumb:hover {
-  background-color: #868686;
+  background-color: #404040;
 }
 </style>

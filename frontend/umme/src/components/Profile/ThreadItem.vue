@@ -63,7 +63,8 @@ const props = defineProps({
   background-color: rgba(0, 0, 0, 0.9);
 }
 .card:hover {
-  transform: translateY(-4px) scale(1.02); 
+  transform: scale(1.005); 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: .2s ease-in;
 }
 </style>

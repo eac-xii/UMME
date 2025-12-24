@@ -14,8 +14,10 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
 import { useControlStore } from '@/stores/controls'
+import { useToolStore } from '@/stores/tools'
 
 const control = useControlStore()
+const tool = useToolStore()
 
 const localPosition = ref(control.position / 1000)
 const isDragging = ref(false)
@@ -49,15 +51,8 @@ const progressStyle = computed(() => {
     }
 })
 
-const formatTime = (sec) => {
-    if (!sec && sec !== 0) return '0:00'
-    const m = Math.floor(sec / 60)
-    const s = String(Math.floor(Math.abs(sec) % 60)).padStart(2, '0')
-    return `${m}:${s}`
-}
-
-const currentTime = computed(() => formatTime(localPosition.value))
-const totalTime = computed(() => formatTime(duration.value))
+const currentTime = computed(() => tool.formatTime(localPosition.value))
+const totalTime = computed(() => tool.formatTime(duration.value))
 </script>
 
 <style scoped>

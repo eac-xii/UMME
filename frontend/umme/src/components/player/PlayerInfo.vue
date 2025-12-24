@@ -29,6 +29,9 @@
 
 <script setup>
 import { computed, ref, watch, nextTick } from 'vue'
+import { useToolStore } from '@/stores/tools'
+
+const tool = useToolStore()
 
 const props = defineProps({
     track: { type: Object, default: null },
@@ -40,7 +43,7 @@ const needsScroll = ref(false)
 const artistNeedsScroll = ref(false)
 
 const albumImage = computed(() => props.track?.album?.images?.[0]?.url || '')
-const artists = computed(() => props.track?.artists?.map(a => a.name).join(' · ') || '')
+const artists = computed(() => tool.formatArtists(props.track?.artists) || '')
 
 const updateScrollStatus = async () => {
     await nextTick()
