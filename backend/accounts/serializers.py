@@ -2,6 +2,7 @@ from dj_rest_auth.registration.serializers import RegisterSerializer
 from dj_rest_auth.serializers import LoginSerializer, UserDetailsSerializer
 from rest_framework import serializers
 from django.contrib.auth import get_user_model, authenticate
+from .models import Profile
 
 User = get_user_model()
 
@@ -18,7 +19,6 @@ class CustomRegisterSerializer(RegisterSerializer):
         return user
 
 class CustomLoginSerializer(LoginSerializer):
-    username = None
     email = serializers.EmailField(required=True)
 
     def validate(self, attrs):
@@ -54,3 +54,10 @@ class CustomUserDetailsSerializer(UserDetailsSerializer):
 
     def get_is_spotify(self, user):
         return hasattr(user, "spotify")
+    
+class ProfileSerializer(serializers.ModelSerializer):
+    user = CustomUserDetailsSerializer(read_only=True)
+    image = serializers.ImageField(use_url=True)
+    class Meta:
+        model = Profile
+        fields = "__all__"

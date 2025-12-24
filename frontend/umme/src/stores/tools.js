@@ -49,6 +49,30 @@ export const useToolStore = defineStore('tool', () => {
     }
   }
 
+  const formatTime = (sec) => {
+    if (!sec && sec !== 0) return '0:00'
+    const m = Math.floor(sec / 60)
+    const s = String(Math.floor(Math.abs(sec) % 60)).padStart(2, '0')
+    return `${m}:${s}`
+  }
+
+  const formatArtists = (artists) => {
+    return artists?.map(artist => artist.name).join(' · ')
+  }
+
+  const getElapsedTime = (isoString) => {
+  if (!isoString) return ''
+  const diffMs = new Date() - new Date(isoString)
+  const diffMin = Math.floor(diffMs / 60000)
+  const diffHour = Math.floor(diffMin / 60)
+  const diffDay = Math.floor(diffHour / 24)
+
+  if (diffMin < 1) return 'now'
+  if (diffMin < 60) return `${diffMin} minutes ago`
+  if (diffHour < 24) return `${diffHour} hours ago`
+  return `${diffDay} days ago`
+}
+
   return {
     searchItems,
     playlist,
@@ -57,5 +81,8 @@ export const useToolStore = defineStore('tool', () => {
     searchArtistTracks,
     addTrackToPlaylist,
     getPlaylistItems,
+    formatTime,
+    formatArtists,
+    getElapsedTime,
   }
 })

@@ -25,10 +25,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import { RouterLink, useRouter } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import { useAccountStore } from '@/stores/accounts'
 const account = useAccountStore()
-const router = useRouter()
 
 const email = ref('')
 const password = ref('')
@@ -39,7 +38,7 @@ const logIn = async () => {
         password: password.value
     }
     await account.logIn(payload)
-    router.push({ name: 'home' })
+    window.location.href = '/'
 }
 </script>
 

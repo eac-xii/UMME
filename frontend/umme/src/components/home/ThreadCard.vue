@@ -4,18 +4,20 @@
       <img :src="thread.track?.image" class="album-cover" alt="Album Cover">
       <div class="track-meta w-100 px-2 text-start">
         <p class="track-title my-3">{{ thread.track?.name }}</p>
-        <p class="track-artist">{{ thread.track?.artists.map(a => a.name).join(', ') }}</p>
+        <p class="track-artist">{{ tool.formatArtists(thread.track?.artists) }}</p>
       </div>
     </div>
 
     <div class="thread-body flex-grow-1 px-3 d-flex flex-column">
       <div class="user-header d-flex align-items-center my-2">
-        <div class="profile-icon d-flex justify-content-center align-items-center rounded-circle me-3">
-          {{ thread.user?.last_name?.[0].toUpperCase() }}
-        </div>
+        <RouterLink :to="{ name: 'profile', params: { id: thread.user?.pk }}"
+        class="profile-icon d-flex justify-content-center align-items-center rounded-circle me-3"
+        >
+        <UserImage :user="userInfo"/>
+        </RouterLink>
         <div class="user-meta">
           <p class="username">{{ thread.user?.last_name }} {{ thread.user?.first_name }}</p>
-          <p class="elapsed-date">{{ getElapsedTime(thread.updated_at) }}</p>
+          <p class="elapsed-date">{{ tool.getElapsedTime(thread.updated_at) }}</p>
         </div>
       </div>
       <hr class="my-2 border-secondary">
@@ -25,11 +27,39 @@
 </template>
 
 <script setup>
+import { ref, watch } from 'vue'
+import { RouterLink } from 'vue-router'
+import { useAccountStore } from '@/stores/accounts'
+import { useToolStore } from '@/stores/tools'
+import UserImage from '../UserImage.vue'
+
+const account = useAccountStore()
+const tool = useToolStore()
+
 import { useRouter } from 'vue-router'
 const router = useRouter()
 const props = defineProps({
   thread: { type: Object, required: true },
 })
+
+const userInfo = ref(null)
+
+const loading = ref(true)
+const error = ref(false)
+watch(
+  () => props.thread?.user?.pk,
+  async id => {
+    if (!id) return
+    try {
+      userInfo.value = await account.getProfile(id)
+    } catch {
+      error.value = true
+    } finally {
+      loading.value = false
+    }
+  },
+  { immediate: true }
+)
 
 // const user_threadlist = () => {
 //   console.log('thread prop: ', props.thread)
@@ -101,11 +131,8 @@ p { margin: 0; padding: 0; }
 .track-artist { font-size: 0.85rem; color: #b3b3b3; }
 
 .profile-icon {
-  background-color: #1ed760;
-  width: 40px;
-  height: 40px;
-  color: #000;
-  font-weight: bold;
+  width: 50px;
+  height: 50px;
 }
 
 .username { font-size: 1rem; color: #fff; }
