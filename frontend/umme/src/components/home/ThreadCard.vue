@@ -1,5 +1,5 @@
 <template>
-  <div class="thread-card d-flex ">
+  <div class="thread-card d-flex" @click="threadDetail">
     <div class="song-info d-flex flex-column align-items-center mx-4">
       <img :src="thread.track?.image" class="album-cover" alt="Album Cover">
       <div class="track-meta w-100 px-2 text-start">
@@ -36,8 +36,10 @@ import UserImage from '../UserImage.vue'
 const account = useAccountStore()
 const tool = useToolStore()
 
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const props = defineProps({
-  thread: { type: Object, required: true }
+  thread: { type: Object, required: true },
 })
 
 const userInfo = ref(null)
@@ -59,6 +61,33 @@ watch(
   { immediate: true }
 )
 
+// const user_threadlist = () => {
+//   console.log('thread prop: ', props.thread)
+//   router.push({
+//     name: 'thread-detail',
+//     params: { id: props.thread.user.pk }
+//   })
+// }
+
+const threadDetail = () => {
+  router.push({
+    name: 'thread-detail',
+    params: { id: props.thread.id }
+  })
+}
+
+const getElapsedTime = (isoString) => {
+  if (!isoString) return ''
+  const diffMs = new Date() - new Date(isoString)
+  const diffMin = Math.floor(diffMs / 60000)
+  const diffHour = Math.floor(diffMin / 60)
+  const diffDay = Math.floor(diffHour / 24)
+
+  if (diffMin < 1) return 'now'
+  if (diffMin < 60) return `${diffMin} minutes ago`
+  if (diffHour < 24) return `${diffHour} hours ago`
+  return `${diffDay} days ago`
+}
 </script>
 
 <style scoped>
