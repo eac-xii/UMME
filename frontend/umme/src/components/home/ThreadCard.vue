@@ -1,15 +1,15 @@
 <template>
-  <div class="thread-card d-flex p-4">
-    <div class="song-info d-flex flex-column align-items-center">
+  <div class="thread-card d-flex ">
+    <div class="song-info d-flex flex-column align-items-center mx-4">
       <img :src="thread.track?.image" class="album-cover" alt="Album Cover">
       <div class="track-meta w-100 px-2 text-start">
-        <p class="track-title">{{ thread.track?.name }}</p>
+        <p class="track-title my-3">{{ thread.track?.name }}</p>
         <p class="track-artist">{{ thread.track?.artists.map(a => a.name).join(', ') }}</p>
       </div>
     </div>
 
     <div class="thread-body flex-grow-1 px-3 d-flex flex-column">
-      <div class="user-header d-flex align-items-center mb-2">
+      <div class="user-header d-flex align-items-center my-2">
         <div class="profile-icon d-flex justify-content-center align-items-center rounded-circle me-3">
           {{ thread.user?.last_name?.[0].toUpperCase() }}
         </div>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <hr class="my-2 border-secondary">
-      <p class="content-text text-break">{{ thread.content }}</p>
+      <p class="content-text text-break my-3">{{ thread.content }}</p>
     </div>
   </div>
 </template>
@@ -47,10 +47,12 @@ const getElapsedTime = (isoString) => {
 p { margin: 0; padding: 0; }
 
 .thread-card {
-  height: 18rem;
+  height: 25rem;
   border-radius: 1rem;
   background-color: #121212;
   color: #eee;
+  padding: 3rem;
+  gap: 2rem;
 }
 
 .song-info {
@@ -67,6 +69,10 @@ p { margin: 0; padding: 0; }
   margin-bottom: 0.75rem;
 }
 
+.thread-body{
+  overflow: hidden;
+}
+
 .track-title, .track-artist {
   display: block;
   overflow: hidden;
@@ -74,8 +80,8 @@ p { margin: 0; padding: 0; }
   white-space: nowrap;
 }
 
-.track-title { font-size: 0.85rem; font-weight: 300; }
-.track-artist { font-size: 0.75rem; color: #b3b3b3; }
+.track-title { font-size: 1rem; font-weight: 300; }
+.track-artist { font-size: 0.85rem; color: #b3b3b3; }
 
 .profile-icon {
   background-color: #1ed760;

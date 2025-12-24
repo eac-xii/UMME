@@ -1,6 +1,6 @@
 <template>
+  <h5 class="px-4 PL-title">Playlist</h5>
   <div class="container-fluid playlist bgDark rounded-5 p-3">
-    <h5>Playlist</h5>
     <ol class="ps-2 list-unstyled">
       <li v-for="(item, index) in playlistItems" :key="index"
         class="d-flex align-items-center my-3 p-2 rounded list-item" @click.prevent="evokeTrack(index, item.track)"
@@ -74,9 +74,25 @@ const resetScroll = (index) => {
 </script>
 
 <style scoped>
-.playlist {
-  height: 100%;
+ .PL-title {
   color: white;
+ }
+.playlist {
+  height: 60vh;
+  color: white;
+  overflow-y: scroll;
+}
+
+.playlist::-webkit-scrollbar{
+  width: 0.6vw;      /* 세로 스크롤 */
+  height: 0.6vw;     /* 가로 스크롤 */
+  background-color: rgba(64, 64, 64, 0.8);
+  border-radius: 1vh;
+}
+
+.playlist::-webkit-scrollbar-thumb{
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 1vh;
 }
 
 .list-item {

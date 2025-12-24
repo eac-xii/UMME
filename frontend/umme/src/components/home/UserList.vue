@@ -1,12 +1,14 @@
 <template>
-  <div class="userlist card">
-    <div class="titlebar px-4">
-      <span class="title">UMME</span>
-      <span><i class="bi bi-arrow-clockwise"></i></span>
-    </div>
-    <div class="px-4 row">
-      <div v-for="user in users" :key="user.name">
-        <UserCard :user="user" />
+  <div class="userlist-layout">
+    <div class="userlist card px-2">
+      <div class="titlebar px-4">
+        <span class="title">UMME</span>
+        <span><i class="bi bi-arrow-clockwise"></i></span>
+      </div>
+      <div class="px-4 row">
+        <div v-for="user in users" :key="user.name">
+          <UserCard :user="user" />
+        </div>
       </div>
     </div>
   </div>
@@ -27,6 +29,11 @@ const users = ref([
 </script>
 
 <style scoped>
+.userlist-layout{
+  height: 70vh;
+  margin-right: 2rem;
+}
+
 .userlist {
   margin-top: 50px;
   border-radius: 1rem;
