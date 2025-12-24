@@ -5,4 +5,5 @@ urlpatterns = [
     path('create/', views.create),
     path('get_threads/', views.get_threads),
     path('get_user_threads/', views.get_user_threads),
+    path('<int:id>/', views.get_thread),
 ]

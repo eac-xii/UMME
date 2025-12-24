@@ -13,7 +13,7 @@ from rest_framework.response import Response
 from .models import Thread
 from musics.models import Track
 
-from .serializers import ThreadListSerializer
+from .serializers import ThreadListSerializer, ThreadDetailSerializer
 
 # Create your views here.
 @api_view(["GET", "POST"])
@@ -53,3 +53,12 @@ def get_user_threads(request):
         threads = Thread.objects.filter(user=user)
         serializer = ThreadListSerializer(threads, many=True)
         return Response(serializer.data, status=200)
+
+@api_view(['GET'])
+def get_thread(request, id):
+    try:
+        thread = Thread.objects.get(pk=id)
+        serializer = ThreadDetailSerializer(thread)
+        return Response(serializer.data)
+    except Thread.DoesNotExist:
+        return Response({"detail": "Not found"}, status=404)

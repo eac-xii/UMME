@@ -1,5 +1,5 @@
 <template>
-  <div class="thread-card d-flex ">
+  <div class="thread-card d-flex" @click="threadDetail">
     <div class="song-info d-flex flex-column align-items-center mx-4">
       <img :src="thread.track?.image" class="album-cover" alt="Album Cover">
       <div class="track-meta w-100 px-2 text-start">
@@ -25,9 +25,26 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const props = defineProps({
-  thread: { type: Object, required: true }
+  thread: { type: Object, required: true },
 })
+
+// const user_threadlist = () => {
+//   console.log('thread prop: ', props.thread)
+//   router.push({
+//     name: 'thread-detail',
+//     params: { id: props.thread.user.pk }
+//   })
+// }
+
+const threadDetail = () => {
+  router.push({
+    name: 'thread-detail',
+    params: { id: props.thread.id }
+  })
+}
 
 const getElapsedTime = (isoString) => {
   if (!isoString) return ''
