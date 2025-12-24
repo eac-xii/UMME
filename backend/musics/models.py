@@ -134,7 +134,7 @@ class Playlist(TimeStampedModel, models.Model):
     tracks = models.ManyToManyField(
         Track,
         through="PlaylistTrack",
-        related_name="playlists"
+        related_name="playlists",
     )
     is_public = models.BooleanField(default=True)
 

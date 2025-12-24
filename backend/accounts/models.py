@@ -1,7 +1,6 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, PermissionsMixin
-from musics.models import Track
 from django.core.validators import (
     MinValueValidator,
     MaxValueValidator
@@ -89,32 +88,6 @@ class SpotifyAccount(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-class Follow(models.Model):
-    follower = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="following"
-    )
-    following = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="followers"
-    )
-
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(
-                fields=["follower", "following"],
-                name="unique_follow"
-            ),
-            models.CheckConstraint(
-                condition=~models.Q(follower=models.F("following")),
-                name="prevent_self_follow"
-            ),
-        ]
-
 class Profile(models.Model):
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
@@ -139,22 +112,26 @@ class Profile(models.Model):
     
 class UserFeatures(models.Model):
     user = models.OneToOneField(
-        Track,
+        settings.AUTH_USER_MODEL,
         primary_key=True,
         on_delete=models.CASCADE,
         related_name="user"
     )
     acousticness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     danceability = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     energy = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     instrumentalness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     KEY_CHOICES = [
         (-1, "unknown"),
@@ -167,27 +144,32 @@ class UserFeatures(models.Model):
         null=True,
     )
     liveness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     loudness = models.FloatField(
         validators=[
             MinValueValidator(-60.0),
             MaxValueValidator(0.0)
-        ]
+        ],
+        null=True
     )
     mode = models.BooleanField(
         null=True,
         help_text="True=major, False=minor"
     )
     speechiness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     tempo = models.FloatField(
         validators=[
             MinValueValidator(0.0),
             MaxValueValidator(300.0)
-        ]
+        ],
+        null=True
     )
     valence = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
