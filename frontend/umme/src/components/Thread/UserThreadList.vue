@@ -1,8 +1,6 @@
 <template>
-  <div class="px-4">
+  <div class="layout">
     <div class="filter">
-      <div class="filter-item">All</div>
-      <div class="filter-item">Follow</div>
       <hr class="line">
     </div>
     <div class="thread-layout">
@@ -18,26 +16,31 @@
 </template>
 
 <script setup>
-import { computed, onMounted } from 'vue'
-import ThreadCard from './ThreadCard.vue'
+import ThreadCard from '@/components/home/ThreadCard.vue'
+import { useRoute } from 'vue-router'
+import { onMounted, ref } from 'vue'
 import { useThreadStore } from '@/stores/threads'
+import api from '@/api/axios'
 
 const thread = useThreadStore()
+const route = useRoute()
+const userId = route.params.id
 
-const threads = computed(() => {
-  return thread.isAIMode
-  ? thread.ragThreads
-  : thread.threadItems
+const threads = ref([])
+const user = ref(null)
+
+onMounted(async () => {
+  const payload = {
+    userId: userId
+  }
+  const data = await thread.getUserThreads(payload)
+  threads.value = data
+  
 })
-onMounted(() => {
-  thread.getThreads({ filter: 'all' })
-})
-
-
+console.log('threads:',threads)
 </script>
 
 <style scoped>
-
 .thread-layout{
   height: 80vh;
   overflow-y: scroll;

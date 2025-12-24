@@ -34,3 +34,34 @@ class ThreadListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Thread
         fields = "__all__"
+
+class ThreadDetailSerializer(serializers.ModelSerializer):
+    # user serializer
+    class CustomUserDetailsSerializer(UserDetailsSerializer):
+        is_spotify = serializers.SerializerMethodField()
+
+        class Meta(UserDetailsSerializer.Meta):
+            fields = UserDetailsSerializer.Meta.fields + ("is_spotify",)
+
+        def get_is_spotify(self, user):
+            return hasattr(user, "spotify")
+
+    # track serializer
+    class TrackDetailSerializer(serializers.ModelSerializer):
+        class ArtistListSerializer(serializers.ModelSerializer):
+            class Meta:
+                model = Artist
+                fields = "__all__"
+
+        artists = ArtistListSerializer(read_only=True, many=True)
+
+        class Meta:
+            model = Track
+            fields = "__all__"
+
+    user = CustomUserDetailsSerializer(read_only=True)
+    track = TrackDetailSerializer(read_only=True)
+
+    class Meta:
+        model = Thread
+        fields = "__all__"
