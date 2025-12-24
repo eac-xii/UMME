@@ -40,6 +40,7 @@ export const useThreadStore = defineStore('thread', {
       this.isAIMode = true
       const response = await api.post('/rag/query/', payload)
       this.ragThreads = response.data.threads
+      console.log('RAG response:', response.data)
       return response.data
     },
   },

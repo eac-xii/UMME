@@ -6,7 +6,7 @@
       <hr class="line">
     </div>
     <div class="thread-layout">
-      <div class="mx-2 mb-3 p-0" v-for="thread in threads" :key="thread.title">
+      <div class="mx-2 mb-3 p-0" v-for="thread in threads" :key="thread.id">
         <ThreadCard :thread="thread" />
       </div>
     </div>
