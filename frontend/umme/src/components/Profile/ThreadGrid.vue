@@ -7,21 +7,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import ThreadItem from './ThreadItem.vue'
+import { useThreadStore } from '@/stores/threads';
 
-const threads = ref([
-  { title: 'Thread1', content: 'Content1' },
-  { title: 'Thread2', content: 'Content2' },
-  { title: 'Thread3', content: 'Content3' },
-  { title: 'Thread4', content: 'Content4' },
-  { title: 'Thread5', content: 'Content5' },
-  { title: 'Thread6', content: 'Content6' },
-  { title: 'Thread7', content: 'Content7' },
-  { title: 'Thread8', content: 'Content8' },
-  { title: 'Thread9', content: 'Content9' },
-  { title: 'Thread10', content: 'Content10' },
-])
+const thread = useThreadStore()
+const threads = ref([])
+
+onMounted(async () => {
+  const data = await thread.getThreads({filter:'all'})
+  threads.value = data
+})
 </script>
 
 <style scoped>
