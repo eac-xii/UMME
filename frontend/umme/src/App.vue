@@ -28,7 +28,7 @@
       <hr class="m-4">
       <Playlist v-if="account.isAuthenticated" @evoke-track="playTrack" />
     </aside>
-    <main class="flex-grow-1">
+    <main class="flex-grow-1 mx-3">
       <header class="top d-flex align-items-center px-3">
         <SearchBox />
         <button v-if="account.isAuthenticated" class="btn btn-outline border-0" @click.prevent="logOut">

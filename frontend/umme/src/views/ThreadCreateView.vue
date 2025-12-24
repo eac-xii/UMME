@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="layout m-4">
     <div class="row">
       <div class="col-5">
         <Playlist @evoke-track="getTrack" />
@@ -25,4 +25,10 @@ const getTrack = (idx, track) => {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
