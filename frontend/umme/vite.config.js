@@ -19,7 +19,13 @@ export default defineConfig({
       '/threads': {
         target: 'http://127.0.0.1:8000',
         changeOrigin: true,
+      },
+      '/rag': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/rag/, '/rag')
       }
+
     }
   },
   plugins: [

@@ -18,7 +18,7 @@ import { ref } from 'vue'
 
 const trackDetail = ref(null)
 
-const getTrack = (track) => {
+const getTrack = (idx, track) => {
   trackDetail.value = track
   console.log(track)
 }

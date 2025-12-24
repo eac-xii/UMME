@@ -12,13 +12,21 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import ThreadCard from './ThreadCard.vue'
 import { useThreadStore } from '@/stores/threads'
 
 const thread = useThreadStore()
 
-const threads = computed(() => thread.threadItems)
+
+const threads = computed(() => {
+  return thread.isAIMode
+  ? thread.ragThreads
+  : thread.threadItems
+})
+onMounted(() => {
+  thread.getThreads({ filter: 'all' })
+})
 </script>
 
 <style scoped>

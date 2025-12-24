@@ -1,0 +1,46 @@
+[
+{
+    "model": "threads.thread",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "track": 1,
+        "content": "존메이어 사랑해요",
+        "created_at": "2025-12-23T06:41:47.744Z",
+        "updated_at": "2025-12-23T06:41:47.744Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "track": 2,
+        "content": "이하이 Lee Hi",
+        "created_at": "2025-12-23T08:15:18.275Z",
+        "updated_at": "2025-12-23T08:15:18.275Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "track": 3,
+        "content": "Cocaine !?!?!?!?",
+        "created_at": "2025-12-23T08:15:46.191Z",
+        "updated_at": "2025-12-23T08:15:46.191Z"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "track": 4,
+        "content": "박서연 PICK",
+        "created_at": "2025-12-23T08:16:06.564Z",
+        "updated_at": "2025-12-23T08:16:06.564Z"
+    }
+}
+]
