@@ -14,9 +14,17 @@ import { useThreadStore } from '@/stores/threads';
 const thread = useThreadStore()
 const threads = ref([])
 
+const props = defineProps({
+  user: Number
+})
+
 onMounted(async () => {
-  const data = await thread.getThreads({filter:'all'})
+  const payload = {
+    userId: props.user
+  }
+  const data = await thread.getUserThreads(payload)
   threads.value = data
+  console.log(threads.value)
 })
 </script>
 

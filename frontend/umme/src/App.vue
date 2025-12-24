@@ -43,7 +43,7 @@
             로그인하기
           </button>
         </RouterLink>
-        <RouterLink v-if="account.isAuthenticated" :to="{ name: 'profile' }"
+        <RouterLink v-if="account.isAuthenticated" :to="{ name: 'profile', params: { id: account.user?.pk }}"
           class="profileBtn d-flex justify-content-center align-items-center ms-auto text-decoration-none">
           <span>{{ account.user?.last_name[0].toUpperCase() }}</span>
         </RouterLink>

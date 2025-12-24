@@ -15,7 +15,7 @@
     <div class="row second">
       <div class="col-6 profile-overview">
         <div class="threads">
-          <ThreadGrid />
+          <ThreadGrid :user="route.params.id"/>
         </div>
       </div>
       <div class="col-6 music">
@@ -32,6 +32,11 @@ import UserInfo from '@/components/Profile/UserInfo.vue'
 import ThreadGrid from '@/components/Profile/ThreadGrid.vue'
 import UserType from '@/components/Profile/UserType.vue'
 import Playlist from '@/components/Profile/Playlist.vue'
+
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
 </script>
 
 <style scoped>

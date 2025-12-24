@@ -28,12 +28,19 @@ export const useThreadStore = defineStore('thread', {
         })
 
         this.threadItems = response.data
-        console.log(response.data)
-
         return response.data
       } catch (error) {
         console.error('getThreads error:', error)
       }
+    },
+    async getUserThreads(payload) {
+      const { userId } = payload
+      const response = await api.get('/threads/get_user_threads/', {
+        params: {
+          userId
+        }
+      })
+      return response.data
     },
 
     async runRag(payload) {

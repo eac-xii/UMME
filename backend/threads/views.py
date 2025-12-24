@@ -45,3 +45,11 @@ def get_threads(request):
 
         else:
             return Response(status=204)
+        
+@api_view(["GET"])
+def get_user_threads(request):
+    if request.method == "GET":
+        user = request.GET.get("userId")
+        threads = Thread.objects.filter(user=user)
+        serializer = ThreadListSerializer(threads, many=True)
+        return Response(serializer.data, status=200)

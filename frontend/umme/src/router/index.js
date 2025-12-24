@@ -19,7 +19,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/profile',
+      path: '/profile/:id',
       name: 'profile',
       component: ProfileView,
       meta: { requiresAuth: true }
