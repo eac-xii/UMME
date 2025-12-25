@@ -71,7 +71,20 @@ watch(
 <style scoped>
 .wrapper {
   max-height: 55vh;
-  overflow-y: auto;
+  overflow-y: scroll;
+  margin-right: 2rem;
+}
+
+.wrapper::-webkit-scrollbar{
+  width: 0.5vw;      /* 세로 스크롤 */
+  height: 0.6vw;     /* 가로 스크롤 */
+  background-color: rgba(64, 64, 64, 0.8);
+  border-radius: 1vh;
+}
+
+.wrapper::-webkit-scrollbar-thumb{
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 1vh;
 }
 .sticky-top {
   background-color: #000;
