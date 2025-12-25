@@ -324,3 +324,15 @@ def get_playlist_items(request):
         playlist_track = PlaylistTrack.objects.filter(playlist=playlist)
         serializer = PlaylistTracksSerializer(playlist_track, many=True)
         return Response(serializer.data)
+    
+from .serializers import AudioFeaturesSerializer
+
+@api_view(['GET'])
+def get_audiofeatures(request, track_id):
+    try:
+        features = AudioFeatures.objects.get(track_id=track_id)
+    except AudioFeatures.DoesNotExist:
+        return Response({"detail": "AudioFeatures not found"})
+
+    serializer = AudioFeaturesSerializer(features)
+    return Response(serializer.data)

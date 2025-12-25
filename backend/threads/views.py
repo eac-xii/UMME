@@ -11,7 +11,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from .models import Thread
-from musics.models import Track
+from musics.models import Track, AudioFeatures
 
 from .serializers import ThreadListSerializer, ThreadDetailSerializer
 
@@ -62,3 +62,4 @@ def get_thread(request, id):
         return Response(serializer.data)
     except Thread.DoesNotExist:
         return Response({"detail": "Not found"}, status=404)
+    
