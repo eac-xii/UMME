@@ -48,12 +48,25 @@ class CustomLoginSerializer(LoginSerializer):
 
 class CustomUserDetailsSerializer(UserDetailsSerializer):
     is_spotify = serializers.SerializerMethodField()
+    followers = serializers.SerializerMethodField()
+    followings = serializers.SerializerMethodField()
 
     class Meta(UserDetailsSerializer.Meta):
-        fields = UserDetailsSerializer.Meta.fields + ("is_spotify",)
+        fields = UserDetailsSerializer.Meta.fields + (
+            "is_spotify",
+            "followers",
+            "followings",
+        )
 
     def get_is_spotify(self, user):
         return hasattr(user, "spotify")
+
+    def get_followers(self, user):
+        return user.followers.values("id", "username")
+
+    def get_followings(self, user):
+        return user.followings.values("id", "username")
+
     
 class ProfileSerializer(serializers.ModelSerializer):
     user = CustomUserDetailsSerializer(read_only=True)

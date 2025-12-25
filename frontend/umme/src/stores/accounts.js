@@ -91,7 +91,16 @@ export const useAccountStore = defineStore('account', () => {
 
     const getPlaylist = async (userId) => {
         try {
-            const response = await api.get(`/accounts_umme/get_playlist/${userId}`)
+            const response = await api.get(`/accounts_umme/get_playlist/${userId}/`)
+            return response.data
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    const follow = async (userId) => {
+        try {
+            const response = await api.put(`/accounts_umme/follow/${userId}/`)
             return response.data
         } catch (error) {
             console.error(error)
@@ -114,5 +123,6 @@ export const useAccountStore = defineStore('account', () => {
 
         getProfile,
         getPlaylist,
+        follow,
     }
 })

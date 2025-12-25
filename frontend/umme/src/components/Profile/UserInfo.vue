@@ -4,8 +4,10 @@
       <div class="row profile-top p-5">
         <span class="profile-image" :style="{ backgroundImage: `url('${userInfo?.image ? base_url + userInfo.image : defaultUser}')` }">
         </span>
-        <div class="col profile-spotify">
-          <span>{{ userInfo?.user?.is_spotify ? 'Spotify User' : 'Free User' }}</span>
+        <div class="col profile-meta">
+          <span class="profile-spotify">{{ userInfo?.user?.is_spotify ? 'Spotify User' : 'Free User' }}</span>
+          <span class="profile-follow">Follower {{ userInfo?.user?.followers?.length }}</span>
+          <span class="profile-follow">Following {{ userInfo?.user?.followings?.length }}</span>
         </div>
       </div>
       <div class="row profile-bottom">
@@ -18,6 +20,10 @@
           <button v-if="userInfo?.user?.pk === account.user?.pk" type="button"
             class="btn btn-outline-light rounded-pill" data-bs-toggle="modal" data-bs-target="#editProfileModal" ref="editBtn">
             Edit profile
+          </button>
+          <button v-if="userInfo?.user?.pk !== account.user?.pk" type="button"
+            class="btn btn-outline-light rounded-pill" @click="follow">
+            {{ isFollowing ? 'Unfollow' : 'Follow'}}
           </button>
         </div>
       </div>
@@ -52,7 +58,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { Modal } from 'bootstrap'
 import { useAccountStore } from '@/stores/accounts'
 import { useRouter } from 'vue-router'
@@ -89,6 +95,19 @@ const updateProfile = async () => {
   userInfo.value = await account.getProfile(userInfo.value?.user?.pk)
   closeModal()
   router.go(0)
+}
+
+const isFollowing = computed(() => {
+  return userInfo.value?.user?.followings
+  .map(follower => follower.id)
+  .find(id => id === account.user?.pk)
+})
+
+const follow = async () => {
+  const userId = userInfo.value?.user?.pk
+  await account.follow(userId)
+  const response = await account.getProfile(userId)
+  userInfo.value = response
 }
 
 const closeModal = () => {
@@ -143,12 +162,22 @@ watch(
   border-top-right-radius: 3vh;
 }
 
-.profile-spotify {
+.profile-meta {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  align-items: end;
+}
+.profile-spotify {
   font-size: 2vh;
   font-weight: 400;
   color: #aaa;
+  padding-bottom: 2vh;
+}
+.profile-follow {
+  width: 50%;
+  font-size: 1.5vh;
+  font-weight: 300;
+  color: #8c8c8c;
 }
 
 .profile-bottom {

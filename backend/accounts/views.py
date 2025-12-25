@@ -84,3 +84,18 @@ def update_profile(request):
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             
+@api_view(["PUT"])
+def follow(request, user_pk):
+    if request.method == "PUT":
+        you = get_object_or_404(User, pk=user_pk)
+        me = request.user
+
+        if you != me:
+            if you in me.followers.all():
+                you.followings.remove(me)
+                is_followed = False
+            else:
+                you.followings.add(me)
+                is_followed = True
+            return Response({"is_followed": is_followed}, status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_400_BAD_REQUEST)

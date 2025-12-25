@@ -6,4 +6,5 @@ urlpatterns = [
     path('get_profile/<int:user_pk>/', views.get_profile),
     path('get_playlist/<int:user_pk>/', views.get_playlist),
     path('update_profile/', views.update_profile),
+    path('follow/<int:user_pk>/', views.follow),
 ]
