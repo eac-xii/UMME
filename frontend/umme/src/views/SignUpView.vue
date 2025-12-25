@@ -134,7 +134,6 @@ const signUp = async () => {
             password2: password2.value
         }
 
-
         await account.signUp(payload)
         await account.logIn({ email: payload.email, password: payload.password1 })
         await account.initUserSetting()

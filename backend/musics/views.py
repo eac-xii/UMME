@@ -286,6 +286,7 @@ def add_track_to_playlist(request):
         ).json()["content"]
 
         if item:
+            print("Audiofeature가 있어요")
             item = item[0]
             track = Track.objects.get(spotify_id=data["id"])
             audiofeatures, _ = AudioFeatures.objects.get_or_create(
@@ -302,6 +303,23 @@ def add_track_to_playlist(request):
                 tempo=item["tempo"],
                 valence=item["valence"]
             )
+        else:
+            print("Audiofeature가 없어요")
+            track = Track.objects.get(spotify_id=data["id"])
+            audiofeatures, _ = AudioFeatures.objects.get_or_create(
+                track=track,
+                acousticness=None,
+                danceability=None,
+                energy=None,
+                instrumentalness=None,
+                key=None,
+                liveness=None,
+                loudness=None,
+                mode=None,
+                speechiness=None,
+                tempo=None,
+                valence=None
+            )
 
         targetPlaylist = Playlist.objects.get(user=request.user)
 
@@ -315,6 +333,32 @@ def add_track_to_playlist(request):
             order_index=next_index
         )
         return Response(status=status.HTTP_201_CREATED)
+
+@api_view(["DELETE"])
+@permission_classes([IsAuthenticated])
+def remove_track_from_playlist(request):
+    if request.method == "DELETE":
+        track_spotify_id = request.query_params.get("trackId")
+
+        if not track_spotify_id:
+            return Response(
+                {"detail": "track_id is required"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        playlist = get_object_or_404(Playlist, user=request.user)
+        
+        track = get_object_or_404(
+            Track,
+            spotify_id=track_spotify_id
+        )
+
+        PlaylistTrack.objects.filter(
+            playlist=playlist,
+            track=track
+        ).delete()
+
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 from .serializers import PlaylistTracksSerializer
 
@@ -331,11 +375,9 @@ def get_playlist_items(request):
 from .serializers import AudioFeaturesSerializer
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def get_audiofeatures(request, track_id):
-    try:
-        features = AudioFeatures.objects.get(track_id=track_id)
-    except AudioFeatures.DoesNotExist:
-        return Response({"detail": "AudioFeatures not found"}, status=status.HTTP_204_NO_CONTENT)
-
-    serializer = AudioFeaturesSerializer(features)
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    if request.method == "GET":
+        features = get_object_or_404(AudioFeatures, track=track_id)
+        serializer = AudioFeaturesSerializer(features)
+        return Response(serializer.data, status=status.HTTP_200_OK)

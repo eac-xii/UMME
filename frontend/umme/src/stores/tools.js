@@ -34,11 +34,24 @@ export const useToolStore = defineStore('tool', () => {
   const addTrackToPlaylist = async (payload) => {
     const { track } = payload
     try {
-      await api.post('/musics/spotify/add_track_to_playlist/', { track })
+      await api.post('/musics/add_track_to_playlist/', { track })
     } catch (error) {
       console.error(error)
     }
   }
+
+  const removeTrackFromPlaylist = async (trackId) => {
+        try {
+            await api.delete('/musics/remove_track_from_playlist/', {
+                params: { 
+                    trackId
+                }
+            })
+            await getPlaylistItems()
+        } catch (error) {
+            console.error(error)
+        }
+    }
 
   const getPlaylistItems = async () => {
     try {
@@ -80,6 +93,7 @@ export const useToolStore = defineStore('tool', () => {
     search,
     searchArtistTracks,
     addTrackToPlaylist,
+    removeTrackFromPlaylist,
     getPlaylistItems,
     formatTime,
     formatArtists,

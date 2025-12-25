@@ -36,7 +36,6 @@ export const useThreadStore = defineStore('thread', {
     async getThread(threadId) {
       try {
         const response = await api.get(`/threads/get_thread/${threadId}/`)
-        console.log(response.data)
         return response.data
       } catch (error) {
         console.error(error)
@@ -63,9 +62,7 @@ export const useThreadStore = defineStore('thread', {
 
     async getAudiofeatures(payload) {
       const { track_id } = payload
-      const response = await api.get(`/musics/get_audiofeatures/${track_id}/`, {
-        params: { track_id }
-      })
+      const response = await api.get(`/musics/get_audiofeatures/${track_id}/`)
       return response.data
     }
   },

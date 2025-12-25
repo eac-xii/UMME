@@ -21,8 +21,10 @@
 <script setup>
 import { computed, onMounted } from 'vue'
 import ThreadCard from './ThreadCard.vue'
+import { useAccountStore } from '@/stores/accounts'
 import { useThreadStore } from '@/stores/threads'
 
+const account = useAccountStore()
 const thread = useThreadStore()
 
 const threads = computed(() => {
@@ -32,6 +34,7 @@ const threads = computed(() => {
 })
 
 onMounted(async () => {
+  if (!account.isAuthenticated) return
   await getThreads('all')
 })
 

@@ -77,16 +77,20 @@ class AudioFeatures(TimeStampedModel, models.Model):
         related_name="audio_features"
     )
     acousticness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     danceability = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     energy = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     instrumentalness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     KEY_CHOICES = [
         (-1, "unknown"),
@@ -99,29 +103,34 @@ class AudioFeatures(TimeStampedModel, models.Model):
         null=True,
     )
     liveness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     loudness = models.FloatField(
         validators=[
             MinValueValidator(-60.0),
             MaxValueValidator(0.0)
-        ]
+        ],
+        null=True
     )
     mode = models.BooleanField(
         null=True,
         help_text="True=major, False=minor"
     )
     speechiness = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
     tempo = models.FloatField(
         validators=[
             MinValueValidator(0.0),
             MaxValueValidator(300.0)
-        ]
+        ],
+        null=True
     )
     valence = models.FloatField(
-        validators=float_scope_validator
+        validators=float_scope_validator,
+        null=True
     )
 
 class Playlist(TimeStampedModel, models.Model):
