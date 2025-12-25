@@ -64,8 +64,10 @@
 <script setup>
 import { ref } from 'vue'
 import { useAccountStore } from '@/stores/accounts'
+import { useThreadStore } from '@/stores/threads'
 
 const account = useAccountStore()
+const thread = useThreadStore()
 const formRef = ref(null)
 
 const email = ref('')
@@ -136,7 +138,7 @@ const signUp = async () => {
         await account.signUp(payload)
         await account.logIn({ email: payload.email, password: payload.password1 })
         await account.initUserSetting()
-
+        await thread.getThread('all')
         window.location.href = '/'
     } catch (err) {
         console.error(err)

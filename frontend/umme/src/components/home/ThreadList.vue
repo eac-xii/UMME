@@ -32,7 +32,7 @@ const threads = computed(() => {
 })
 
 onMounted(async () => {
-  await getThreads({filter: 'all'})
+  await getThreads('all')
 })
 
 const getThreads = async (filter) => {
