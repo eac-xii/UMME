@@ -153,6 +153,10 @@ export const useControlStore = defineStore('control', () => {
         }
     }
 
+    const disconnect = () => {
+        player.disconnect()
+    }
+
     return {
         volume: computed(() => volume.value),
 
@@ -171,6 +175,7 @@ export const useControlStore = defineStore('control', () => {
         previousTrack,
         nextTrack,
         seek,
+        disconnect,
 
         setSDKReady,
         setPaused,

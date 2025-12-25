@@ -55,11 +55,13 @@
 import { ref, watch } from 'vue'
 import { Modal } from 'bootstrap'
 import { useAccountStore } from '@/stores/accounts'
+import { useRouter } from 'vue-router'
 import defaultUser from '@/assets/default-user.png'
 
 const base_url = import.meta.env.VITE_API_BASE_URL
 
 const account = useAccountStore()
+const router = useRouter()
 
 const props = defineProps({
   userId: String
@@ -86,6 +88,7 @@ const updateProfile = async () => {
   await account.updateProfile(formData)
   userInfo.value = await account.getProfile(userInfo.value?.user?.pk)
   closeModal()
+  router.go(0)
 }
 
 const closeModal = () => {
