@@ -1,7 +1,11 @@
 <template>
   <div class="thread-grid-wrapper">
     <div class="thread-grid px-4">
-      <ThreadItem v-for="thread in threads" :key="thread.title" :thread="thread" class="grid-item" />
+      <ThreadItem 
+      v-for="thread in threads" 
+      :key="thread.title" 
+      :thread="thread" 
+      class="grid-item" />
     </div>
   </div>
 </template>

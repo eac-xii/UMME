@@ -62,14 +62,6 @@ watch(
   { immediate: true }
 )
 
-// const user_threadlist = () => {
-//   console.log('thread prop: ', props.thread)
-//   router.push({
-//     name: 'thread-detail',
-//     params: { id: props.thread.user.pk }
-//   })
-// }
-
 const threadDetail = () => {
   router.push({
     name: 'thread-detail',

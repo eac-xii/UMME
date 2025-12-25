@@ -39,7 +39,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-/* 스크롤 필요 시 */
 div {
   overflow-y: auto;
 }
