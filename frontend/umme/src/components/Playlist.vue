@@ -4,10 +4,9 @@
     <ol class="ps-2 list-unstyled">
       <li v-for="(item, index) in playlistItems" :key="index"
         class="d-flex align-items-center my-3 p-2 rounded list-item" @click.prevent="evokeTrack(index, item.track)"
-        @mouseenter="checkAllScroll($event, index)" @mouseleave="resetScroll(index)"
-        :class="{'active': index === control.currentTrackIdx}">
-        <span class="mx-2 index-num">{{ index + 1 }}</span>
-        <img :src="item.track.image" class="playlist-images rounded flex-shrink-0">
+        @mouseenter="checkAllScroll($event, index)" @mouseleave="resetScroll(index)">
+        <span class="index-num">{{ index + 1 }}</span>
+        <img :src="item.track.image" class="playlist-images rounded">
         <div class="track-meta mx-2 flex-grow-1 overflow-hidden">
           <div class="marquee-container title-container">
             <div :class="['marquee-content', { 'scroll': scrollStates[index]?.title }]">
@@ -23,6 +22,10 @@
             </div>
           </div>
         </div>
+        <button type="button" class="btn btn-outline-light border-0 p-0 m-0"
+        @click.prevent.stop="tool.removeTrackFromPlaylist(item.track.spotify_id)">
+          <i class="bi bi-x"></i>
+        </button>
       </li>
     </ol>
   </div>
@@ -100,7 +103,7 @@ const resetScroll = (index) => {
 }
 
 .list-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 214, 113, 0.5);
   cursor: pointer;
 }
 

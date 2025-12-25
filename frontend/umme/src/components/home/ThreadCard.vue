@@ -74,7 +74,6 @@ watch(
   async () => {
     try {
       threadInfo.value = await threadStore.getThread(props.threadId)
-      console.log(threadInfo.value)
     } catch {
       error.value = true
     } finally {

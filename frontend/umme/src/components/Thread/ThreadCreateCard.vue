@@ -2,7 +2,7 @@
   <div class="createCard rounded-5 p-4 mx-4">
     <div class="row">
       <div class="col-4 p-3">
-        <img :src="props.track?.image" />
+        <img :src="props.track?.image"/>
       </div>
 
       <div class="col-8">
