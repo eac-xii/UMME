@@ -23,7 +23,7 @@ embedding_model = SentenceTransformer('jhgan/ko-sroberta-multitask')
 client = chromadb.Client()
 collection = client.create_collection(name="rag_index")
 
-# docs = list(fetch_threads_for_rag())
+docs = list(fetch_threads_for_rag())
 # 스레드 vectorDB에 저장
 def create_vector_db(docs, collection):
     for doc in docs:
@@ -46,7 +46,7 @@ def create_vector_db(docs, collection):
 
     # print("벡터db 저장완")
 
-# create_vector_db(docs, collection)
+create_vector_db(docs, collection)
 
 # 질문에 맞는 문서 반환
 def search_vector_db(query, collection, top_k):

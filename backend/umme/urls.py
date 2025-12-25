@@ -27,5 +27,5 @@ urlpatterns = [
     path('accounts_umme/', include('accounts.urls')),
     path('musics/', include('musics.urls')),
     path('threads/', include('threads.urls')),
-    # path("rag/", include("rag.urls")),
+    path("rag/", include("rag.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

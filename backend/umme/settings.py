@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
 
     # apps
-    # 'rag',
+    'rag',
     'accounts',
     'musics',
     'threads',

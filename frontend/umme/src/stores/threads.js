@@ -3,13 +3,10 @@ import { ref } from 'vue'
 import api from '@/api/axios'
 
 export const useThreadStore = defineStore('thread', () => {
-  /* ---------- state ---------- */
 
   const threadItems = ref([])
   const ragThreads = ref([])
   const isAIMode = ref(false)
-
-  /* ---------- actions ---------- */
 
   const uploadThread = payload => {
     const { content, track_id } = payload
@@ -57,10 +54,10 @@ export const useThreadStore = defineStore('thread', () => {
   }
 
   const runRag = async payload => {
-    isAIMode.value = true
-
+    
     const response = await api.post('/rag/query/', payload)
     ragThreads.value = response.data.threads
+    isAIMode.value = true
 
     console.log('RAG response:', response.data)
     return response.data
@@ -75,15 +72,11 @@ export const useThreadStore = defineStore('thread', () => {
     return response.data
   }
 
-  /* ---------- expose ---------- */
-
   return {
-    // state
     threadItems,
     ragThreads,
     isAIMode,
 
-    // actions
     uploadThread,
     getThreads,
     getThread,

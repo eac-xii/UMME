@@ -7,12 +7,21 @@
       <hr class="line">
     </div>
     <div class="thread-layout">
-      <div 
+      <div v-if="!thread.isAIMode"
       class="mx-2 mb-3 p-0" 
       v-for="thread in threads" 
       :key="thread.id"
       >
         <ThreadCard :threadId="thread.id"/>
+      </div>
+      <div>
+        <ul v-if="thread.isAIMode">
+          <li v-for="thread in threads">
+            <p>Track : {{ thread.track.name }}</p>
+            <p>Artist : {{ thread.track.artists[0] }}</p>
+            <p>Content : {{ thread.content }}</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

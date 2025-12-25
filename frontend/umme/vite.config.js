@@ -12,6 +12,10 @@ export default defineConfig({
         target: 'http://127.0.0.1:8000',
         changeOrigin: true,
       },
+      '/accounts_umme/': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+      },
       '/musics': {
         target: 'http://127.0.0.1:8000',
         changeOrigin: true,
