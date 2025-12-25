@@ -15,25 +15,12 @@ class Thread(models.Model):
         related_name="threads"
     )
     content = models.TextField(max_length=660)
+    like_threads = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        related_name="likes"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
-class ThreadRecommend(models.Model):
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="recommended_threads"
-    )
-    thread = models.ForeignKey(
-        Thread,
-        on_delete=models.CASCADE,
-        related_name="recommends"
-    )
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ("user", "thread")
-
 
 class Comment(models.Model):
     user = models.ForeignKey(
@@ -49,20 +36,3 @@ class Comment(models.Model):
     content = models.TextField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
-
-class CommentRecommend(models.Model):
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="recommended_comments"
-    )
-    comment = models.ForeignKey(
-        Comment,
-        on_delete=models.CASCADE,
-        related_name="recommends"
-    )
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ("user", "comment")
