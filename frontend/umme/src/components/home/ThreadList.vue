@@ -11,7 +11,7 @@
       v-for="thread in threads" 
       :key="thread.id"
       >
-        <ThreadCard :thread="thread"/>
+        <ThreadCard :threadId="thread.id"/>
       </div>
     </div>
   </div>
@@ -37,7 +37,9 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
+.test {
+  color:white;
+}
 .thread-layout{
   height: 80vh;
   overflow-y: scroll;

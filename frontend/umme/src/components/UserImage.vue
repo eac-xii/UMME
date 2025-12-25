@@ -1,7 +1,7 @@
 <template>
     <div
         class="image"
-        :style="{backgroundImage: `url('${props.user?.image ? base_url + props.user?.image : defaultUser}')`}"
+        :style="{backgroundImage: `url('${props.imageUrl ? base_url + props.imageUrl : defaultUser}')`}"
     >
     </div>
 </template>
@@ -10,7 +10,7 @@
 import defaultUser from '@/assets/default-user.png'
 const base_url = import.meta.env.VITE_API_BASE_URL
 const props = defineProps({
-    user: Object
+    imageUrl: String
 })
 
 </script>
