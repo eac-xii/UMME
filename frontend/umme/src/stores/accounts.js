@@ -107,6 +107,15 @@ export const useAccountStore = defineStore('account', () => {
         }
     }
 
+    const like_thread = async (threadId) => {
+        try {
+            const response = await api.put(`/threads/like_thread/${threadId}/`)
+            return response.data
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
     return {
         user,
         isAuthenticated,
@@ -124,5 +133,6 @@ export const useAccountStore = defineStore('account', () => {
         getProfile,
         getPlaylist,
         follow,
+        like_thread,
     }
 })

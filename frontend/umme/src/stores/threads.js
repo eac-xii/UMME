@@ -32,6 +32,17 @@ export const useThreadStore = defineStore('thread', {
         console.error('getThreads error:', error)
       }
     },
+
+    async getThread(threadId) {
+      try {
+        const response = await api.get(`/threads/get_thread/${threadId}/`)
+        console.log(response.data)
+        return response.data
+      } catch (error) {
+        console.error(error)
+      }
+    },
+
     async getUserThreads(payload) {
       const { userId } = payload
       const response = await api.get('/threads/get_user_threads/', {

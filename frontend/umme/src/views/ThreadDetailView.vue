@@ -51,28 +51,21 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import api from '@/api/axios'
+import { useThreadStore } from '@/stores/threads'
 
 const route = useRoute()
 const router = useRouter()
+const threadStore = useThreadStore()
+
 const threadId = route.params.id
 
 const thread = ref({})
 const comments = ref([])
 const newComment = ref('')
-const likesCount = ref(0)
 
-const fetchThread = async () => {
-  try {
-    const res = await api.get(`/threads/${threadId}`)
-    thread.value = res.data
-    likesCount.value = res.data.likes_count || 0
-  } catch (err) {
-    console.error(err)
-  }
-}
 onMounted(async () => {
-  await fetchThread()
+  const response = await threadStore.getThread(threadId)
+  thread.value = response
 })
 </script>
 
