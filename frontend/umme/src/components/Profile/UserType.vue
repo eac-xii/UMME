@@ -28,15 +28,57 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import { useThreadStore } from '@/stores/threads';
+import { useToolStore } from '@/stores/tools';
 
-const Acousticness = ref(70)
-const Danceability = ref(20)
-const Energy = ref(50)
-const Sentiment = ref(15)
+const thread = useThreadStore()
+const userthreads = ref([])
+const route = useRoute()
+
+const userId = route.params.id
+const Acousticness = ref(0)
+const Danceability = ref(0)
+const Energy = ref(0)
+const Sentiment = ref(0)
+
+onMounted(async () => {
+  const payload = { userId }
+  const data = await thread.getUserThreads(payload)
+
+  let totalAcousticness = 0
+  let totalDanceability = 0
+  let totalEnergy = 0
+  let totalValence = 0
+  let validCount = 0
+
+  userthreads.value = data
+  for (const threadItem of userthreads.value) {
+    const trackId = threadItem.track.id
+    const features = await thread.getAudiofeatures({ track_id: trackId })
+
+    if (features) { // 오디오 피처스가 존재할 때만 계산
+        totalAcousticness += features.acousticness
+        totalDanceability += features.danceability
+        totalEnergy += features.energy
+        totalValence += features.valence
+        validCount++
+      }
+
+    const count = validCount || 1
+    Acousticness.value = Math.round((totalAcousticness / count) * 100)
+    Danceability.value = Math.round((totalDanceability / count) * 100)
+    Energy.value = Math.round((totalEnergy / count) * 100)
+    Sentiment.value = Math.round((totalValence / count) * 100)
+  }
+});
 </script>
 
 <style scoped>
+  .aa {
+    color: #eee;
+  }
 .features-container {
   height: 100%;
   background: linear-gradient(to bottom, #121212, 50%, #000);
