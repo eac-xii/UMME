@@ -39,7 +39,7 @@
         </RouterLink>
         <RouterLink v-if="account.isAuthenticated" :to="{ name: 'profile', params: { id: account.user?.pk } }"
           class="profileBtn d-flex justify-content-center align-items-center ms-auto text-decoration-none">
-          <UserImage :user="user" />
+          <UserImage :user="user"/>
         </RouterLink>
       </header>
       <RouterView />
