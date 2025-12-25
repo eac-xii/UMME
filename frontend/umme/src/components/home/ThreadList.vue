@@ -1,8 +1,9 @@
 <template>
   <div class="px-4">
     <div class="filter">
-      <div class="filter-item">All</div>
-      <div class="filter-item">Follow</div>
+      <button type="button" class="btn filter-item" @click.prevent="getThreads('all')">All</button>
+      <button type="button" class="btn filter-item" @click.prevent="getThreads('follow')">Follow</button>
+      <button type="button" class="btn filter-item" @click.prevent="getThreads('liked')">Liked</button>
       <hr class="line">
     </div>
     <div class="thread-layout">
@@ -29,10 +30,14 @@ const threads = computed(() => {
   ? thread.ragThreads
   : thread.threadItems
 })
-onMounted(() => {
-  thread.getThreads({ filter: 'all' })
+
+onMounted(async () => {
+  await getThreads({filter: 'all'})
 })
 
+const getThreads = async (filter) => {
+  await thread.getThreads({ filter })
+}
 
 </script>
 
@@ -62,9 +67,15 @@ onMounted(() => {
 .filter-item {
   display: inline-flex;
   margin-right: 10px;
-  font-size: x-small;
+  font-size: 1.2vh;
   text-align: start;
   color: #aaa;
+}
+
+.filter-item:hover {
+  transition: .2s ease;
+  transform: scale(1.05);
+  color: #eee;
 }
 
 .line {

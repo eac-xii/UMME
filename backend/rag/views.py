@@ -1,6 +1,7 @@
 # rag/views.py
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 from rag.ingestion.indexer import search_vector_db, collection
 from rag.config.settings import TOP_K
 from musics.models import Track
@@ -33,4 +34,4 @@ class RagQueryView(APIView):
                 # 해당 track이 없으면 그냥 skip
                 continue
         
-        return Response({"threads": threads})
+        return Response({"threads": threads}, status=status.HTTP_200_OK)

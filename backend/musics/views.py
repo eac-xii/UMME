@@ -16,6 +16,7 @@ from django.contrib.auth import get_user_model
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework import status
 
 from .models import Playlist
 
@@ -123,12 +124,12 @@ def spotify_playback_token(request):
         if "streaming" not in spotify.scope:
             return Response(
                 {"detail": "Spotify streaming 권한 없음"},
-                status=403
+                status=status.HTTP_403_FORBIDDEN
             )
 
         ensure_valid_token(spotify)
         
-        return Response({ "access_token": spotify.access_token })
+        return Response({ "access_token": spotify.access_token }, status=status.HTTP_200_OK)
 
 @api_view(["PUT"])
 @permission_classes([IsAuthenticated])
@@ -148,7 +149,7 @@ def spotify_transfer_playback(request):
             }
         )
 
-        return Response(status=204)
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 @api_view(["PUT"])
 @permission_classes([IsAuthenticated])
@@ -173,7 +174,7 @@ def spotify_play(request):
             timeout=5
         )
 
-        return Response(status=204)
+        return Response(status=status.HTTP_204_NO_CONTENT)
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -185,8 +186,9 @@ auth_manager = SpotifyClientCredentials(
 spcc = spotipy.Spotify(auth_manager=auth_manager)
 
 from rapidfuzz import fuzz
-from pprint import pprint
+
 @api_view(["GET"])
+@permission_classes([IsAuthenticated])
 def spotify_search(request):
     if request.method == "GET":
         query = request.GET.get("query")
@@ -215,15 +217,16 @@ def spotify_search(request):
             })
 
         sorted_results = sorted(combined_results, key=lambda x: x['score'], reverse=True)
-    return Response(sorted_results)
+    return Response(sorted_results, status=status.HTTP_200_OK)
 
 @api_view(["GET"])
+@permission_classes([IsAuthenticated])
 def spotify_search_artist_tracks(request):
     if request.method == "GET":
         artist_id = request.GET.get("artistId")
         response = spcc.artist_top_tracks(artist_id=artist_id)
         response = [{"data": track, "type": "track"} for track in response["tracks"]]
-        return Response(response)
+        return Response(response, status=status.HTTP_200_OK)
     
 
 from datetime import date
@@ -311,7 +314,7 @@ def add_track_to_playlist(request):
             playlist=targetPlaylist,
             order_index=next_index
         )
-        return Response(status=201)
+        return Response(status=status.HTTP_201_CREATED)
 
 from .serializers import PlaylistTracksSerializer
 
@@ -323,7 +326,7 @@ def get_playlist_items(request):
         playlist = Playlist.objects.get(user=user)
         playlist_track = PlaylistTrack.objects.filter(playlist=playlist)
         serializer = PlaylistTracksSerializer(playlist_track, many=True)
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     
 from .serializers import AudioFeaturesSerializer
 
@@ -332,7 +335,7 @@ def get_audiofeatures(request, track_id):
     try:
         features = AudioFeatures.objects.get(track_id=track_id)
     except AudioFeatures.DoesNotExist:
-        return Response({"detail": "AudioFeatures not found"})
+        return Response({"detail": "AudioFeatures not found"}, status=status.HTTP_204_NO_CONTENT)
 
     serializer = AudioFeaturesSerializer(features)
-    return Response(serializer.data)
+    return Response(serializer.data, status=status.HTTP_200_OK)

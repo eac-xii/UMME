@@ -91,11 +91,11 @@ def follow(request, user_pk):
         me = request.user
 
         if you != me:
-            if you in me.followers.all():
-                you.followings.remove(me)
+            if you in me.followings.all():
+                you.followers.remove(me)
                 is_followed = False
             else:
-                you.followings.add(me)
+                you.followers.add(me)
                 is_followed = True
             return Response({"is_followed": is_followed}, status=status.HTTP_200_OK)
         return Response(status=status.HTTP_400_BAD_REQUEST)

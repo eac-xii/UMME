@@ -25,27 +25,27 @@
     <main class="flex-grow-1 mx-3">
       <header class="top d-flex align-items-center px-3">
         <SearchBox />
-        <button v-if="account.isAuthenticated" class="btn btn-outline border-0" @click.prevent="logOut">
-          로그아웃
-        </button>
+        <RouterLink v-if="account.isAuthenticated" :to="{ name: 'profile', params: { id: account.user?.pk } }"
+        class="profileBtn d-flex justify-content-center align-items-center ms-3 text-decoration-none">
+          <UserImage :imageUrl="user?.image"/>
+        </RouterLink>
+        <span v-if="account.isAuthenticated" class="ms-3 fs-6" style="color: #aaa;">Hello, {{ account.user?.first_name }} !</span>
         <button v-if="!account.user?.is_spotify && account.isAuthenticated" class="btn btn-outline"
           @click.prevent="connectSpotify">
           스포티파이 연동하기
         </button>
         <RouterLink v-if="!account.isAuthenticated" :to="{ name: 'login' }">
-          <button class="btn btn-light rounded-pill px-4 py-2 ms-4">
+          <button class="btn btn-outline-light border-0 rounded-pill px-3 py-2 ms-4">
             로그인하기
           </button>
         </RouterLink>
-        <RouterLink v-if="account.isAuthenticated" :to="{ name: 'profile', params: { id: account.user?.pk } }"
-          class="profileBtn d-flex justify-content-center align-items-center ms-auto text-decoration-none">
-          <UserImage :user="user"/>
-        </RouterLink>
+        <button v-if="account.isAuthenticated" class="btn btn-outline border-0 ms-auto" @click.prevent="logOut">
+          로그아웃
+        </button>
       </header>
       <RouterView />
     </main>
   </div>
-
   <div class="SDK position-fixed bottom-0 start-0 d-flex justify-content-center align-items-center">
     <SDKPlayer v-if="account.user?.is_spotify && account.isAuthenticated" />
     <div v-if="!account.user?.is_spotify || !account.isAuthenticated">

@@ -61,13 +61,6 @@ router.beforeEach(async (to) => {
       await tool.getPlaylistItems()
     }
 
-    if (to.name === 'home') {
-      const payload = {
-        filter: 'all'
-      }
-      await thread.getThreads(payload)
-    }
-
     if ((to.name === 'login' || to.name === 'signup') && account.isAuthenticated) {
       window.alert('You\'ve already logged in!')
       return { name: 'home' }
