@@ -103,6 +103,9 @@ const threadDetail = () => {
 
 <style scoped>
 p { margin: 0; padding: 0; }
+.bi:hover {
+  color: #1ed760;
+}
 
 .thread-card {
   height: 25rem;
@@ -138,7 +141,7 @@ p { margin: 0; padding: 0; }
   white-space: nowrap;
 }
 
-.track-title { font-size: 1rem; font-weight: 300; }
+.track-title { font-size: 1rem; font-weight: 300; color: #1ed760;}
 .track-artist { font-size: 0.85rem; color: #b3b3b3; }
 
 .profile-icon {

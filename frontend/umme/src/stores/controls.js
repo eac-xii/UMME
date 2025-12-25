@@ -31,14 +31,14 @@ export const useControlStore = defineStore('control', () => {
             volume: Number(volume.value) / 100
         })
 
-        player.value.addListener('ready', ({ device_id }) => {
+        player.value.addListener('ready', async ({ device_id }) => {
             player.value.device_id = device_id
             if (tool.playlist.length > 0) {
                 const payload = {
                     cIdx: 0,
                     spotify_id: tool.playlist[0].track.spotify_id
                 }
-                playTrack(payload)
+                await playTrack(payload)
             }
             setTimeout(() => {
                 setVolume(volume.value)
@@ -154,7 +154,7 @@ export const useControlStore = defineStore('control', () => {
     }
 
     const disconnect = () => {
-        player.disconnect()
+        if (player.value) player.value.disconnect()
     }
 
     return {

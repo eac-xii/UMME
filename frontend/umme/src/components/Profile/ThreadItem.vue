@@ -1,52 +1,54 @@
 <template>
-  <div class="card text-bg-dark" @click="openModal">
-    <img :src="thread.track?.image" class="card-img" alt="album cover">
-
-    <div class="card-img-overlay overlay">
-      <div class="track-title">
-        <h5 class="card-title">
-          {{ thread.track?.name }}
-        </h5>
+  <div class="thread-item">
+    <div class="card text-bg-dark" @click="openModal">
+      <img :src="thread.track?.image" class="card-img" alt="album cover">
+  
+      <div class="card-img-overlay overlay">
+        <div class="track-title">
+          <h5 class="card-title">
+            {{ thread.track?.name }}
+          </h5>
+        </div>
       </div>
     </div>
-  </div>
-  <Teleport to="body">
-    <div v-if="open" class="sp-backdrop" @click="closeModal">
-      <div class="sp-modal" @click.stop>
-
-        <!-- HEADER -->
-        <section
-          class="sp-header"
-          :style="{ backgroundImage: `url(${thread.track?.image})` }"
-        >
-          <div class="header-overlay">
-            <img :src="thread.track?.image" class="cover" />
-
-            <div class="header-info">
-              <span class="type">THREAD</span>
-              <h1>{{ thread.track?.name }}</h1>
-
-              <div class="meta">
-                <span>{{ thread.user?.username }}</span>
-                <span>•</span>
-                <span>{{ formatDate(thread.created_at) }}</span>
+    <Teleport to="body">
+      <div v-if="open" class="sp-backdrop" @click="closeModal">
+        <div class="sp-modal" @click.stop>
+  
+          <!-- HEADER -->
+          <section
+            class="sp-header"
+            :style="{ backgroundImage: `url(${thread.track?.image})` }"
+          >
+            <div class="header-overlay">
+              <img :src="thread.track?.image" class="cover" />
+  
+              <div class="header-info">
+                <span class="type">THREAD</span>
+                <h1>{{ thread.track?.name }}</h1>
+  
+                <div class="meta">
+                  <span>{{ thread.user?.username }}</span>
+                  <span>•</span>
+                  <span>{{ formatDate(thread.created_at) }}</span>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <!-- BODY -->
-        <section class="sp-body">
-          <p class="description">
-            {{ thread.content }}
-          </p>
-
-          <!-- <button class="play-btn">▶ Play</button> -->
-        </section>
-
+          </section>
+  
+          <!-- BODY -->
+          <section class="sp-body">
+            <p class="description">
+              {{ thread.content }}
+            </p>
+  
+            <!-- <button class="play-btn">▶ Play</button> -->
+          </section>
+  
+        </div>
       </div>
-    </div>
-  </Teleport>
+    </Teleport>
+  </div>
 </template>
 
 

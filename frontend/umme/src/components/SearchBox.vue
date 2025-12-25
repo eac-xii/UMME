@@ -11,10 +11,11 @@
         class="dropdown-toggle"
         data-bs-toggle="dropdown"
         data-bs-auto-close="outside"
-        placeholder="What do you want to play?"
+        :placeholder="account.isAuthenticated ? 'What do you want to play?' : 'Login required to use this search engine.'"
         autocomplete="off"
         @keyup="search"
         @focus="showDropdown"
+        :disabled="!account.isAuthenticated"
       />
 
       <ul 
@@ -63,7 +64,7 @@
       </ul>
     </div>
 
-    <button class="btn btn-outline-light border-0 AIbtn" @click="runAIMode">
+    <button class="btn btn-outline-light border-0 rounded-pill AIbtn" @click="runAIMode">
       AI Search
     </button>
   </div>

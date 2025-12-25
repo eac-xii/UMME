@@ -55,10 +55,10 @@ class User(AbstractBaseUser, PermissionsMixin):
         blank=False
     )
 
-    followings = models.ManyToManyField(
+    followers = models.ManyToManyField(
         'self',
         symmetrical=False,
-        related_name='followers'
+        related_name='followings'
     )
 
     created_at = models.DateTimeField(

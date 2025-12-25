@@ -36,7 +36,9 @@
 
       <!-- 댓글 입력 -->
       <div class="comment-input-section">
-        <div class="avatar current-user">T</div>
+        <div class="avatar current-user">
+          <UserImage :imageUrl="user?.image"/>
+        </div>
         <input
           type="text"
           v-model="newComment"
@@ -51,21 +53,25 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { useAccountStore } from '@/stores/accounts'
 import { useThreadStore } from '@/stores/threads'
+import UserImage from '@/components/UserImage.vue'
 
 const route = useRoute()
 const router = useRouter()
+const account = useAccountStore()
 const threadStore = useThreadStore()
 
 const threadId = route.params.id
+const user = ref(null)
 
 const thread = ref({})
 const comments = ref([])
 const newComment = ref('')
 
 onMounted(async () => {
-  const response = await threadStore.getThread(threadId)
-  thread.value = response
+  thread.value = await threadStore.getThread(threadId)
+  user.value = await account.getProfile(account.user?.pk)
 })
 </script>
 
@@ -176,7 +182,6 @@ onMounted(async () => {
 }
 .comment-input-section .avatar.current-user {
   display: flex;
-  background-color: #1ed760;
   color: #121212;
   width: 2rem;
   aspect-ratio: 1;

@@ -22,6 +22,7 @@ from .serializers import ThreadSerializer
 def create(request):
     if request.method == "GET":
         return redirect(f"{base_url}")
+    
     elif request.method == "POST":
         track_id = request.data["track_id"]
 
@@ -33,19 +34,32 @@ def create(request):
             track=track,
             content=content
         )
-        return Response(status=201)
+        return Response(status=status.HTTP_201_CREATED)
     
 @api_view(["GET"])
+@permission_classes([IsAuthenticated])
 def get_threads(request):
     if request.method == "GET":
         query_filter = request.GET.get("filter")
         if query_filter == "all":
-            threads = Thread.objects.all()
-            serializer = ThreadSerializer(threads, many=True)
-            return Response(serializer.data, status=200)
+            threads = Thread.objects.all().order_by("-created_at")
+
+        elif query_filter == "follow":
+            threads = Thread.objects.filter(
+                user__in=request.user.followings.all()
+            ).order_by("-created_at")
+        
+        elif query_filter == "liked":
+            threads = Thread.objects.filter(
+                like_threads=request.user
+            ).order_by("-created_at")
 
         else:
-            return Response(status=204)
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        
+        serializer = ThreadSerializer(threads, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
         
 @api_view(["GET"])
 def get_user_threads(request):
@@ -53,7 +67,7 @@ def get_user_threads(request):
         user = request.GET.get("userId")
         threads = Thread.objects.filter(user=user)
         serializer = ThreadSerializer(threads, many=True)
-        return Response(serializer.data, status=200)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 @api_view(["GET"])
 def get_thread(request, thread_pk):
