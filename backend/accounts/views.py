@@ -65,7 +65,7 @@ def get_playlist(request, user_pk):
     if request.method == "GET":
         user = get_object_or_404(User, pk=user_pk)
         playlist = get_object_or_404(Playlist, user=user)
-        tracks = get_list_or_404(PlaylistTrack, playlist=playlist)
+        tracks = PlaylistTrack.objects.filter(playlist=playlist)
         serializer = PlaylistTracksSerializer(tracks, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
     

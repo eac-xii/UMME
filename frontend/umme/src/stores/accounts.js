@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import api from '@/api/axios'
+import { useControlStore } from './controls'
 
 export const useAccountStore = defineStore('account', () => {
     const user = ref(null)
@@ -32,10 +33,12 @@ export const useAccountStore = defineStore('account', () => {
     }
 
     const logOut = async () => {
+        const control = useControlStore()
         await api.post('/accounts/logout/')
         user.value = null
         isAuthenticated.value = false
         checked.value = false
+        control.disconnect()
     }
 
     const initUserSetting = async () => {
@@ -49,7 +52,6 @@ export const useAccountStore = defineStore('account', () => {
     const updateProfile = async (payload) => {
         try {
             const response = await api.put('/accounts_umme/update_profile/', payload)   
-            console.log(response.data)
         } catch (error) {
             console.error(error)
         }

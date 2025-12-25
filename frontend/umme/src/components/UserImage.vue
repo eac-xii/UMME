@@ -13,7 +13,6 @@ const props = defineProps({
     user: Object
 })
 
-
 </script>
 
 <style scoped>

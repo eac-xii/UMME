@@ -12,6 +12,7 @@
       <div class="user-header d-flex align-items-center my-2">
         <RouterLink :to="{ name: 'profile', params: { id: thread.user?.pk }}"
         class="profile-icon d-flex justify-content-center align-items-center rounded-circle me-3"
+        @click.stop
         >
         <UserImage :user="userInfo"/>
         </RouterLink>
@@ -74,19 +75,6 @@ const threadDetail = () => {
     name: 'thread-detail',
     params: { id: props.thread.id }
   })
-}
-
-const getElapsedTime = (isoString) => {
-  if (!isoString) return ''
-  const diffMs = new Date() - new Date(isoString)
-  const diffMin = Math.floor(diffMs / 60000)
-  const diffHour = Math.floor(diffMin / 60)
-  const diffDay = Math.floor(diffHour / 24)
-
-  if (diffMin < 1) return 'now'
-  if (diffMin < 60) return `${diffMin} minutes ago`
-  if (diffHour < 24) return `${diffHour} hours ago`
-  return `${diffDay} days ago`
 }
 </script>
 

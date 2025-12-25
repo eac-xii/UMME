@@ -1,5 +1,8 @@
 <template>
   <div class="thread-detail-container">
+    <button class="btn border-0" @click.prevent="router.go(-1)">
+      <i class="bi bi-chevron-double-left fs-2"></i>
+    </button>
     <!-- Left: Album / Track Info -->
     <div class="track-card">
       <img :src="thread.track?.image" class="album-cover" alt="Album Cover" />
@@ -47,10 +50,11 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import api from '@/api/axios'
 
 const route = useRoute()
+const router = useRouter()
 const threadId = route.params.id
 
 const thread = ref({})
