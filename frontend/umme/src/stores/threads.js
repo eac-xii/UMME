@@ -49,5 +49,13 @@ export const useThreadStore = defineStore('thread', {
       console.log('RAG response:', response.data)
       return response.data
     },
+
+    async getAudiofeatures(payload) {
+      const { track_id } = payload
+      const response = await api.get(`/musics/get_audiofeatures/${track_id}/`, {
+        params: { track_id }
+      })
+      return response.data
+    }
   },
 })

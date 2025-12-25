@@ -65,7 +65,7 @@ onMounted(async () => {
         totalValence += features.valence
         validCount++
       }
-
+    console.log()
     const count = validCount || 1
     Acousticness.value = Math.round((totalAcousticness / count) * 100)
     Danceability.value = Math.round((totalDanceability / count) * 100)
