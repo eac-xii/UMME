@@ -32,9 +32,11 @@ import { computed, onMounted } from 'vue'
 import ThreadCard from './ThreadCard.vue'
 import { useAccountStore } from '@/stores/accounts'
 import { useThreadStore } from '@/stores/threads'
+import { useRouter } from 'vue-router'
 
 const account = useAccountStore()
 const thread = useThreadStore()
+const router = useRouter()
 
 const threads = computed(() => {
   return thread.isAIMode
@@ -48,6 +50,7 @@ onMounted(async () => {
 })
 
 const getThreads = async (filter) => {
+  if (thread.isAIMode) thread.isAIMode ^= 1
   await thread.getThreads({ filter })
 }
 
@@ -64,7 +67,8 @@ const getThreads = async (filter) => {
 }
 
 .thread-layout::-webkit-scrollbar{
-  display: none;
+  width: 4px;
+  background-color: white;
 }
 
 .filter {
