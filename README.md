@@ -1,169 +1,359 @@
-# UMME Project
+<div align="center">
+  <h1>UMME</h1>
+  <h3>음악으로 연결되는 감상 공유 커뮤니티</h3>
+  <h4>곡 하나를 중심으로 스레드, 플레이리스트, 취향을 함께 탐색하는 <b>음악 커뮤니티 서비스</b>입니다.</h4>
+</div>
 
-## 1. 프로젝트 개요
+<br/>
 
-**UMME**는 *음악을 매개로 사용자가 자신의 감상과 생각을 스레드 형태로 공유*할 수 있는 커뮤니티 서비스이다.
-
-단순한 플레이리스트 공유를 넘어, **곡 하나를 중심으로 한 감상 기록과 사용자 간 소통**을 목표로 한다.
-
-사용자는 음악을 검색하고 재생하며, 특정 곡에 대한 자신의 감상을 스레드로 작성할 수 있다.
-
-또한 다른 사용자의 스레드를 탐색하고, 해당 사용자의 음악 취향 및 플레이리스트를 확인함으로써
-
-음악 취향 기반의 커뮤니티 경험을 제공한다.
-
-본 프로젝트는 **Frontend(Vue 3)** 와 **Backend(Django REST Framework)** 를 분리한 구조로 설계되었으며,
-
-RESTful API를 기반으로 데이터 통신을 수행한다.
-
-컴포넌트 단위의 UI 설계와 확장성을 고려한 아키텍처를 채택하였다.
+- **개발 기간** : 2025.12.16 ~ 2025.12.19 **(4일)**
+- **플랫폼** : Web
+- **개발 인원** : 2명
+- **담당자** : 김형택
+- **기관** : 삼성 청년 SW · AI 아카데미 14기
 
 ---
 
-## 2. 팀원 정보 및 업무 분담
+## 🔎 목차
 
-###  팀 구성
-
-| 이름 | 역할 | 담당 업무 |
-| 박서연 | Frontend | Vue 기반 UI 구현,   AI 활용 |
-| 김형택 | Backend | Django REST API 설계, DB 설계, Spotify API 연동 |
-
-###  역할 상세
-
-**박서연 (Frontend)**
-
-- 프로젝트 기획 및 전체 구조 설계 참여
-- Vue 3 Composition API 기반 UI 구현
-- 생성형 AI 활용 및 문서 정리
-
-**김형택 (Backend)**
-
-- 프로젝트 기획 및 전체 구조 설계 참여
-- Django REST Framework 기반 API 설계
-- ERD 작성 및 데이터베이스 모델링
-- 기능 구현
-- Spotify API 연동 및 음악 데이터 처리
+- [🙌 팀원 구성](#-팀원-구성)
+- [🎧 프로젝트 소개](#-프로젝트-소개)
+- [🪄 기술 스택](#-기술-스택)
+- [🛠️ 아키텍처](#-아키텍처)
+- [📲 주요 기능](#-주요-기능)
+- [🧠 추천 검색 구조](#-추천-검색-구조)
+- [📂 디렉터리 구조](#-디렉터리-구조)
+- [🚀 로컬 실행](#-로컬-실행)
+- [📦 프로젝트 산출물](#-프로젝트-산출물)
 
 ---
 
-## 3. 목표 서비스 및 실제 구현 정도
+## 🙌 팀원 구성
 
-###  목표 서비스
-
-- 음악(곡) 기반 스레드 커뮤니티 서비스
-- 사용자 스레드 기반 **Audio Features 분석**을 통한 취향 분석
-- 사용자 입력 데이터 기반 **AI 스레드 추천 서비스**
-- 음악 검색 서비스 (UMME 유저)
-- 음악 재생 서비스 (UMME 유저 + Spotify 연동 유저)
-- 스레드 좋아요 및 댓글 기능
-- 유저 타입 기반 추천 기능
-
-###  실제 구현 기능
-
-- Spotify 플레이리스트를 연동한 **스레드 작성 폼**
-- 스레드 전체 목록 및 스레드 상세 정보 조회
-- 사용자 프로필 기능
-    - 유저 취향 정보 조회
-    - 플레이리스트 조회
-    - 해당 유저의 스레드 목록 조회
-    - 팔로우 기능
-- 음악(곡) 기반 스레드 작성 및 조회
-- RESTful API 기반 프론트-백엔드 통신
-- 생성형 AI를 활용한 **스레드 검색/추천 보조 기능**
-
----
-
-## 4. 데이터베이스 모델링
-
-프로젝트의 데이터베이스는 사용자, 스레드, 음악 정보 간의 관계를 중심으로 설계되었다.
-
-Spotify API에서 제공하는 트랙 정보를 기반으로 Audio Features를 저장하고,
-
-이를 통해 사용자 취향 분석 및 추천 기능 확장이 가능하도록 구성하였다.
-
-> ERD 다이어그램
-![alt text](ERD.png)
----
-
-## 5. 추천 알고리즘 기술 설명
-
-본 프로젝트의 추천 기능은 **RAG(Retrieval-Augmented Generation)** 개념을 참고하여 설계되었다.
-
-###  왜 RAG 방식이 적절한가?
-
-- 사용자 입력은 단순한 질문이 아닌 **검색 의도 또는 취향 표현**에 가깝다.
-- 새로운 텍스트를 생성하기보다는,
-    
-    **이미 데이터베이스에 존재하는 스레드 중 적절한 결과를 찾는 것**이 핵심이다.
-    
-- 생성형 AI를 단독으로 사용하기보다는,
-    
-    **기존 데이터 검색 + AI 보조 판단** 구조가 프로젝트 목적에 부합한다.
-    
-
-### ⚙️ 동작 방식
-
-1. 사용자 검색어 또는 입력 데이터 수집
-2. 데이터베이스에서 관련 스레드 필터링
-3. 유사도가 높은 상위 20개 스레드 추출
-4. 해당 데이터를 기반으로 사용자에게 결과 제공
-
-이를 통해 불필요한 텍스트 생성 없이,
-
-기존 스레드를 효율적으로 활용하는 추천 구조를 구현하였다.
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <b>박서연</b>
+      <br/>
+      <b>Frontend</b>
+      <ul>
+        <li>Vue 3 기반 화면 및 컴포넌트 구현</li>
+        <li>홈, 프로필, 스레드 작성/상세 UI 구현</li>
+        <li>생성형 AI 활용 및 문서 정리</li>
+      </ul>
+    </td>
+    <td align="center" width="50%">
+      <b>김형택</b>
+      <br/>
+      <b>Backend</b>
+      <ul>
+        <li>Django REST API 설계 및 구현</li>
+        <li>데이터베이스 모델링 및 ERD 작성</li>
+        <li>Spotify API, ReccoBeats API, RAG 검색 연동</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 6. 생성형 AI 활용
+## 🎧 프로젝트 소개
 
-###  활용 목적
+**UMME**는 음악을 매개로 사용자가 자신의 감상과 생각을 스레드 형태로 공유할 수 있는 커뮤니티 서비스입니다.
 
-- 개발 과정 중 코드 리팩토링 및 구조 개선 보조
+단순한 플레이리스트 공유를 넘어, **곡 하나를 중심으로 한 감상 기록과 사용자 간 소통**을 목표로 합니다. 사용자는 Spotify 기반 음악 검색과 재생을 활용해 곡을 탐색하고, 특정 곡에 대한 감상을 스레드로 작성할 수 있습니다.
+
+다른 사용자의 스레드, 프로필, 플레이리스트를 탐색하며 음악 취향을 발견할 수 있고, RAG 기반 검색을 통해 기존 스레드 중 사용자 의도와 가까운 감상 글을 추천받을 수 있습니다.
+
+---
+
+## 🪄 기술 스택
+
+<div align="center">
+
+### 🫡 Frontend
+
+<img src="https://img.shields.io/badge/html5-badge?style=for-the-badge&logo=html5&logoColor=white&color=%23E34F26"/>
+<img src="https://img.shields.io/badge/css-badge?style=for-the-badge&logo=css&logoColor=white&color=%23663399"/>
+<img src="https://img.shields.io/badge/javascript-badge?style=for-the-badge&logo=javascript&logoColor=white&color=%23F7DF1E"/>
+<img src="https://img.shields.io/badge/vuedotjs-badge?style=for-the-badge&logo=vuedotjs&logoColor=white&color=%234FC08D"/>
+<img src="https://img.shields.io/badge/pinia-badge?style=for-the-badge&logo=pinia&logoColor=white&color=%23FFD859"/>
+<img src="https://img.shields.io/badge/vite-badge?style=for-the-badge&logo=vite&logoColor=white&color=%239135FF"/>
+<img src="https://img.shields.io/badge/bootstrap-badge?style=for-the-badge&logo=bootstrap&logoColor=white&color=%237952B3"/>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Specification</th>
+  </tr>
+  <tr>
+    <td><b>Framework</b></td>
+    <td>Vue 3.5.25</td>
+  </tr>
+  <tr>
+    <td><b>Build Tool</b></td>
+    <td>Vite 7.2.4</td>
+  </tr>
+  <tr>
+    <td><b>State Management</b></td>
+    <td>Pinia 3.0.4, Pinia Plugin Persistedstate 4.7.1</td>
+  </tr>
+  <tr>
+    <td><b>Router</b></td>
+    <td>Vue Router 4.6.3</td>
+  </tr>
+  <tr>
+    <td><b>UI</b></td>
+    <td>Bootstrap 5.3.8, Bootstrap Icons 1.13.1, Phosphor Icons Vue 2.2.1</td>
+  </tr>
+  <tr>
+    <td><b>HTTP Client</b></td>
+    <td>Axios 1.13.2</td>
+  </tr>
+  <tr>
+    <td><b>Music Player</b></td>
+    <td>Spotify Web Playback SDK</td>
+  </tr>
+  <tr>
+    <td><b>Node.js</b></td>
+    <td>^20.19.0 || >=22.12.0</td>
+  </tr>
+</table>
+
+### 🤓 Backend
+
+<img src="https://img.shields.io/badge/python-badge?style=for-the-badge&logo=python&logoColor=white&color=%233776AB"/>
+<img src="https://img.shields.io/badge/django-badge?style=for-the-badge&logo=django&logoColor=white&color=%23092E20"/>
+<img src="https://img.shields.io/badge/sqlite-badge?style=for-the-badge&logo=sqlite&logoColor=white&color=%23003B57"/>
+<img src="https://img.shields.io/badge/spotify-badge?style=for-the-badge&logo=spotify&logoColor=white&color=%231DB954"/>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Specification</th>
+  </tr>
+  <tr>
+    <td><b>Framework</b></td>
+    <td>Django 5.2.9, Django REST Framework 3.16.1</td>
+  </tr>
+  <tr>
+    <td><b>Auth</b></td>
+    <td>dj-rest-auth 7.0.1, django-allauth 65.13.1, Simple JWT 5.5.1</td>
+  </tr>
+  <tr>
+    <td><b>Database</b></td>
+    <td>SQLite3, Django ORM</td>
+  </tr>
+  <tr>
+    <td><b>External API</b></td>
+    <td>Spotify API, ReccoBeats Audio Features API</td>
+  </tr>
+  <tr>
+    <td><b>API Client</b></td>
+    <td>Spotipy 2.25.2, Requests 2.32.5</td>
+  </tr>
+  <tr>
+    <td><b>CORS / Env</b></td>
+    <td>django-cors-headers 4.9.0, python-dotenv 1.2.1</td>
+  </tr>
+</table>
+
+### 🧐 AI / Data
+
+<img src="https://img.shields.io/badge/chromadb-badge?style=for-the-badge&logo=database&logoColor=white&color=%235B5BD6"/>
+<img src="https://img.shields.io/badge/pytorch-badge?style=for-the-badge&logo=pytorch&logoColor=white&color=%23EE4C2C"/>
+<img src="https://img.shields.io/badge/huggingface-badge?style=for-the-badge&logo=huggingface&logoColor=black&color=%23FFD21E"/>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Specification</th>
+  </tr>
+  <tr>
+    <td><b>Vector DB</b></td>
+    <td>ChromaDB 1.4.0</td>
+  </tr>
+  <tr>
+    <td><b>Embedding</b></td>
+    <td>jhgan/ko-sroberta-multitask, Sentence Transformers 5.2.0</td>
+  </tr>
+  <tr>
+    <td><b>ML / NLP</b></td>
+    <td>PyTorch 2.9.1, Transformers 4.57.3, scikit-learn 1.8.0</td>
+  </tr>
+  <tr>
+    <td><b>Retrieval</b></td>
+    <td>Thread content embedding, TOP_K 20</td>
+  </tr>
+  <tr>
+    <td><b>Data</b></td>
+    <td>ERD(vuerd), Thread test data(JSON)</td>
+  </tr>
+</table>
+
+### 😀 Collaboration / AI Tools
+
+<img src="https://img.shields.io/badge/git-badge?style=for-the-badge&logo=git&logoColor=white&color=%23F05032"/>
+<img src="https://img.shields.io/badge/chatgpt-badge?style=for-the-badge&logo=openai&logoColor=white&color=%23000000"/>
+<img src="https://img.shields.io/badge/gemini-badge?style=for-the-badge&logo=googlegemini&logoColor=white&color=%238E75B2"/>
+
+</div>
+
+---
+
+## 🛠️ 아키텍처
+
+```text
+Vue 3 SPA
+  |-- Pinia Store
+  |-- Vue Router
+  |-- Spotify Web Playback SDK
+  |
+  | REST API / Cookie JWT
+  v
+Django REST API
+  |-- accounts : 회원, 프로필, 팔로우, Spotify 계정
+  |-- musics   : 음악 검색, 플레이리스트, 재생, Audio Features
+  |-- threads  : 스레드 작성, 목록, 상세, 좋아요
+  |-- rag      : 스레드 임베딩 검색
+  |
+  | ORM / External API
+  v
+SQLite3 + Spotify API + ReccoBeats API + ChromaDB
+```
+
+---
+
+## 📲 주요 기능
+
+| 기능 | 설명 |
+| :-- | :-- |
+| 회원 인증 | dj-rest-auth와 JWT Cookie 기반 회원가입, 로그인, 로그아웃 |
+| 사용자 프로필 | 프로필 소개/이미지 수정, 사용자의 플레이리스트와 스레드 조회 |
+| 팔로우 | 사용자 간 팔로우/언팔로우 및 팔로잉 기반 스레드 필터 |
+| Spotify 연동 | OAuth 인증, 재생 토큰 발급, 디바이스 전환, 트랙 재생 |
+| 음악 검색 | Spotify Artist/Track 검색 및 아티스트 인기 트랙 조회 |
+| 플레이리스트 | 트랙 추가/삭제, 사용자별 플레이리스트 관리 |
+| Audio Features | ReccoBeats API 기반 곡 특성 저장 및 조회 |
+| 스레드 커뮤니티 | 곡 기반 감상 스레드 작성, 전체/팔로잉/좋아요 목록, 상세 조회 |
+| 스레드 좋아요 | 스레드별 좋아요 토글 및 좋아요한 스레드 조회 |
+| RAG 검색 | 입력 문장과 유사한 기존 스레드를 벡터 검색으로 추천 |
+
+---
+
+## 🧠 추천 검색 구조
+
+UMME의 추천 검색은 새로운 답변을 생성하기보다, **이미 작성된 스레드 중 사용자 의도와 가까운 감상 글을 찾아주는 Retrieval 중심 구조**입니다.
+
+1. 스레드 본문과 트랙 메타데이터를 수집합니다.
+2. `jhgan/ko-sroberta-multitask` 모델로 스레드 본문을 임베딩합니다.
+3. ChromaDB 컬렉션에 문서, 메타데이터, 임베딩 벡터를 저장합니다.
+4. 사용자의 검색어를 동일한 모델로 임베딩합니다.
+5. 유사도가 높은 상위 20개 스레드를 조회하고 트랙 정보를 함께 반환합니다.
+
+---
+
+## 📂 디렉터리 구조
+
+```text
+.
+|-- README.md
+|-- ERD.png
+|-- thread_testcase.json
+|-- package-lock.json
+|-- backend
+|   |-- manage.py
+|   |-- requirements.txt
+|   |-- umme
+|   |   |-- settings.py
+|   |   |-- urls.py
+|   |   |-- asgi.py
+|   |   `-- wsgi.py
+|   |-- accounts
+|   |-- musics
+|   |-- threads
+|   `-- rag
+|       |-- config
+|       |-- ingestion
+|       |-- retrieval
+|       `-- management
+|-- data
+|   |-- README.md
+|   `-- erd.vuerd.json
+`-- frontend
+    `-- umme
+        |-- package.json
+        |-- vite.config.js
+        |-- index.html
+        `-- src
+            |-- api
+            |-- assets
+            |-- components
+            |-- router
+            |-- stores
+            |-- styles
+            `-- views
+```
+
+---
+
+## 🚀 로컬 실행
+
+### Backend
+
+```bash
+cd backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+Backend `.env` 예시:
+
+```env
+DJANGO_SECRET_KEY=
+DJANGO_DEBUG_MODE=True
+DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+DJANGO_ALLOWED_ORIGINS=http://localhost:5173
+DJANGO_TRUSTED_ORIGINS=http://localhost:5173
+VUE_BASE_URL=http://localhost:5173
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+SPOTIFY_REDIRECT_URI=
+```
+
+### Frontend
+
+```bash
+cd frontend/umme
+npm install
+npm run dev
+```
+
+Frontend `.env` 예시:
+
+```env
+VITE_CLIENT_ID=
+VITE_REDIRECT_URI=
+```
+
+---
+
+## 📦 프로젝트 산출물
+
+### 🗄️ ERD
+
+![UMME ERD](./ERD.png)
+
+### 📑 데이터 설계 파일
+
+- `data/erd.vuerd.json`
+- `thread_testcase.json`
+
+### 🤖 생성형 AI 활용
+
+- 코드 리팩토링 및 구조 개선 보조
 - 커밋 메시지 작성 및 문서 정리 보조
-- 데이터베이스에 사용할 사용자/스레드 더미 데이터 생성
-
-###  활용 도구
-
-- **ChatGPT**
-- **Gemini CLI**
-
-**개발 생산성을 높이기 위한 보조 도구**로 활용하였다.
-
----
-
-## 7. 구현 과정에서 학습한 내용
-
-###  기술적 학습
-
-- Vue 3 Composition API (`ref`, `onMounted`)의 활용
-- 비동기 요청 흐름의 이해, `async/await`를 활용한 안정적인 데이터 로딩 구현
-- 컴포넌트 단위 설계의 중요성
-- RESTful API 구조에 대한 이해
-- 프론트엔드와 백엔드 분리 개발 경험
-- Git 기반 협업 및 버전 관리의 중요성
-
-###  어려웠던 점
-
-- 프론트엔드와 백엔드 역할 분리로 인한 소통의 어려움
-- Git 충돌과 코드 유실, 브랜치 관리
-- 컴포넌트 분리 기준 설정의 어려움
-- API 응답 데이터 구조 파악 및 필요한 데이터 추출
-- 의존성 충돌 및 환경 설정 문제
-
-###  새로 배운 점 및 느낀 점
-
-- 명확한 API 설계와 소통의 중요성
-- UI가 아닌 **역할 중심 설계**의 필요성
-- 작은 단위의 커밋과 브랜치 관리 습관
-- 공식 문서를 기반으로 한 문제 해결 능력 향상
-- 목적에 맞는 AI 활용에 대한 이해
-
-## 8. 마무리
-
-UMME 프로젝트를 통해 음악 데이터를 활용한 커뮤니티 서비스 설계부터
-
-프론트엔드와 백엔드 협업, AI 활용 방식까지 전반적인 웹 서비스 개발 과정을 경험할 수 있었다.
-
-향후 댓글 기능, 사용자 타입 기반 추천,
-
-더 정교한 추천 알고리즘을 추가하여 서비스 확장을 계획하고 있다.
+- 사용자/스레드 더미 데이터 생성 보조
